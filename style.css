@@ -1,0 +1,76 @@
+body{
+    background-image:url(imgSite/soft2.jpg);
+    background-attachment:fixed;
+    background-size:125%;
+    background-repeat:no-repeat;
+}
+
+h1{
+    height: 100px;
+    width: 50%;
+    font-style: oblique;
+    padding-left:450px; 
+    text-decoration-line:underline;
+    font-size:xx-large;
+    color:purple;
+}
+
+p{
+    font-size: x-large;
+    padding-left:150px;
+    font-style:initial;
+    color: purple;
+}
+
+#veja{
+    padding-left:540px;
+    font-style: oblique;
+    text-decoration-line:underline;
+    font-size:xx-large;
+    color: purple;
+}
+
+#lab01{
+    text-decoration-line:underline;
+    color:purple;
+    font-size:xx-large;
+}
+
+div{
+    display: inline-block;
+}
+
+#l1{
+
+    display: inline;
+    width:400px;
+    height:400px;
+    
+}
+
+
+#l2{
+    position: absolute;
+    display: inline;
+    top: 420px;
+    left: 360px;
+    width:400px;
+    height:400px;
+}
+
+#lab02{
+    text-decoration-line:underline;
+    color:purple;
+    font-size:xx-large;
+}
+       
+
+
+a{
+    font-size:x-large;
+}
+
+#barra{
+    border-color: rgb(7, 93, 163);
+    border-style:ridge;
+}

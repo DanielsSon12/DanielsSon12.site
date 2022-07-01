@@ -1,43 +1,39 @@
 body{
-    background-color:lightpink;
+    background-image:url(./imgSite/PokemonPF4.jpg);
     background-attachment:fixed;
-    background-size:125%;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
     background-repeat:no-repeat;
+    
 }
 
 h1{
     height: 100px;
     width: 50%;
     font-style: oblique;
-    padding-left:450px; 
+    font-family:"Lucida Console", "Courier New", monospace;
+    padding-left:100px; 
     text-decoration-line:underline;
     font-size:xx-large;
-    color:purple;
+    color:black;
 }
 
 p{
-    font-size: x-large;
-    padding-left:150px;
+    font-size: large;
+    font-family:"Lucida Console", "Courier New", monospace;
+    padding-left:20px;
     font-style:initial;
-    color: purple;
+    color:black;
 }
 
 #veja{
-    padding-left:540px;
+    padding-left:100px;
     font-style: oblique;
+    font-family:"Lucida Console", "Courier New", monospace;
     text-decoration-line:underline;
-    font-size:xx-large;
-    color: purple;
-}
-
-#lab01{
-    text-decoration-line:underline;
-    color:purple;
-    font-size:xx-large;
-}
-
-div{
-    display: inline-block;
+    font-size:x-large;
+    color:black;
 }
 
 #l1{
@@ -45,6 +41,7 @@ div{
     display: inline;
     width:400px;
     height:400px;
+    font-family:"Lucida Console", "Courier New", monospace;
     
 }
 
@@ -52,22 +49,16 @@ div{
 #l2{
     position: absolute;
     display: inline;
-    top: 420px;
-    left: 360px;
+    top: 395px;
+    left: 330px;
     width:400px;
     height:400px;
+    font-family:"Lucida Console", "Courier New", monospace;
 }
-
-#lab02{
-    text-decoration-line:underline;
-    color:purple;
-    font-size:xx-large;
-}
-       
-
 
 a{
-    font-size:x-large;
+    font-size:large;
+    font-family:"Lucida Console", "Courier New", monospace;
 }
 
 #barra{

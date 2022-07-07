@@ -37,8 +37,10 @@ p{
 }
 
 #l1{
-
+    position: absolute;
     display: inline;
+    top: 396px;
+    left:px;
     width:400px;
     height:400px;
     font-family:"Lucida Console", "Courier New", monospace;
@@ -57,11 +59,15 @@ p{
 }
 
 a{
-    font-size:large;
+    font-size:20px;
     font-family:"Lucida Console", "Courier New", monospace;
 }
 
 #barra{
-    border-color: rgb(7, 93, 163);
-    border-style:ridge;
+    border-color:black;
+    height:9px;
+    background:black;
+     margin-bottom: 50px;
 }
+
+

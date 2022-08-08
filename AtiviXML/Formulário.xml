@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<formulario>
+    <aluno nome="Daniel Ouverney da Silva Guimarães">
+        <biografia>
+            <sexo> Masculino </sexo>
+            <dataDeNascimento> 12/05/2006 </dataDeNascimento>
+            <idade> 16 anos </idade>
+            <signo> Touro </signo>
+            <pet nome="Mel"> Gata </pet>
+            <cidade> Nova Friburgo-RJ </cidade>
+            <escola instituicao="CEFET-RJ">
+                <anoEscolar> 1º ano do ensino medio </anoEscolar>
+                <curso> Tecnico integral de informatica </curso>
+            </escola>
+        </biografia>
+    </aluno>
+</formulario>

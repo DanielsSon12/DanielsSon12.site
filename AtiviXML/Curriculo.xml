@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curriculo>
+	<pessoa nome="Wanderley Carvalho da Silva" sexo="M">
+		<nacionalidade> Brasileiro </nacionalidade>
+		<idade> 40 anos </idade>
+		<endereco cep="28616-095"> Rua Cachoeira Madeira </endereco>
+		<telefone> +55 (22) 9886-23691 </telefone>
+		<formacao>
+			<escola nomeinsti="Rogerio de Jesus"> Ensino Superior completo </escola>
+			<faculdade> Carpinteiro </faculdade>
+		</formacao>
+	</pessoa>
+</curriculo>

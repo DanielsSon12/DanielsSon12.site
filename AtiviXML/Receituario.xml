@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<receituario>
+	<clinica instituicao="Clinica Baby Pediatra"/>
+	<paciente nome="Ana Maria Marina" sexo="F"/>
+	<idade> 7 anos </idade>
+	<remedio>
+			<xarope uso="interno" nome="Xarope SemTosse"> 1 colher 3x ao dia </xarope>
+			<xarope uso="externo" nome="Gyellow"> aplicar ao braco 1x ao dia ao deitar </xarope>
+	</remedio>
+	<doutor nome="Dr.Juca"/>
+</receituario>

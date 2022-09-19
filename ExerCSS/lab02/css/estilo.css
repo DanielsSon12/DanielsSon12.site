@@ -1,0 +1,247 @@
+/*
+azul escuro: rgb(2, 27, 38)
+azul claro: rgb(195, 227, 245)
+
+azul-botao: rgb(23, 176, 228)
+azul-link: rgb(9, 70, 92)
+*/
+
+
+body {
+    background-color:rgb(2, 27, 38);
+}
+main {
+    background-color: #fff;
+    position:absolute;
+    right: 30px;
+    left: 30px;
+    
+}
+main footer {
+    background-color: rgb(195, 227, 245);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+header h1 {
+    color: #fff;
+}
+
+h1{
+    position: relative;
+    left: 40px;
+}
+
+.rodape {
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    list-style:none;
+    position: relative;
+    left: 300px;
+    font-family: sans-serif;
+}
+
+#cabeçalho{
+    display:flex;
+    flex-direction: row;
+    list-style:none;
+    position: relative;
+    right: 200px;
+    font-family: sans-serif;
+}
+
+nav li {
+    padding: 20px;
+}
+
+nav a {
+    color:#fff;
+}
+
+#banner{
+    background:url(../img/surf.jpg);
+    position: relative;
+    padding: 140px;
+    padding-left: 100px;
+    padding-top: 50px;
+    left: 20px;
+    width: 968px;
+    top: 20px;
+    font-family: sans-serif;
+}
+
+#titulo{
+    font-size: 80px;
+    font-family: sans-serif;
+}
+
+#serviços{
+    background-color: rgb(53, 124, 247);
+    position: relative;
+    width: 300px;
+    height: 250px;  
+    left: 20px;
+    top: 30px;
+    color: white;
+    display: inline-block;
+    font-family: sans-serif;
+    text-align: justify;
+  
+}
+
+#projetos{
+    background-color: rgb(53, 124, 247);
+    position: relative;
+    width: 300px;
+    height: 250px;  
+    left: 180px;
+    top: 50px;
+    color: white;
+    display: inline-block;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+#clientes{
+    background-color: rgb(53, 124, 247);
+    position: relative;
+    width: 300px;
+    height: 250px;
+    left: 320px;
+    top: 35px;
+    color: white;
+    display: inline-block;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.titulosdois{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+}
+
+.botao{
+    background-color: rgb(17, 121, 156);
+    color: white;
+    border:rgb(247, 247, 247);
+    font-size: 22px;
+    position: absolute;
+    border-radius: 5px;
+    top: 210px;
+    left: 20px;
+    font-family: sans-serif;
+}
+
+#imgpredio{
+    width: 380px;
+    display: inline-block;
+    display: table-cell;
+    position: relative;
+    left: 20px;
+}
+
+#conquiste{
+    position: relative;
+    display: inline-block;
+    top: -150px;
+    height: 270px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+#textoconquiste{
+    display: table-cell;
+    position: relative;
+    width: 300px;
+    float: right;
+    left: 330px;
+    top: -270px;
+    font-family: sans-serif;
+}
+
+.titulotres{
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+    font-family: sans-serif;
+}
+
+#depoimento{
+    position: relative;
+    display: inline-block;
+    top: 160px;
+    width:300px;
+    left: 530px;
+    background-color: rgb(195, 227, 245);
+    height: 250px;
+    font-family: sans-serif;
+}
+
+#saibamais{
+    color:rgb(0, 131, 175) ;
+    position:absolute;
+    left: -500px;
+    top: 220px;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+#titulo3{
+    font-size: 30px;
+    position: relative;
+    right: -37px;
+    top: -90px;
+    font-family: sans-serif;
+}
+
+.corrodape{
+    color:rgb(0, 131, 175) ;
+}
+
+.texto{
+    position: relative;
+    width: 270px;
+    left: 20px;
+    top: -15px;
+    font-family: sans-serif;
+}
+
+#blockote{
+    background-color: rgb(195, 227, 245);
+    height: 100px;
+    position: relative;
+    width: 250px;
+    left: 25px;
+    top: -50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+#blockote::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid  rgb(195, 227, 245);
+    bottom: -20px;
+    left: 10%;
+    top: 200px;
+}
+
+h4{
+    position: absolute;
+    top: 250px;
+    color: rgb(151, 151, 151);
+    font-size: 15px;
+    font-family: sans-serif;
+}

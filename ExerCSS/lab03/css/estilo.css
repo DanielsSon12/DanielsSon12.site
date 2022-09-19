@@ -1,0 +1,270 @@
+
+header{
+    background-color: rgb(218, 213, 213);
+    position: relative;
+    height: 384px;
+    width: 1385px;
+    left: -40px;
+    top: -10px;
+}
+
+body{
+    width: 960px;
+    overflow-x:hidden;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    list-style:none;
+    position: relative;
+    left: 160px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 15px;
+    top: -17px;
+    background-color: rgb(2, 27, 38);
+    left: -10px;
+    width: 1300px;
+    margin: auto;
+}
+
+nav li{
+    margin-inline: 50px;
+    margin: auto;
+}
+a{
+    color: white;
+}
+
+.cabeçalhotexto{
+    position: relative;
+    width: 300px;
+    text-align: justify;
+    left: -110px;
+    top: 150px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.cabeçalhotitulo1{
+    position: absolute;
+    font-size: 30px;
+    left: 250px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    color: rgb(17, 41, 53);
+    font-weight:bolder;
+}
+
+.cabeçalhotitulo2{
+    position: relative;
+    left: 240px;
+    top: -50px;
+    width: 350px;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.entregador{
+    display: inline-block;
+    position: relative;
+    float: right;
+    right: 360px;
+    top: 23px;
+    width: 350px;
+}
+
+.ligueja{
+    background: black;
+    color: white;
+    position: relative;
+    float: right;
+    right: -160px;
+    top: 5px;
+    width: 190px;
+    height: 30px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.sectionmeio{
+    position: relative;
+    left: 220px;
+}
+
+div{
+    display: inline-block;
+}
+
+.divmeio{
+    border:5px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    top: 30px;
+    position: relative;
+    width: 250px;
+    height: 610px;
+    left: 36px;
+}
+
+.imagemmeio{
+    position: relative;
+    width: 250px;
+    height: 155px;
+    top: -1px;
+}
+
+.imagemmeio2{
+    position: relative;
+    width: 250px;
+    height: 155px;
+    top: 1px;
+}
+
+.titulomeio{
+    background-color:rgb(2, 27, 38);
+    padding: 10px;
+    position: relative;
+    width: 230px;
+    top: -25px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.titulomeio::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(2, 27, 38);
+    bottom: -20px;
+    left: 40%;
+    top: 30px;
+}
+
+.textomeio{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+    left: 25px;
+    top: -40px;
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.leiamais{
+    height: 30px;
+    width: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 20px;
+    left: 113px;
+    background-color: rgb(250, 125, 0);
+    border-radius: 5px;
+    color: white;
+    border-color: rgb(250, 125, 0);
+}
+
+.sectionfinal{
+    background-color: rgb(13, 41, 53);
+    position: absolute;
+    width: 2000px;
+    left: -20px;
+    height: 580px; 
+}
+
+.sectionfinal2{
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    left: 300px;
+    top: 60px;
+}
+
+.sectionfinal3{
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    left: 450px;
+    top: -210px;
+}
+
+.titulofinal{
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.textofinal{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: white;
+}
+
+td{
+    color: rgb(218, 213, 213);
+    width: 200px;
+    height: 35px;
+    left: 30px;
+    position: relative;
+}
+
+input, textarea{
+    background-color:rgb(0, 21, 30) ;
+    border: rgb(0, 21, 30);
+    border-radius: 5px;
+    color: rgb(218, 213, 213);
+    margin: 3px;
+}
+
+input{
+    width: 235px;
+    height: 25px;
+}
+
+table{
+    background-color: rgb(0, 21, 30);
+    border-radius: 5px;
+}
+
+.enviar{
+    background-color: rgb(250, 125, 0);
+    border-radius: 5px;
+    color: white;
+    border-color: rgb(250, 125, 0);
+    width: 70px;
+    height: 30px;
+    position: relative;
+    left: 171px;
+}
+
+.linhavertical{
+    display: inline-block;
+    position:absolute;
+    height: 373px;
+    top: 50px;
+    left: 650px;
+    border-right: 3px solid rgb( 6, 30, 40);
+}
+
+footer{
+    color: black;
+    position: absolute;
+    top: 1500px;
+    left: 980px;
+}
+/*
+Segunda opção caso a linha vertical do rodapé não funcione
+.vertical{
+    background-color: rgb(0, 21, 30);
+    border-left:2px solid rgb(0, 21, 30);
+    border-right: 2px solid rgb(0, 21, 30);
+    position: absolute;
+    height: 350px;
+    left: 32%;
+    top: 20px;
+}
+*/

@@ -1,0 +1,30 @@
+#titulo{
+    background-color: rgb(175, 175, 175);
+}
+
+.bordas {
+    border: 10px solid rgb(175, 175, 175);
+}
+
+#fium{
+    text-align: center;
+}
+
+.curto{
+    text-indent: 10px;
+    display: inline-block;
+    width: 800px;
+}
+
+#fidois{
+    display: inline-block;
+    position: absolute;
+    top: 960px;
+}
+
+h2{
+    color: rgb(64, 64, 218);
+    font-size: 70px;
+    text-align: center;
+    background-color: rgb(177, 218, 219);
+}

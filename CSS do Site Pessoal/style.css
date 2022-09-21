@@ -25,6 +25,7 @@ h1{
     top: -50px;
     text-align: center;
     text-decoration-line:underline;
+    font-size: 40px;
 }
 
 header div p{
@@ -36,7 +37,7 @@ header div p{
     background-size: 200% 200%;
     padding: 110px;
     text-align: center;
-    font-family:cursive;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     animation: animação 8s infinite;
 }
 
@@ -87,7 +88,7 @@ main section{
     text-decoration-line: none;
     display: block;
     color: white;
-    font-family:cursive;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 main .menu ul a:hover{

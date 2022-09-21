@@ -4,7 +4,7 @@
 
 body{
     position: relative;
-    top: 50px;
+    top: -5px;
 }
 /*
 .fundo{
@@ -25,7 +25,7 @@ body{
     font-size: 22px;
     margin-top: 30px;
     text-align: justify;
-    font-family:cursive;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     background:linear-gradient(90deg, #cf4627, #CD104D, #9C2C77);
     background-size: 180% 180%;
     border-radius: 20px;
@@ -44,7 +44,7 @@ body{
     text-align: justify;
     font-size: 23px;
     position: relative;
-    font-family:cursive;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     background:linear-gradient(90deg, #cf4627, #CD104D, #9C2C77);
     background-size: 180% 180%;
     padding: 5px;

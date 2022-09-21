@@ -1,0 +1,112 @@
+
+
+h1{
+    text-align: center;
+    font-family:cursive;
+    font-size: 40px;
+    position: relative;
+    top: 20px;
+    background:linear-gradient(45deg, #CD104D, #9C2C77);
+    background-size: 200% 200%;
+    border-radius: 20px;
+    padding: 10px;
+    width: 1130px;
+    left: 70px;
+    color:rgb(255, 248, 225);
+}
+
+h2{
+    text-decoration: underline;
+}
+
+div{
+    display: inline-block;
+    position: relative;
+    font-family:cursive;
+}
+
+.seção1{
+    margin: auto;
+    text-align:center;
+    position: relative;
+    width: 1150px;
+    background:linear-gradient(45deg, #CD104D, #9C2C77);
+    background-size: 200% 200%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.lab01{
+    position: relative;
+    top: -67px;
+    width: 310px;
+    height:365px;
+    left: -30px;
+    border: 7px solid #ffaec8;
+    border-radius: 8px;
+    color:rgb(255, 248, 225);
+}
+
+.lab02{
+    position: relative;
+    top: 70px;
+    left: 3px;
+    width: 310px;
+    border: 7px solid #ffaec8;
+    border-radius: 8px;
+    color:rgb(255, 248, 225);
+}
+
+.labxml{
+    position: relative;
+    top: -3px;
+    left: 35px;
+    width: 310px;
+    height:365px;
+    border: 7px solid #ffaec8;
+    border-radius: 8px;
+    color:rgb(255, 248, 225);
+}
+
+li{
+    list-style: none;
+    padding: 9px;
+    font-size: 20px;
+    position: relative;
+    left: -20px;
+}
+
+a{
+    text-decoration-line: none;
+    color:rgb(255, 248, 225);
+}
+
+a:hover{
+    background-color:#ff184e;
+    text-decoration-line: underline;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.seção2{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    width: 1150px;
+    background:linear-gradient(45deg, #CD104D, #9C2C77);
+    background-size: 200% 200%;
+    border-end-end-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.Ativiestilização{
+    position: relative;
+    top: -28px;
+    border: 7px solid  #ffaec8;
+    width: 320px;
+    height: 250px;
+    left: 7px;
+    border-radius: 8px;
+    color:rgb(255, 248, 225);
+}
+

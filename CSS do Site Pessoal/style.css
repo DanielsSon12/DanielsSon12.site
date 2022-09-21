@@ -1,0 +1,102 @@
+
+body{
+    overflow-x: hidden;
+}
+
+.textobanner{
+    width: 600px;
+    text-align: justify;
+    font-size: 20px;
+    position: relative;
+    top: 70px;
+    color: white;
+}
+
+.bannerborder{
+    border: 5px solid white;
+    width: 670px;
+    height: 270px;
+    border-color:  rgb(255, 191, 252);
+}
+
+h1{
+    padding: 10px;
+    position: relative;
+    top: -50px;
+    text-align: center;
+    text-decoration-line:underline;
+}
+
+header div p{
+    text-indent: 30px;
+}
+
+.banner{
+    background:linear-gradient(45deg, #FD841F, #E14D2A, #CD104D, #9C2C77);
+    background-size: 200% 200%;
+    padding: 110px;
+    text-align: center;
+    font-family:cursive;
+    animation: animação 8s infinite;
+}
+
+@keyframes animação{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+main{
+    background:linear-gradient(45deg, #FD841F, #E14D2A, #CD104D, #9C2C77);
+    background-size: 200% 200%;
+    animation: animação 8s infinite;
+    height: 1300px;
+    width: 1350px;
+}
+
+main .menu{
+    background-color:#b61b3f;
+    padding: 24px;
+}
+
+main section{
+    background:linear-gradient(90deg, #FD841F, #E14D2A, #CD104D, #9C2C77);
+    background-size: 200% 200%;
+    animation: animação 8s infinite;
+}
+
+.menu ul{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-left: 260px;
+    padding-right: 300px;
+}
+
+.menu ul a{
+    text-decoration-line: none;
+    display: block;
+    color: white;
+    font-family:cursive;
+}
+
+main .menu ul a:hover{
+    background-color:#ff184e;
+    text-decoration-line: underline;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+*{
+    margin: auto;
+}

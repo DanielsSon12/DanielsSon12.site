@@ -83,7 +83,7 @@ a{
 }
 
 a:hover{
-    background-color: #D4D925;
+    background-color: rgb(212, 217, 37);
     text-decoration-line: underline;
     border-radius: 10px;
     padding: 5px;

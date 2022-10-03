@@ -11,6 +11,7 @@ header{
 body{
     width: 960px;
     overflow-x:hidden;
+    background-color: white;
 }
 
 nav ul{

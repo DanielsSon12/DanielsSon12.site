@@ -9,14 +9,14 @@ body{
     font-size: 20px;
     position: relative;
     top: 70px;
-    color: white;
+    color: #000000;
 }
 
 .bannerborder{
-    border: 5px solid white;
+    border: 5px solid  #FF5B00;
     width: 670px;
     height: 270px;
-    border-color:  rgb(255, 191, 252);
+    border-color:   #FF5B00;
 }
 
 h1{
@@ -33,7 +33,7 @@ header div p{
 }
 
 .banner{
-    background:linear-gradient(45deg, #FD841F, #E14D2A, #CD104D, #9C2C77);
+    background:linear-gradient(60deg, #990000, #FF5B00, #D4D925, #FFEE63);
     background-size: 200% 200%;
     padding: 110px;
     text-align: center;
@@ -56,7 +56,7 @@ header div p{
 }
 
 main{
-    background:linear-gradient(45deg, #FD841F, #E14D2A, #CD104D, #9C2C77);
+    background:linear-gradient(60deg, #990000, #FF5B00, #D4D925, #FFEE63);
     background-size: 200% 200%;
     animation: animação 8s infinite;
     height: 1300px;
@@ -64,12 +64,12 @@ main{
 }
 
 main .menu{
-    background-color:#b61b3f;
+    background-color:#FF5B00;
     padding: 24px;
 }
 
 main section{
-    background:linear-gradient(90deg, #FD841F, #E14D2A, #CD104D, #9C2C77);
+    background:linear-gradient(80deg, #990000, #FF5B00, #D4D925, #FFEE63);
     background-size: 200% 200%;
     animation: animação 8s infinite;
 }
@@ -87,14 +87,14 @@ main section{
 .menu ul a{
     text-decoration-line: none;
     display: block;
-    color: white;
+    color: black;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 main .menu ul a:hover{
-    background-color:#ff184e;
+    background-color: #D4D925;
     text-decoration-line: underline;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 5px;
 }
 

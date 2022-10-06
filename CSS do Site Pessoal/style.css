@@ -9,14 +9,14 @@ body{
     font-size: 20px;
     position: relative;
     top: 70px;
-    color: #000000;
+    color: rgb(248, 238, 218);
 }
 
 .bannerborder{
-    border: 5px solid  #FF5B00;
+    border: 5px solid  #FF7A00;
     width: 670px;
     height: 270px;
-    border-color:   #FF5B00;
+    border-color:   #FF7A00;
 }
 
 h1{
@@ -33,12 +33,12 @@ header div p{
 }
 
 .banner{
-    background:linear-gradient(60deg, #990000, #FF5B00, #D4D925, #FFEE63);
-    background-size: 200% 200%;
+    background:linear-gradient(60deg, #864000, #D44000, #FF7A00, #FFEFCF);
+    background-size: 300% 300%;
     padding: 110px;
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    animation: animação 8s infinite;
+    animation: animação 6s infinite;
 }
 
 @keyframes animação{
@@ -56,9 +56,9 @@ header div p{
 }
 
 main{
-    background:linear-gradient(60deg, #990000, #FF5B00, #D4D925, #FFEE63);
+    background:linear-gradient(-10deg,  #864000, #D44000, #FF7A00, #FFEFCF);
     background-size: 200% 200%;
-    animation: animação 8s infinite;
+    animation: animação 6s infinite;
     height: 1300px;
     width: 1350px;
 }
@@ -69,9 +69,9 @@ main .menu{
 }
 
 main section{
-    background:linear-gradient(80deg, #990000, #FF5B00, #D4D925, #FFEE63);
+    background:linear-gradient(80deg,  #864000, #D44000, #FF7A00, #FFEFCF);
     background-size: 200% 200%;
-    animation: animação 8s infinite;
+    animation: animação 6s infinite;
 }
 
 .menu ul{
@@ -87,12 +87,12 @@ main section{
 .menu ul a{
     text-decoration-line: none;
     display: block;
-    color: black;
+    color: rgb(248, 238, 218);
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 main .menu ul a:hover{
-    background-color: #D4D925;
+    background-color: #D44000;
     text-decoration-line: underline;
     border-radius: 10px;
     padding: 5px;

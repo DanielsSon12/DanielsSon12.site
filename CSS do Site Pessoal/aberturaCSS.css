@@ -26,10 +26,11 @@ body{
     margin-top: 30px;
     text-align: justify;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background:linear-gradient(60deg, #D44000, #FF7A00);
+    background:linear-gradient(60deg, #FFA36C, #A20A0A);
     background-size: 160% 160%;
     border-radius: 20px;
     color:rgb(248, 238, 218);
+    -webkit-text-stroke: 1px rgb(63, 26, 26);
 }
 
 .introdução h1{
@@ -45,7 +46,7 @@ body{
     font-size: 23px;
     position: relative;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background:linear-gradient(87deg,#D44000, #FF7A00);
+    background:linear-gradient(87deg,#FFA36C, #A20A0A);
     background-size: 160% 160%;
     padding: 5px;
     left: 10px;

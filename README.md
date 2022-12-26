@@ -1,3 +1,3 @@
 # Olá !
 
-Esse é meu site do curso de informática (Design Web)
+Esse é o repositório do meu site pessoal

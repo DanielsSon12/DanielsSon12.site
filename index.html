@@ -2,45 +2,37 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="./CSS do Site Pessoal/style.css">
+        <link rel="stylesheet" href="./style.css">
         <link rel="shortcut icon" href="./imgSite/PurpleFox.ico">
         <title> Site pessoal</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://danielsson12.github.io/DanielsSon12.site/style.css" rel="stylesheet" />
     </head>
     <body>
-        <header class="banner">
-            <!--img href="./imgSite/morcego.png" alt="image error">-->
-            <div class="bannerborder">
-                <div class="textobanner">
-                    <h1><strong>Olá pessoas!</strong></h1>
-                        <p>
-                            Sou o Daniel Ouverney e criei este site com o intuito de aprender e mostrar meu aprendizado sobre HTML, CSS, PHP e JAVASCRIPT.
-                            Dê uma olhada no meu site e se ""divirta"".
-                        </p>
+        <header >
+            <nav >
+                <a class="logo" href="#">The 
+                    Amateur</a>
+                <div class="mobile-menu">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
                 </div>
-            </div>
-        </header>
-
-        <main>
-            <nav class="menu">
-                <ul>
-                    <li><a href="AtividadesCursoInfo.html" target="abertura">Atividades do curso de<br> informática</a></li>
-                    <li><a href="Sobremim.html" target="abertura" style="text-decoration-line:line-through;">Sobre mim</a></li>
-                    <li><a href="ProjetosPessoais.html" target="abertura" style="text-decoration-line:line-through;">Projetos pessoais</a></li>
+                <ul class="nav-list">
+                    <li><a href="AtividadesCursoInfo.html" target="abertura">Atividades Escolares</a></li>
                     <li><a href="abertura.html" target="abertura">Página Inicial</a></li>
+                    <li><a href="ProjetosPessoais.html" target="abertura" style="text-decoration-line:line-through;">Projetos pessoais</a></li>
+                    <li><a href="Sobremim.html" target="abertura" style="text-decoration-line:line-through;">Sobre mim</a></li>
                 </ul>
             </nav>
-            <section>
-                <!--Tamanho padrão do iframe 300x150 / larguraXaltura-->
-                <iframe src="abertura.html" height="1210" width="1309" frameborder="0"  name="abertura" >[ESSE NAVEGADOR NÃO É COMPATIVEL COM O IFRAME]</iframe>
-            </section>
-        </main>
+        </header>
+        <main>
 
-        <footer>
-            <div>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-            </div> 
-        </footer>
+        </main>
+        <script src="mobile-navbar.js"></script>
+            <!--<section>
+                Tamanho padrão do iframe 300x150 / larguraXaltura
+                <iframe src="abertura.html"  frameborder="0"  name="abertura" >[ESSE NAVEGADOR NÃO É COMPATIVEL COM O IFRAME]</iframe>
+            </section> -->
     </body>
 </html>

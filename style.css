@@ -28,10 +28,11 @@ nav{
     height: 10vh; /*vh ou vw é uma medida responsiva que se adapta a altura ou largura da tela de visualização do usuário, sendo que 100 cobre a tela inteira*/
 }
 
-main{
-    background: url("./imgSite/JS.png") no-repeat center center; /*center center são os eixos X e Y respectivamente do site*/
+body{
+    background: url("./imgSite/JS.png") repeat center center; /*center center são os eixos X e Y respectivamente do site*/
     background-size: cover; /*Caso a resolução do monitor for maior do que a imagem*/
     height: 92vh;
+    background-attachment:scroll;
 }
 
 .nav-list{
@@ -102,4 +103,35 @@ main{
 
 html{
     scroll-behavior: smooth;
+}
+
+.listas{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.listas li{
+    letter-spacing: 2.3px;
+    padding: 10px;
+}
+
+.listas:hover{
+    color: rgb(71, 72, 77);
+}
+
+section{
+    text-align: center;
+    padding: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #dadada;
+}
+
+section p{
+    width: 720px;
+    margin: auto;
+    display: flex;
+    padding-top: 20px;
+    letter-spacing: 1px;
 }

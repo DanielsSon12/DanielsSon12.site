@@ -29,7 +29,7 @@ nav{
 }
 
 body{
-    background: url("./imgSite/JS.png") repeat center center ; /*center center são os eixos X e Y respectivamente do site*/
+    background: url("./imgSite/#23232e.png") repeat center center ; /*center center são os eixos X e Y respectivamente do site*/
     background-size: cover; /*Caso a resolução do monitor for maior do que a imagem*/
     height: 92vh;
     background-attachment:scroll;

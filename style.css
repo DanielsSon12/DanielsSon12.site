@@ -147,9 +147,8 @@ h2{
     font-size: x-large;
     letter-spacing: 2px;
     text-transform: uppercase;
-    border-left: ridge cyan 6.5px;
-    border-right: ridge  cyan 6.5px;
-    border-radius: 10vh;
+    border-left: ridge cyan 20px;
+    border-radius: 13vh;
     padding: 10px;
-    padding-left: -50px;
+    text-shadow: 3px 2px #949494;
 }

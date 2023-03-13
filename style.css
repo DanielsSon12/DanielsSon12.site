@@ -24,12 +24,12 @@ nav{
     justify-content: space-around; /*Ira fazer com que o espaço ao redor seja a metade do espaço entre eles*/
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #23232e;
+    background: #232338;
     height: 10vh; /*vh ou vw é uma medida responsiva que se adapta a altura ou largura da tela de visualização do usuário, sendo que 100 cobre a tela inteira*/
 }
 
 body{
-    background-image: url("./imgSite/") no-repeat center center ; /*center center são os eixos X e Y respectivamente do site*/
+    background-color: #2a2a44; /*center center são os eixos X e Y respectivamente do site*/
     background-size: cover; /*Caso a resolução do monitor for maior do que a imagem*/
     height: 92vh;
     background-attachment:scroll;

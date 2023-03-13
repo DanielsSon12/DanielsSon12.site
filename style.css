@@ -29,7 +29,7 @@ nav{
 }
 
 body{
-    background: url("./imgSite/#23232e.png") repeat center center ; /*center center são os eixos X e Y respectivamente do site*/
+    background-image: url("./imgSite/") no-repeat center center ; /*center center são os eixos X e Y respectivamente do site*/
     background-size: cover; /*Caso a resolução do monitor for maior do que a imagem*/
     height: 92vh;
     background-attachment:scroll;
@@ -107,7 +107,7 @@ html{
 
 .listas{
     list-style: none;
-    display: flex;
+    display: inline-block;
     padding-top: 20px;
     padding: 7px;
 }
@@ -130,12 +130,12 @@ section{
 
 section p{
     border:8px;
-    width:900em;
+    width:900px;
     display: flex;
-    padding-top: 13em;
-    padding-left: 15em;
+    padding-top: 13px;
+    padding-left: 15px;
     letter-spacing: 2px;
-    font-size: 19em;
+    font-size: 19px;
     text-align: justify;
     word-spacing: 4px; /*Define o espaçamento entre as letras de um paragrafo*/
     line-height: 34px ; /*Define o espaçamento entre linhas em um parágrafo*/

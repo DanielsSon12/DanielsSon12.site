@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios DOM</title>
+    <script src="./DOMnum.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Laboratório de JavaScript - DOM - Números</h1><br>
+    </header>
+    <main>
+        <div>
+            <h4>Insira dois números:</h4>
+            <label for="n1">Número 1:</label>
+            <input type="number" id="n1">
+            <label for="n2">Número 2:</label>
+            <input type="number" id="n2"><br>
+            <br><button onclick="soma()" id="botao"> Soma </button>
+            <p id="resultadoDaSoma"></p>
+            <button onclick="maior()">Verifica maior</button>
+            <p id="verificaqualmaior"></p>
+            <button onclick="calculahipotenusa()">Calcula a hipotenusa</button>
+            <p id="respostahipotenusa"></p><hr><br>
+
+            <label for="num">Insira um número: </label>
+            <input type="number" id="num">
+            <button onclick="verificaPrimo()">Verifica Primo</button>
+            <p id="verificaprimo"></p><hr><br>
+
+            <label for="salarioFuncionario">Insira o salario mensal do funcionario: </label>
+            <input type="number" id="salarioFuncionario">
+            <label for="percentualReajuste">Insira o percentual de reajuste: </label>
+            <input type="number" id="percentualReajuste">
+            <button onclick="novoSalario()">Calcula Novo Salario</button>
+            <p id="escreveNovoSalario"></p><hr><br>
+
+            <label for="tempFah">Insira uma temperatura em graus Fahrenheit:</label>
+            <input type="number" id="tempFah">
+            <button onclick="transformaFahemCel()">Transforma graus Fahrenheit em Cesius</button>
+            <p id="calculoTransformacao"></p><hr><br>
+
+            <label for="nota1">Insira a 1º nota do aluno:</label>
+            <input type="number" id="nota1">
+            <label for="nota2">Insira a 2º nota do aluno:</label>
+            <input type="number" id="nota2">
+            <label for="nota3">Insira a 3º nota do aluno:</label>
+            <input type="number" id="nota3">
+            <button onclick="calculaMedia()">Calcula Média das Notas</button>
+            <p id="resultadoMedia"></p><hr><br>
+        </div>
+    </main>
+</body>
+</html>

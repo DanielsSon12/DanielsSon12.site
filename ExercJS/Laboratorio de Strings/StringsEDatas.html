@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./StringsEDatas.js" defer></script>
+    <title>Letras A, B, C, D</title>
+</head>
+<body>
+    <header>
+        <h1>Laboratorio de Strings e Datas</h1>
+        <h2>Leitor de texto</h2>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <h1>Fora do PDF:</h1><br>
+            <label for="frase">Insira a frase: </label><br>
+            <input type="text" id="frase"><br><br>
+
+            <button onclick="numeroPTotalN()">Número de palavras e total de letras</button>
+            <p id="nTresult"></p><br><hr>
+
+            <button onclick="ocorrencia()">Ocorrência de palavras</button>
+            <p id="ocoresult"></p><br><hr>
+
+            <label for="procure">Procure pela palavra que quer Marcar: </label>
+            <input type="text" id="procure"><br><br>
+            <button onclick="marcar()">Marcação de palavras</button><br>
+            <p id="marqueresult"></p><hr><br>
+
+            <label for="substitui">Qual palavra deve ser substituida? </label> 
+            <input type="text" id="substitui"><br><br>
+            <label for="novaPalavra">Digite a nova palavra: </label>
+            <input type="text" id="novaPalavra"><br><br>
+            <button onclick="substituicao()">Substituição de palavra</button><br>
+            <p id="substituiresult"></p><hr><br>
+        </section>
+
+        <section>
+            <h1>Atividades do PDF:</h1><br>
+            <hr>
+            <h3>Use o INSIRA A FRASE do exercicio de Fora do PDF</h3>
+            <button onclick="inverte()">Inverte caracteres</button>
+            <p id="inverteresult"></p>
+            <hr>
+            <h3>Use o INSIRA A FRASE do exercicio de Fora do PDF</h3>
+            <button onclick="vogaisnegrito()">Vogais em negrito</button>
+            <p id="vogaisresult"></p>
+            <hr>
+            <h3>Use o INSIRA A FRASE do exercicio de Fora do PDF</h3>
+            <button onclick="numeroOcorrencia()">Verifica a ocorrencia das palavras</button>
+            <p id="numeroresult"></p>
+            <hr>
+            <h3>Use o INSIRA A FRASE do exercicio de Fora do PDF</h3>
+            <button onclick="palavraOcorrencia()">Palavra com maior ocorrencia</button>
+            <p id="palavraresult"></p>
+            <hr>
+            <h3>Use o INSIRA A FRASE do exercicio de Fora do PDF</h3>
+            <label for="subs">Qual palavra deve ser substituida? </label> 
+            <input type="text" id="subs"><br><br>
+            <label for="newPalavra">Digite a nova palavra: </label>
+            <input type="text" id="newPalavra"><br><br>
+            <button onclick="substi()">Substituição de palavra</button><br>
+            <p id="subsresult"></p><hr><br>
+            <hr>
+            <form onsubmit="dataPorExtenso(); return false;">
+                <label for="dataNascimento">Insira sua data de nascimento no estilo dd/mm/aa :</label>
+                <input type="text" id="dataNascimento" name="dataNascimento" required><br><br>
+                <button type="submit">Escrever por extenso</button>
+                <p id="extensoresult"></p><hr><br>
+            </form>
+            <label for="senha">Insira sua senha:</label>
+            <input type="password" id="senha" onkeyup="verificadorSenha()"><!-- A marcação 'onkeyup' é um attributo HTML que define um evento a ser executado sempre que uma tecla é pressionada e liberada (ou seja, solta)em um elemento HTML, como uma caixa de texto ou um campo de formulário-->
+            <p id="senharesult"></p><hr>
+            <br>
+            <label for="inverte">Insira a frase:</label>
+            <input type="text" id="inverte">
+            <button onclick="inverteFrase()">Inverta sua frase</button>
+            <p id="inverterresultado"></p><hr><br>
+        </section>
+    </main>
+</body>
+</html>

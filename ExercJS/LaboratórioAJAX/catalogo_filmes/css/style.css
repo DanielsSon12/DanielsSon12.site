@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,300;1,400;1,500&family=Rajdhani:wght@300;400;600&display=swap');
+
+*{
+    font-family: 'Belanosima', sans-serif;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+
+body{
+    background: linear-gradient(rgb(31, 32, 48),rgb(59, 62, 92));
+    background-color: ;
+    overflow-x:hidden;
+}
+
+#filmes{
+    margin: 5%;
+}
+
+.prepara{
+    border-radius: 50px;
+    background:rgb(37, 37, 37); 
+    display: inline-block;
+    max-width: 40%;
+    padding: 10px;   
+    margin: 20px;
+    box-shadow: 0px 0px  30px black;
+}
+
+/*FOTO DO FILME - INÍCIO*/
+.banner img{
+    border-radius: 50px;
+    border: solid;
+    width: 520px;
+    max-height: 50%;
+}
+
+.banner{
+    text-align: center;
+}
+/*FOTO DO FILME - FINAL*/
+
+/*TÍTULOS H3, TEXTOS E LISTAS; E H1- INÍCIO*/
+h3, p, ul, li{
+    list-style-type: none;
+    color: whitesmoke;
+}
+
+header{
+    text-decoration: underline;
+}
+
+h1{
+    color: rgb(167, 0, 0);
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-size: 60px;
+    text-shadow: -4px -1px 2px black;
+}
+
+.span-flix{
+    color: rgb(167, 0, 0);
+    text-shadow: -4px -1px 2px black;
+}
+
+h1, .span-flix{
+    letter-spacing: 8px;
+}
+/*TÍTULOS H3, TEXTOS E LISTAS; E H1- FINAL*/
+
+/*TÍTULO E RESUMO - INÍCIO*/
+.div-tituresu h3{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.div-tituresu p{
+    max-width: 65%;
+    margin:auto;
+    text-align: center;
+}
+/*TÍTULO E RESUMO - FINAL*/
+
+/*FAIXA ETÁRIA E AVALIAÇÃO - INÍCIO*/
+.faixaEtariaAva{
+    text-align: center;
+    margin: 30px auto;
+}
+/*FAIXA ETÁRIA E AVALIAÇÃO - FINAL*/
+
+/*LISTA DO GÊNERO - INÍCIO*/
+.div-gene ul li{
+    word-spacing: 1px;
+}
+
+.div-gene ul{
+    margin: 5px auto;
+    max-width: 70%;
+}
+
+.div-gene h3{
+    text-align: center;
+}
+
+.div-gene li{
+    text-align: center;
+    margin: 30px auto;
+}
+/*LISTA DO GÊNERO - FINAL*/
+
+/*LISTA DO ELENCO - INÍCIO*/
+.div-elenc ul li{
+    word-spacing: 1px;
+}
+
+.div-elenc ul{
+    margin: 5px auto;
+    max-width: 70%;
+}
+
+.div-elenc h3{
+    text-align: center;
+}
+
+.div-elenc li{
+    text-align: center;
+    margin: 30px auto;
+}
+/*LISTA DO ELENCO - FINAL*/
+
+/*TÍTULOS SEMELHANTES - INÍCIO*/
+.div-titulos h3{
+    text-align: center;
+}
+
+.div-titulos ul li{
+    text-align: center;
+}
+/*TÍTULOS SEMELHANTES - FINAL*/

@@ -8,6 +8,11 @@ xhttp.send();
 
 const carregaFilme = prepara =>{    
 
+    //A função para criar os titulos semelhantes esta aqui, porém meu site ficou todo bugado com a adição dele no html, então não coloquei
+    const Id = (id, lista) => lista.filter(elem => elem.id == id)
+    const titulosSemelhantes = (semelhantes, lista) => semelhantes.reduce((acum, idFilme) => acum = acum + `<li>${Id(idFilme, lista)[0].titulo}</li>`,"")
+
+    //Função geradora das estrelas para a avaliação de cada filme
     const geraEstrela = avaliacao =>{
         let estrela = prepara.opinioes[0].rating;
 
@@ -45,7 +50,7 @@ const carregaFilme = prepara =>{
         return avaliacao;
     }
     
-
+    //Função para mudar a cor da faixa etária de cada filme de acordo com a classificação
     const color = faixaEtaria =>{
         if(prepara.classificacao >= 0 && prepara.classificacao <= 14){
             //verde

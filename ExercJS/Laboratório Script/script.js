@@ -23,7 +23,7 @@ let InputCidade = document.querySelector('#cidade');
 document.addEventListener('DOMContentLoaded', function(){
     const buscarAPI = async cidade => {
         //Implementação aqui usando a Fetch API
-        const api = await fetch('https://apiadvisor.climatempo.com.br/api/v1/locale/city?name=${cidade}');
+        const api = await fetch('https://api.openweathermap.org/data/2.5/weather?q=${cidade}');
     }
     
     buscarPrevisaoTempo.addEventListener("click", function() {
@@ -58,51 +58,44 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 //ATIDADE 3
-async function enviarComentario(comentario) {
+async function enviarComentario(comentario){
+  //criação da promise
+  return new Promise((resolve, reject) => {
+    //url do local pra onde vai o comentario
+    const url = 'https://danielsson12.github.io/DanielsSon12.site/ExercJS/Laboratório%20Script/index.html';
 
-    const parametros = {
-      method: 'POST', // Ou 'PUT', 'PATCH', etc., dependendo da sua API
+    //configuração da requisição
+    const options = {
+      method: 'POST',
       headers: {
-        'Content-Type': 'application/json', // Defina o tipo de conteúdo apropriado
+        'Content-Type': 'application/json',//o conteúdo vai ser enviado por JSON
       },
-      body: JSON.stringify(comentario), // Converta o objeto de comentário em JSON
+      body: JSON.stringify({comentario}),//vai conerverter o objeto em uma string JSON
     };
 
-    // Substitua a URL abaixo pela URL do endpoint da API do servidor de comentários
-    const url = 'https://sua-api.com/comentarios';
-
-    try {
-      const response = await fetch(url, parametros);
-
-      if (!response.ok) {
-        // Se a resposta não for bem-sucedida, rejeite a Promise com uma mensagem de erro
-        throw new Error(`Erro ao enviar o comentário: ${response.status}`);
+    //realiza a requisição API por fetch
+    fetch(url, options)
+    .then(response => {
+      if(!response.ok){
+        throw new Error('Erro da rede - ${response.status}');
       }
-
-      // Aguarde a resposta ser processada e retorne uma mensagem de sucesso
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      // Se ocorrer um erro durante a solicitação, rejeite a Promise com o erro
-      throw error;
-    }
-  }
-    
-    const novoComentario = {
-      autor: 'Programador',
-      texto: 'Este é um ótimo artigo!',
-    };
-
-    enviarComentario(novoComentario)
-    
-    .then((resposta) => {
-    
-    console.log('Comentário enviado com sucesso:', resposta);
-    
+      return response.json();//vai converter a resposta pra JSON
     })
-    
-    .catch((erro) => {
-    
-    console.error('Erro ao enviar comentário:', erro);
-    
+    .then(data => {
+      //resolva a promise com os dados da resposta
+      resolve(data);
+    })
+    .catch(error => {
+      //rejeita a promise em caso de erro
+      reject(error);
     });
+  });
+}
+
+enviarComentario('Este é um ótimo artigo!')
+.then(() => {
+  console.log('Comentário enviado com sucesso.');
+})
+.catch((erro) => {
+  console.error('Erro ao enviar comentário: ', erro);
+});

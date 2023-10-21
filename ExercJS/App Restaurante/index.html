@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" method="get"></script>
+    <title>Restaurante</title>
+</head>
+<body>
+
+<!--________________BANNER DO RESTAURANTE_________________-->
+    <header>
+        <div class="banner">
+            <h1>RESTAURANTE</h1>
+        </div>
+    </header>
+
+    <main>
+<!--___________________CARDAPIO______________________-->
+
+        <h1>CARDAPIO</h1>
+        <!--<h4>*CLIQUE NA IMAGEM DO ITEM QUE DESEJA PARA ADICIONA-LO AO PEDIDO*</h4>-->
+        <div id="cardapio">
+            <div id="pedido"></div>
+            <div id="mensagemPedido"></div>
+        </div>
+
+<!--_______________LISTA DOS PEDIDOS__________________-->
+        <div class="infoPedido">
+            <h2>Lista de pedidos:</h2>
+            <div class="divPedido">
+                <h3>Quantidade Comprada:
+                    <span class="qtdComprada"><!--Inserir aqui a quantidade de itens selecionados pelo usuário--></span>
+                </h3>
+                <h3 class="scrollbarPrecoUni">Preço Unitário:
+                    <span class="precoUnitario"><!--Inserir aqui o preço unitário de cada item selecionado pelo usuário--></span>
+                </h3>
+                <h3>Total
+                    <span class="total"><!--Inserir aqui o preço total de todos os itens do usuário, com 10% de desconto--></span>
+                    <span class="taxaServico">(+10% de taxa de serviço)</span>: 
+                </h3>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

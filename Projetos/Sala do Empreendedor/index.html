@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Sala do Empreendedor</title>
 </head>
 <body>
@@ -16,8 +17,8 @@
                     <a href="#"><img src="./imgs/logo-nf.png" alt="Error"></a>
                     <p>PREFEITURA DE NOVA FRIBURGO</p>
                 </div>
-
-                <ul>
+                
+                <ul class="options-Menu">
                     <li>
                         <a href="#">Capacitação Profissional</a>
                     </li>
@@ -50,6 +51,47 @@
                     <img src="./imgs/do-utilizador.png" alt="Error">
                     <a href="#">Login</a>
                 </div>   
+
+                <!--------Mobile Menu-------->
+                <div class="mobile-menu-icon">
+                    <button onclick="showMenu()"><img src="./imgs/cardapio.png" alt="Error" class="icon"></button>
+                </div>
+                <div class="mobile-menu">
+                    <ul class="options-Menu">
+                        <li>
+                            <a href="#">Capacitação Profissional</a>
+                        </li>
+                        <li>
+                            <a href="#">Cidade Inteligente</a>
+                        </li>
+                        <li>
+                            <a href="#">Estágios</a>
+                        </li>
+                        <li>
+                            <a href="#">Sala do Empreendedor</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Outros Sistemas</a>
+                            <div class="dropdown-menu">
+                                <p>Sistemas:</p>
+                                <ul>
+                                    <li class="item1"><a href="#">Bem Estar Animal</a></li>
+                                    <li class="item2"><a href="#">Casa do Trabalhador</a></li>
+                                    <li class="item3"><a href="#">Finanças</a></li>
+                                    <li class="item4"><a href="#">Iluminação Pública</a></li>
+                                    <li class="item5"><a href="#">Senhas de Turismo</a></li>
+                                    <li class="item6"><a href="#">Mapeamento Cultural</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <div class="btn-Login">
+                        <img src="./imgs/do-utilizador.png" alt="Error">
+                        <a href="#">Login</a>
+                    </div>
+                </div>
+
             </div>
 
             <!--Segunda Nav-->

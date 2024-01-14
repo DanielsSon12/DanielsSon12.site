@@ -54,7 +54,7 @@ body{
 }
 
 /*______Botão de Login______*/
-.nav-1 > .btn-Login > a, p {
+.nav-1 > .btn-Login > a{
     padding: 5px;
     margin: auto;
 }
@@ -168,10 +168,11 @@ body{
 
 .nav-2 > div > a > img {
     max-width: 120px;
+    padding: 5px;
 }
 
 .nav-2 > div > p {
-    font-size: 3.1rem;
+    font-size: 2.2rem;
     color: #343434;
 }
 
@@ -185,29 +186,96 @@ body{
 
 .nav-2 > .iconSocial > a > img {
     display: block;
-    max-width: 30px;
+    max-width: 20px;
     padding: 0;
     margin: 0 auto;
     color: #343434;
 }
 
-/*
-// Dispositivos small (telefones em modo paisagem, com 576px ou mais)
-@media (min-width: 576px) { ... }
+/*_____Mobile Menu_____*/
+.mobile-menu-icon {
+    display: none;
+}
 
-// Dispositivos médios (tablets com 768px ou mais)
-@media (min-width: 768px) { ... }
-
-// Dispositivos large (desktops com 992px ou mais)
-@media (min-width: 992px) { ... }
-
-// Dispositivos extra large (desktops grandes com 1200px ou mais)
-@media (min-width: 1200px) { ... }
-*/
+.mobile-menu {
+    display: none;
+}
 
 /*______Responsividade_____*/
 /*Dispositivo móvel menor*/
 @media (max-width: 320px) {
+    /*_____Mobile Menu_____*/
+    .nav-1 > .options-Menu {
+        display: none;
+    }
+
+    .nav-1 > .btn-Login {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon > button > img {
+        max-width: 20px;
+        margin: 10px;
+    }
+
+    /*_____Opções do Menu_____*/
+
+    .mobile-menu {
+        border-right: 1px solid rgb(204, 204, 204);
+    }
+
+    .mobile-menu > .options-Menu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5rem;
+        align-items:end;
+
+    }
+
+    .mobile-menu > .options-Menu > li {
+        list-style: none;
+        padding: 0.6rem;
+    }
+
+    .mobile-menu > .options-Menu > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    /*_____Botão de Login_____*/
+    .mobile-menu > .btn-Login {
+        display: flex;
+        margin: 12px;
+        padding: 0.1rem;
+        float: inline-end;
+    }
+
+    .mobile-menu > .btn-Login > img {
+        margin: 0;
+        padding-top: 0.3rem;
+    }
+
+    .mobile-menu > .btn-Login > a {
+        margin: 0;
+        padding-top: 0.3rem;
+    }
+
+    /*______JS______*/
+    .open {
+        display: block;
+    }
+
     /*______Primeira Nav______*/
     .nav-1 > .parte-principal{
         display: flex;
@@ -250,7 +318,7 @@ body{
         padding: 0px;
         margin: 1px;
         margin-right: 25px;
-        margin-top: 12px;
+        margin-top: 14px;
     }
 
     .nav-2 > .iconSocial > a > img {
@@ -269,6 +337,77 @@ body{
 
 /*Dispositivo móvel Médio*/
 @media (min-width: 321px) and (max-width: 375px) {
+    /*_____Mobile Menu_____*/
+    .nav-1 > .options-Menu {
+        display: none;
+    }
+
+    .nav-1 > .btn-Login {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon > button > img {
+        max-width: 20px;
+        margin: 10px;
+    }
+
+    /*_____Opções do Menu_____*/
+
+    .mobile-menu {
+        border-right: 1px solid rgb(204, 204, 204);
+    }
+
+    .mobile-menu > .options-Menu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5rem;
+        align-items:end;
+
+    }
+
+    .mobile-menu > .options-Menu > li {
+        list-style: none;
+        padding: 0.6rem;
+    }
+
+    .mobile-menu > .options-Menu > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    /*_____Botão de Login_____*/
+    .mobile-menu > .btn-Login {
+        display: flex;
+        margin: 12px;
+        padding: 0.1rem;
+        float: inline-end;
+    }
+
+    .mobile-menu > .btn-Login > img {
+        margin: 0;
+        padding-top: 0.3rem;
+    }
+
+    .mobile-menu > .btn-Login > a {
+        margin: 0;
+        padding-top: 0.3rem;
+    }
+
+    /*______JS______*/
+    .open {
+        display: block;
+    }
     /*______Primeira Nav______*/
     .nav-1>.parte-principal {
         display: flex;
@@ -311,7 +450,7 @@ body{
         padding: 0px;
         margin: 1px;
         margin-right: 14px;
-        margin-top: 12px;
+        margin-top: 14px;
     }
     
     .nav-2 > .iconSocial > a > img {
@@ -331,23 +470,95 @@ body{
 
 /*Dispositivo móvel grande*/
 @media (min-width: 376px) and (max-width: 425px) {
-        /*______Primeira Nav______*/
-    .nav-1>.parte-principal {
+    /*_____Mobile Menu_____*/
+    .nav-1 > .options-Menu {
+        display: none;
+    }
+
+    .nav-1 > .btn-Login {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon > button > img {
+        max-width: 20px;
+        margin: 10px;
+    }
+
+    /*_____Opções do Menu_____*/
+
+    .mobile-menu {
+        border-right: 1px solid rgb(204, 204, 204);
+    }
+
+    .mobile-menu > .options-Menu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5rem;
+        align-items:end;
+
+    }
+
+    .mobile-menu > .options-Menu > li {
+        list-style: none;
+        padding: 0.6rem;
+    }
+
+    .mobile-menu > .options-Menu > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    /*_____Botão de Login_____*/
+    .mobile-menu > .btn-Login {
+        display: flex;
+        margin: 12px;
+        padding: 0.1rem;
+        float: inline-end;
+    }
+
+    .mobile-menu > .btn-Login > img {
+        margin: 0;
+        padding-top: 0.3rem;
+    }
+
+    .mobile-menu > .btn-Login > a {
+        margin: 0;
+        padding-top: 0.3rem;
+    }
+
+    /*______JS______*/
+    .open {
+        display: block;
+    }
+       
+    /*______Primeira Nav______*/
+    .nav-1 > .parte-principal {
         display: flex;
         flex-wrap: wrap;
         padding-left: 10%;
     }
 
-    .nav-1>.parte-principal>a,p {
+    .nav-1 > .parte-principal > a ,p {
         padding: 5px;
         margin: auto;
     }
 
-    .nav-1>.parte-principal>a>img {
+    .nav-1 > .parte-principal > a > img {
         max-width: 25px;
     }
 
-    .nav-1>.parte-principal>p {
+    .nav-1 > .parte-principal > p {
         color: white;
         font-size: 0.7rem;
     }
@@ -373,7 +584,7 @@ body{
         padding: 0px;
         margin: 1px;
         margin-right: 25px;
-        margin-top: 12px;
+        margin-top: 14px;
     }
     
     .nav-2 > .iconSocial > a > img {

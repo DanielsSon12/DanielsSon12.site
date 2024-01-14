@@ -15,21 +15,21 @@ body{
     padding: -10px;
 }
 
-.nav-1 > div {
+.nav-1 > .parte-principal{
     display: flex;
     padding-left: 10px;
 }
 
-.nav-1 > div > a, p {
+.nav-1 > .parte-principal > a, p {
     padding: 5px;
     margin: auto;
 }
 
-.nav-1 > div > a > img {
+.nav-1 > .parte-principal > a > img {
     max-width: 26px;
 }
 
-.nav-1 > div >  p {
+.nav-1 > .parte-principal >  p {
     color: white;
 }
 
@@ -54,6 +54,16 @@ body{
 }
 
 /*______Botão de Login______*/
+.nav-1 > .btn-Login > a, p {
+    padding: 5px;
+    margin: auto;
+}
+
+.nav-1 > .btn-Login {
+    display: flex;
+    padding-left: 10px;
+}
+
 .btn-Login > img {
     padding: 5px;
     max-width: 15px;
@@ -196,68 +206,184 @@ body{
 */
 
 /*______Responsividade para telas menores e médias_____*/
-@media (max-width: 576px) {
+@media (max-width: 320px) {
+    /*______Primeira Nav______*/
+    .nav-1 > .parte-principal{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10%;
+    }
+    
+    .nav-1 > .parte-principal > a, p {
+        padding: 5px;
+        margin: auto;
+    }
+    
+    .nav-1 > .parte-principal > a > img {
+        max-width: 21px;
+    }
+    
+    .nav-1 > .parte-principal >  p {
+        color: white;
+        font-size: 0.65rem;
+    }
+
     /*______Segunda Nav______*/
     .nav-2 > div > a {
         display: flex;
-        padding: 10px;
+        padding: 5px;
     }
 
     .nav-2 > div > a > img {
-        max-width: 80px;
+        max-width: 60px;
     }
 
     .nav-2 > div > p {
-        font-size: 1.2rem;
+        font-size: 0.6rem;
         display: flex;
     }
 
     /*______Icones da navbar______*/
     .nav-2 > .iconSocial > a {
-        display: block;
-        padding: 0;
-        margin: 10px;
-        margin-top: 30px;
+        display: flex;
+        padding: 0px;
+        margin: 1vw;
+        margin-right: 7vw;
+        margin-top: 3vw;
     }
 
     .nav-2 > .iconSocial > a > img {
-        display: block;
-        max-width: 17px;
-        padding: 0;
-        margin: 0 auto;
+        display: flex;
+        max-width: 9px;
+        padding: 0px;
+        margin: 0px auto;
         color: #343434;
+    }
+
+    .nav-2 > .iconSocial {
+        display: flex;
+        flex-direction: column;
     }
 }
 
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 375px) {
+    /*______Primeira Nav______*/
+    .nav-1>.parte-principal {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10%;
+    }
+
+    .nav-1>.parte-principal>a,p {
+        padding: 5px;
+        margin: auto;
+    }
+
+    .nav-1>.parte-principal>a>img {
+        max-width: 25px;
+    }
+
+    .nav-1>.parte-principal>p {
+        color: white;
+        font-size: 0.7rem;
+    }
+    
     /*______Segunda Nav______*/
     .nav-2 > div > a {
         display: flex;
-        padding: 10px;
+        padding: 5px;
     }
     
     .nav-2 > div > a > img {
-        max-width: 100px;
+        max-width: 70px;
     }
     
     .nav-2 > div > p {
-        font-size: 1.6rem;
+        font-size: 0.8rem;
         display: flex;
     }
-    
+
     /*______Icones da navbar______*/
     .nav-2 > .iconSocial > a {
-        display: block;
-        padding: 0;
-        margin: 15px;
-        margin-top: 35px;
+        display: flex;
+        padding: 0px;
+        margin: 0.1vw;
+        margin-right: 4vw;
+        margin-top: 3.2vw;
+    }
+    
+    .nav-2 > .iconSocial > a > img {
+        display: flex;
+        max-width: 10px;
+        padding: 0px;
+        margin: 0px auto;
+        color: #343434;
+    }
+    
+    .nav-2 > .iconSocial {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+        /*______Primeira Nav______*/
+    .nav-1>.parte-principal {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10%;
     }
 
+    .nav-1>.parte-principal>a,p {
+        padding: 5px;
+        margin: auto;
+    }
+
+    .nav-1>.parte-principal>a>img {
+        max-width: 25px;
+    }
+
+    .nav-1>.parte-principal>p {
+        color: white;
+        font-size: 0.7rem;
+    }
+    
+    /*______Segunda Nav______*/
+    .nav-2 > div > a {
+        display: flex;
+        padding: 7px;
+    }
+    
+    .nav-2 > div > a > img {
+        max-width: 80px;
+    }
+    
+    .nav-2 > div > p {
+        font-size: 0.9rem;
+        display: flex;
+    }
+
+    /*______Icones da navbar______*/
+    .nav-2 > .iconSocial > a {
+        display: flex;
+        padding: 0px;
+        margin: 0.1vw;
+        margin-right: 4vw;
+        margin-top: 4vw;
+    }
+    
     .nav-2 > .iconSocial > a > img {
-        display: block;
-        max-width: 23px;
-        padding: 0;
-        margin: 0 auto;
+        display: flex;
+        max-width: 12px;
+        padding: 0px;
+        margin: 0px auto;
         color: #343434;
+    }
+    
+    .nav-2 > .iconSocial {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 }

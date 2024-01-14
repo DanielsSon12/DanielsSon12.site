@@ -205,7 +205,8 @@ body{
 @media (min-width: 1200px) { ... }
 */
 
-/*______Responsividade para telas menores e médias_____*/
+/*______Responsividade_____*/
+/*Dispositivo móvel menor*/
 @media (max-width: 320px) {
     /*______Primeira Nav______*/
     .nav-1 > .parte-principal{
@@ -247,9 +248,9 @@ body{
     .nav-2 > .iconSocial > a {
         display: flex;
         padding: 0px;
-        margin: 1vw;
-        margin-right: 7vw;
-        margin-top: 3vw;
+        margin: 1px;
+        margin-right: 25px;
+        margin-top: 12px;
     }
 
     .nav-2 > .iconSocial > a > img {
@@ -266,6 +267,7 @@ body{
     }
 }
 
+/*Dispositivo móvel Médio*/
 @media (min-width: 321px) and (max-width: 375px) {
     /*______Primeira Nav______*/
     .nav-1>.parte-principal {
@@ -307,14 +309,14 @@ body{
     .nav-2 > .iconSocial > a {
         display: flex;
         padding: 0px;
-        margin: 0.1vw;
-        margin-right: 4vw;
-        margin-top: 3.2vw;
+        margin: 1px;
+        margin-right: 14px;
+        margin-top: 12px;
     }
     
     .nav-2 > .iconSocial > a > img {
         display: flex;
-        max-width: 10px;
+        max-width: 11px;
         padding: 0px;
         margin: 0px auto;
         color: #343434;
@@ -327,6 +329,7 @@ body{
     }
 }
 
+/*Dispositivo móvel grande*/
 @media (min-width: 376px) and (max-width: 425px) {
         /*______Primeira Nav______*/
     .nav-1>.parte-principal {
@@ -352,7 +355,7 @@ body{
     /*______Segunda Nav______*/
     .nav-2 > div > a {
         display: flex;
-        padding: 7px;
+        padding: 5px;
     }
     
     .nav-2 > div > a > img {
@@ -360,7 +363,7 @@ body{
     }
     
     .nav-2 > div > p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         display: flex;
     }
 
@@ -368,9 +371,9 @@ body{
     .nav-2 > .iconSocial > a {
         display: flex;
         padding: 0px;
-        margin: 0.1vw;
-        margin-right: 4vw;
-        margin-top: 4vw;
+        margin: 1px;
+        margin-right: 25px;
+        margin-top: 12px;
     }
     
     .nav-2 > .iconSocial > a > img {

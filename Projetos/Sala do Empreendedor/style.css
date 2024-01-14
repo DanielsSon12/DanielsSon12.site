@@ -1,0 +1,263 @@
+body{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.4px;
+}
+
+/*______Primeira Nav______*/
+.nav-1 {
+    background-color: #084775;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding: -10px;
+}
+
+.nav-1 > div {
+    display: flex;
+    padding-left: 10px;
+}
+
+.nav-1 > div > a, p {
+    padding: 5px;
+    margin: auto;
+}
+
+.nav-1 > div > a > img {
+    max-width: 26px;
+}
+
+.nav-1 > div >  p {
+    color: white;
+}
+
+.nav-1 > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav-1 > ul > li {
+    margin: 0 auto;
+    display: block;
+    padding-left: 30px;
+}
+
+.nav-1 > ul > li > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/*______Botão de Login______*/
+.btn-Login > img {
+    padding: 5px;
+    max-width: 15px;
+    margin: 0 auto;
+}
+
+.btn-Login > a{
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-Login {
+    background: linear-gradient(rgb(223, 146, 0, 1), rgb(241, 176, 55));
+    border-radius: 5px;
+    display: block;
+    margin: 15px;
+    padding-right: 10px;
+}
+
+/*______DropDown Menu*/
+.dropdown-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    display: none;
+    padding: 10px;
+} 
+
+.dropdown-menu > p {
+    color: #343434;
+    font-size: 1rem;
+    font-weight:bolder;
+}
+
+.dropdown-menu > ul {
+    list-style: none;
+}
+
+.dropdown-menu > ul > li {
+    display: block;
+}
+
+.dropdown-menu > ul > li > a{
+    display: block;
+    text-decoration: none;
+    color: #343434;
+    font-size: 0.8rem;
+    padding: 7px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*______Itens do dropdown______*/
+.dropdown-menu > ul > .item1 {
+    background: url(./imgs/pata-de-cachorro.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+
+.dropdown-menu > ul > .item2 {
+    background: url(./imgs/museu.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+.dropdown-menu > ul > .item3 {
+    background: url(./imgs/museu.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+.dropdown-menu > ul > .item4 {
+    background: url(./imgs/lampada.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+.dropdown-menu > ul > .item5 {
+    background: url(./imgs/carrinho-de-bagagem.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+.dropdown-menu > ul > .item6 {
+    background: url(./imgs/mapa.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+
+/*______Segunda Nav______*/
+.nav-2 {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.nav-2 > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-2 > div > a > img {
+    max-width: 120px;
+}
+
+.nav-2 > div > p {
+    font-size: 3.1rem;
+    color: #343434;
+}
+
+/*______Icones da navbar______*/
+.nav-2 > .iconSocial > a {
+    display: block;
+    padding: 0px;
+    margin: 40px;
+    margin-left: 0;
+}
+
+.nav-2 > .iconSocial > a > img {
+    display: block;
+    max-width: 30px;
+    padding: 0;
+    margin: 0 auto;
+    color: #343434;
+}
+
+/*
+// Dispositivos small (telefones em modo paisagem, com 576px ou mais)
+@media (min-width: 576px) { ... }
+
+// Dispositivos médios (tablets com 768px ou mais)
+@media (min-width: 768px) { ... }
+
+// Dispositivos large (desktops com 992px ou mais)
+@media (min-width: 992px) { ... }
+
+// Dispositivos extra large (desktops grandes com 1200px ou mais)
+@media (min-width: 1200px) { ... }
+*/
+
+/*______Responsividade para telas menores e médias_____*/
+@media (max-width: 576px) {
+    /*______Segunda Nav______*/
+    .nav-2 > div > a {
+        display: flex;
+        padding: 10px;
+    }
+
+    .nav-2 > div > a > img {
+        max-width: 80px;
+    }
+
+    .nav-2 > div > p {
+        font-size: 1.2rem;
+        display: flex;
+    }
+
+    /*______Icones da navbar______*/
+    .nav-2 > .iconSocial > a {
+        display: block;
+        padding: 0;
+        margin: 10px;
+        margin-top: 30px;
+    }
+
+    .nav-2 > .iconSocial > a > img {
+        display: block;
+        max-width: 17px;
+        padding: 0;
+        margin: 0 auto;
+        color: #343434;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /*______Segunda Nav______*/
+    .nav-2 > div > a {
+        display: flex;
+        padding: 10px;
+    }
+    
+    .nav-2 > div > a > img {
+        max-width: 100px;
+    }
+    
+    .nav-2 > div > p {
+        font-size: 1.6rem;
+        display: flex;
+    }
+    
+    /*______Icones da navbar______*/
+    .nav-2 > .iconSocial > a {
+        display: block;
+        padding: 0;
+        margin: 15px;
+        margin-top: 35px;
+    }
+
+    .nav-2 > .iconSocial > a > img {
+        display: block;
+        max-width: 23px;
+        padding: 0;
+        margin: 0 auto;
+        color: #343434;
+    }
+}

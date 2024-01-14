@@ -1,6 +1,7 @@
-class MobileNavBar { /*Toda class tem seu método constructor*/ 
+
+/*class MobileNavBar { //Toda class tem seu método constructor 
     constructor(mobileMenu, navList, navLinks){
-        /*Aqui dentro referenciamos as propriedades desta classe*/
+        //Aqui dentro referenciamos as propriedades desta classe
         this.mobileMenu = document.querySelector(mobileMenu);
         this.navList = document.querySelector(navList);
         this.navLinks = document.querySelectorAll(navLinks);
@@ -41,4 +42,4 @@ const mobileNavBar = new MobileNavBar(
     ".nav-list", 
     ".nav-list li",
 );
-mobileNavBar.init();
+mobileNavBar.init();*/

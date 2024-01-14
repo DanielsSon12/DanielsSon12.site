@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +20,7 @@ a:hover{
    letter-spacing: 4px; /*espaçamento de letras*/
 }
 
+/*___________Menu___________*/
 nav{
     display: flex;
     justify-content: space-around; /*Ira fazer com que o espaço ao redor seja a metade do espaço entre eles*/
@@ -26,13 +28,6 @@ nav{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #232338;
     height: 10vh; /*vh ou vw é uma medida responsiva que se adapta a altura ou largura da tela de visualização do usuário, sendo que 100 cobre a tela inteira*/
-}
-
-body{
-    background-color: #2a2a44; /*center center são os eixos X e Y respectivamente do site*/
-    background-size: cover; /*Caso a resolução do monitor for maior do que a imagem*/
-    height: 92vh;
-    background-attachment:scroll;
 }
 
 .nav-list{
@@ -48,63 +43,20 @@ body{
     /*Apenas para afastar um menu do outro*/
 }
 
-.mobile-menu{
-    display: none;
-    cursor: pointer; /*Apenas para mostrar a mão do mouse*/
+/*______Background______*/
+body{
+    background-color: #2a2a44; /*center center são os eixos X e Y respectivamente do site*/
+    background-size: cover; /*Caso a resolução do monitor for maior do que a imagem*/
+    height: 92vh;
+    background-attachment:scroll;
 }
 
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-}
-
-@media (max-width: 999px){
-    body{
-        overflow-x: hidden; /*Agora não temos mais o Quadrado dos links aparecendo na tela*/
-    }
-    .nav-list{
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        background-color: #23232e;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around; /*Espalhando os links pelo espaço disponível*/
-        transform: translateX(100%); /*O Quadrado onde ficara as opções do menu irá para fora, porém para o site não ficar com a barra de rolagem vertical, aplicamos overflow-x:hidden no body*/
-        transition: transform 0.3s ease-in; /*Para a animação não ficar tão seca*/
-    }
-    .nav-list li{
-        margin-left: 0;/*Para os links ficarem corretamente alinhados ao centro*/
-    }
-    .mobile-menu{
-        display: block; /*O layout se ajusta */
-    }
-}
-
-.nav-list.active /*active é a classe que esta no JavaScript*/{
-    transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-    /*Translação da esquerda para direita, voltando para a original, dando a impressão que surgiram devagar, por isso o nome Fade*/
-    from{
-        opacity: 0;
-        transform: translateX(50px) ;
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
+/*______Maneira de rolamento da tela______*/
 html{
     scroll-behavior: smooth;
 }
 
+/*______Atividades______*/
 .listas{
     list-style: none;
     display: inline-block;
@@ -122,6 +74,7 @@ html{
     color: rgb(71, 72, 77);
 }
 
+/*______Tópicos______*/
 section{
     
     padding: 17px;
@@ -142,13 +95,17 @@ section p{
     line-height: 34px ; /*Define o espaçamento entre linhas em um parágrafo*/
 }
 
+/*______Titulo da apresentação______*/
 .AP{
     padding-top: 17px;
 }
+
+/*______Título de cada tópico______*/
 .AtiviTitulo{
     padding: 17px;
 }
 
+/*______O básico dos títulos_____*/
 h2{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
@@ -172,6 +129,7 @@ h4{
     padding-left: 16px;
 }
 
+/*______Ícones dos tópicos______*/
 i{
     padding: 10px;
     font-size: 29px;

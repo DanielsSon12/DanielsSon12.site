@@ -335,7 +335,7 @@ header {
 
     .mobile-menu > .btn-Login > a {
         margin: 0;
-        padding-top: 0.3rem;
+        padding-top: 0.1rem;
     }
 
     /*______JS______*/
@@ -537,7 +537,7 @@ header {
 
     .mobile-menu > .btn-Login > a {
         margin: 0;
-        padding-top: 0.3rem;
+        padding-top: 0.1rem;
     }
 
     /*______JS______*/
@@ -568,7 +568,7 @@ header {
     /*______Segunda Nav______*/
     .nav-2 > div > a {
         display: flex;
-        padding: 5px;
+        padding: 1px;
     }
     
     .nav-2 > div > a > img {
@@ -739,7 +739,7 @@ header {
 
     .mobile-menu > .btn-Login > a {
         margin: 0;
-        padding-top: 0.3rem;
+        padding-top: 0.1rem;
     }
 
     /*______JS______*/

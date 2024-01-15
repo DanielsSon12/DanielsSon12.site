@@ -1,6 +1,5 @@
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 0.4px;
 }
 
 body{
@@ -269,6 +268,83 @@ header {
     letter-spacing: 0.05rem;
     line-height: 1.6rem;
     text-align: justify;
+}
+
+/*______Footer 1______*/
+.footer1 {
+    background-color: #212529;
+    margin-top: 50px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.footer1 > .desenvolve {
+    padding: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.footer1 > .desenvolve > .textoFooter1 {
+    padding-top: 10px;
+    color: white;
+}
+
+.footer1 > .desenvolve > .textoFooter1 > p {
+    display: block;
+    text-align: justify;
+    margin-top: -10px;
+}
+
+.footer1 > .desenvolve > .iconInsta {
+    display: block;
+    float: left;
+    margin: 20px;
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 80px;
+    padding: 10px;
+}
+
+.footer1 > .desenvolve > .iconInsta > img {
+    max-width: 60px;
+}
+
+/*_____Fotos que dão zoom_____*/
+.divZoom {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.divZoom > a > figure > img {
+    max-width: 180px;
+}
+
+/*_____Botão do instagram_____*/
+.btn-Insta {
+    padding: 20px;
+}
+
+.btn-Insta > button {
+    background-color: #084775;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    border: none;
+}
+
+.btn-Insta > button > a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.btn-Insta > button > a > img {
+    max-width: 30px;
+}
+
+.btn-Insta > button > a > p {
+    text-decoration: none;
+    color: white;
 }
 
 /*______Responsividade_____*/

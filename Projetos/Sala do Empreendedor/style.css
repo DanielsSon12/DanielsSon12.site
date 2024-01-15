@@ -2,6 +2,11 @@ body{
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.4px;
+    background-color: rgb(240, 240, 240);
+}
+
+header {
+    position: sticky;
 }
 
 /*______Primeira Nav______*/
@@ -20,7 +25,7 @@ body{
     padding-left: 10px;
 }
 
-.nav-1 > .parte-principal > a, p {
+.nav-1 > .parte-principal > a, p{
     padding: 5px;
     margin: auto;
 }
@@ -29,7 +34,7 @@ body{
     max-width: 26px;
 }
 
-.nav-1 > .parte-principal >  p {
+.nav-1 > .parte-principal{
     color: white;
 }
 
@@ -201,6 +206,68 @@ body{
     display: none;
 }
 
+/*_____Parte do Bem vindo_____*/
+/*____ícones redondos____*/
+.iconesRedondos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+}
+
+.iconesRedondos > a {
+    text-decoration: none;
+}
+
+.iconesRedondos > a > figure {
+    display: block;
+    margin: 7px;
+}
+
+.iconesRedondos > a > figure > img {
+    max-width: 100px;
+    border-radius: 70px;
+    border: 3px solid gray;
+}
+
+.iconesRedondos > a > figure > p {
+    display: block;
+    font-size: 0.9rem;
+    color: #212529;
+    text-align: center;
+    max-width: 80px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.3rem;
+}
+
+/*_____Banner Bem Vindo_____*/
+.banner_BemVindo {
+    display: flex;  
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -1px 10px 30px rgb(209, 209, 209);
+    max-width: 70%;
+    justify-content: center;
+    margin: auto;
+}
+
+.banner_BemVindo > img{
+    max-width: 70%; 
+    border-radius: 20px;
+}
+
+.banner_BemVindo > div {
+    padding: 50px;
+}
+
+.banner_BemVindo > div > p {
+    letter-spacing: 0.05rem;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+
 /*______Responsividade_____*/
 /*Dispositivo móvel menor*/
 @media (max-width: 320px) {
@@ -332,6 +399,75 @@ body{
     .nav-2 > .iconSocial {
         display: flex;
         flex-direction: column;
+    }
+
+    /*_______Parte do Bem vindo_______*/
+    /*____ícones redondos____*/
+    .iconesRedondos {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .iconesRedondos > a {
+        text-decoration: none;
+    }
+
+    .iconesRedondos > a > figure {
+        display: block;
+        margin: 7px;
+    }
+
+    .iconesRedondos > a > figure > img {
+        max-width: 50px;
+        border-radius: 70px;
+        border: 3px solid gray;
+    }
+
+    .iconesRedondos > a > figure > p {
+        display: block;
+        font-size: 0.6rem;
+        color: #212529;
+        text-align: center;
+        max-width: 50px;
+        margin: 0 auto;
+        padding: 0;
+        line-height: 1rem;
+    }
+    /*_____Banner Bem Vindo_____*/
+    .banner_BemVindo {
+        display: flex;
+        flex-wrap: wrap;  
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 10px 70px rgb(209, 209, 209);
+        max-width: 70%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .banner_BemVindo > img{
+        max-width: 100%; 
+        border-radius: 20px;
+    }
+
+    .banner_BemVindo > div {
+        padding: 20px;
+    }
+
+    .banner_BemVindo > div > p {
+        letter-spacing: 0.05rem;
+        line-height: 1rem;
+        text-align: justify;
+        font-size: 0.6rem;
+    }
+
+    .banner_BemVindo > div > h2 {
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 10px;
     }
 }
 
@@ -466,6 +602,75 @@ body{
         flex-wrap: wrap;
         flex-direction: column;
     }
+
+    /*_______Parte do Bem vindo_______*/
+    /*____ícones redondos____*/
+    .iconesRedondos {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .iconesRedondos > a {
+        text-decoration: none;
+    }
+
+    .iconesRedondos > a > figure {
+        display: block;
+        margin: 7px;
+    }
+
+    .iconesRedondos > a > figure > img {
+        max-width: 50px;
+        border-radius: 70px;
+        border: 3px solid gray;
+    }
+
+    .iconesRedondos > a > figure > p {
+        display: block;
+        font-size: 0.7rem;
+        color: #212529;
+        text-align: center;
+        max-width: 50px;
+        margin: 0 auto;
+        padding: 0;
+        line-height: 1rem;
+    }
+    /*_____Banner Bem Vindo_____*/
+    .banner_BemVindo {
+        display: flex;
+        flex-wrap: wrap;  
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 10px 70px rgb(209, 209, 209);
+        max-width: 70%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .banner_BemVindo > img{
+        max-width: 100%; 
+        border-radius: 20px;
+    }
+
+    .banner_BemVindo > div {
+        padding: 20px;
+    }
+
+    .banner_BemVindo > div > p {
+        letter-spacing: 0.05rem;
+        line-height: 1rem;
+        text-align: justify;
+        font-size: 0.7rem;
+    }
+
+    .banner_BemVindo > div > h2 {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px;
+    }
 }
 
 /*Dispositivo móvel grande*/
@@ -599,5 +804,74 @@ body{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+    }
+
+    /*_______Parte do Bem vindo_______*/
+    /*____ícones redondos____*/
+    .iconesRedondos {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .iconesRedondos > a {
+        text-decoration: none;
+    }
+
+    .iconesRedondos > a > figure {
+        display: block;
+        margin: 7px;
+    }
+
+    .iconesRedondos > a > figure > img {
+        max-width: 50px;
+        border-radius: 70px;
+        border: 3px solid gray;
+    }
+
+    .iconesRedondos > a > figure > p {
+        display: block;
+        font-size: 0.7rem;
+        color: #212529;
+        text-align: center;
+        max-width: 50px;
+        margin: 0 auto;
+        padding: 0;
+        line-height: 1rem;
+    }
+    /*_____Banner Bem Vindo_____*/
+    .banner_BemVindo {
+        display: flex;
+        flex-wrap: wrap;  
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 10px 70px rgb(209, 209, 209);
+        max-width: 70%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .banner_BemVindo > img{
+        max-width: 100%; 
+        border-radius: 20px;
+    }
+
+    .banner_BemVindo > div {
+        padding: 20px;
+    }
+
+    .banner_BemVindo > div > p {
+        letter-spacing: 0.05rem;
+        line-height: 1rem;
+        text-align: justify;
+        font-size: 0.7rem;
+    }
+
+    .banner_BemVindo > div > h2 {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px;
     }
 }

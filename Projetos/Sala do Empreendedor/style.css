@@ -4,7 +4,7 @@
 
 body{
     margin: 0 auto;
-    background-color: rgb(240, 240, 240);
+    background-color: #f8faff;
 }
 
 header {
@@ -294,6 +294,7 @@ header {
     margin-top: -10px;
 }
 
+/*_____Icone Instagram_____*/
 .footer1 > .desenvolve > .iconInsta {
     display: block;
     float: left;
@@ -312,11 +313,16 @@ header {
 .divZoom {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding: 50px;
 }
 
 .divZoom > a > figure > img {
-    max-width: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: 40%;
+    max-width: 250px;
+    max-height: 250px;
+    margin: -35px;
 }
 
 /*_____Botão do instagram_____*/
@@ -339,12 +345,97 @@ header {
 }
 
 .btn-Insta > button > a > img {
-    max-width: 30px;
+    max-width: 40px;
 }
 
 .btn-Insta > button > a > p {
     text-decoration: none;
     color: white;
+    font-size: 1rem;
+}
+
+/*_____Serviços_____*/
+.flexServicos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 2px;
+    padding-bottom: 4%;
+}
+
+.flexServicos > a > figure {
+   margin: 0px;
+   padding: 7px;
+}
+  
+.flexServicos > a > figure >img {
+    max-width: 270px;
+    border-top: 1px solid rgb(226, 226, 226);
+    border-radius: 10px;
+    box-shadow: -1px 7px 14px rgb(226, 226, 226);
+}
+
+/*___Título Serviços___*/
+.servicos {
+    display: block;
+    margin: 0 auto;
+    margin-left: 15%;
+    margin-top: 4%;
+    margin-bottom: 1.5%;
+    text-align: left;
+
+}
+
+.servicos > h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/*_____Fale Conosco_____*/
+.faleConosco {
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.faleConosco > h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.faleConosco > .divNumero {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -1px 7px 14px rgb(226, 226, 226);
+    border-top: 1px solid rgb(226, 226, 226);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+}
+
+.faleConosco > .divNumero > .numeros {
+    display: flex;
+    margin: auto;
+}
+
+.faleConosco > .divNumero > div > p {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: -3px;
+    padding: 0;
+}
+
+.faleConosco > .divNumero > div > img {
+    display: flex;
+    max-width: 27px;
+    max-height: 27px;
+    margin-right: 15px;
+
 }
 
 /*______Responsividade_____*/
@@ -549,6 +640,104 @@ header {
         text-align: center;
         margin: 10px;
     }
+
+    /*______Footer 1______*/
+    .footer1 {
+        background-color: #212529;
+        margin-top: 50px;
+        border-bottom: 1px solid rgb(209, 209, 209);
+    }
+
+    .footer1 > .desenvolve {
+        padding: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .footer1 > .desenvolve > .textoFooter1 {
+        padding-top: 10px;
+        color: white;
+    }
+
+    .footer1 > .desenvolve > .textoFooter1 > h3 {
+        font-size: 0.8rem;
+    }
+
+    .footer1 > .desenvolve > .textoFooter1 > p {
+        display: block;
+        text-align: justify;
+        margin-top: -10px;
+        font-size: 0.6rem;
+    }
+
+    /*_____Icone Instagram_____*/
+    .footer1 > .desenvolve > .iconInsta {
+        display: block;
+        float: left;
+        margin-top: 40px;
+        margin-right: 20px;
+        border: 1px solid white;
+        border-radius: 80px;
+        padding: 8px;
+    }
+
+    .footer1 > .desenvolve > .iconInsta > img {
+        max-width: 30px;
+    }
+
+    /*_____Fotos que dão zoom_____*/
+    .divZoom {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .divZoom > a > figure {
+        margin: 40px;
+    }
+
+    .divZoom > a > figure > img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: 40%;
+        max-width: 100px;
+        max-height: 250px;
+    }
+
+    /*_____Botão do instagram_____*/
+    .btn-Insta {
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn-Insta > button {
+        background-color: #084775;
+        border-radius: 10px;
+        display: flex;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .btn-Insta > button > a {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+
+    .btn-Insta > button > a > img {
+        max-width: 30px;
+    }
+
+    .btn-Insta > button > a > p {
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
 }
 
 /*Dispositivo móvel Médio*/
@@ -751,6 +940,104 @@ header {
         font-size: 0.9rem;
         text-align: center;
         margin: 10px;
+    }
+
+        /*______Footer 1______*/
+    .footer1 {
+        background-color: #212529;
+        margin-top: 50px;
+        border-bottom: 1px solid rgb(209, 209, 209);
+    }
+
+    .footer1 > .desenvolve {
+        padding: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .footer1 > .desenvolve > .textoFooter1 {
+        padding-top: 10px;
+        color: white;
+    }
+
+    .footer1 > .desenvolve > .textoFooter1 > h3 {
+        font-size: 0.9rem;
+    }
+
+    .footer1 > .desenvolve > .textoFooter1 > p {
+        display: block;
+        text-align: justify;
+        margin-top: -10px;
+        font-size: 0.7rem;
+    }
+
+    /*_____Icone Instagram_____*/
+    .footer1 > .desenvolve > .iconInsta {
+        display: block;
+        float: left;
+        margin-top: 50px;
+        margin-right: 20px;
+        border: 1px solid white;
+        border-radius: 80px;
+        padding: 10px;
+    }
+
+    .footer1 > .desenvolve > .iconInsta > img {
+        max-width: 30px;
+    }
+
+    /*_____Fotos que dão zoom_____*/
+    .divZoom {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .divZoom > a > figure {
+        margin: 40px;
+    }
+
+    .divZoom > a > figure > img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: 40%;
+        max-width: 120px;
+        max-height: 250px;
+    }
+
+    /*_____Botão do instagram_____*/
+    .btn-Insta {
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn-Insta > button {
+        background-color: #084775;
+        border-radius: 10px;
+        display: flex;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .btn-Insta > button > a {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+
+    .btn-Insta > button > a > img {
+        max-width: 30px;
+    }
+
+    .btn-Insta > button > a > p {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
     }
 }
 
@@ -955,5 +1242,103 @@ header {
         font-size: 0.9rem;
         text-align: center;
         margin: 10px;
+    }
+
+        /*______Footer 1______*/
+    .footer1 {
+        background-color: #212529;
+        margin-top: 50px;
+        border-bottom: 1px solid rgb(209, 209, 209);
+    }
+
+    .footer1 > .desenvolve {
+        padding: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .footer1 > .desenvolve > .textoFooter1 {
+        padding-top: 10px;
+        color: white;
+    }
+
+    .footer1 > .desenvolve > .textoFooter1 > h3 {
+        font-size: 0.9rem;
+    }
+
+    .footer1 > .desenvolve > .textoFooter1 > p {
+        display: block;
+        text-align: justify;
+        margin-top: -10px;
+        font-size: 0.7rem;
+    }
+
+    /*_____Icone Instagram_____*/
+    .footer1 > .desenvolve > .iconInsta {
+        display: block;
+        float: left;
+        margin-top: 38px;
+        margin-right: 20px;
+        border: 1px solid white;
+        border-radius: 80px;
+        padding: 10px;
+    }
+
+    .footer1 > .desenvolve > .iconInsta > img {
+        max-width: 30px;
+    }
+
+    /*_____Fotos que dão zoom_____*/
+    .divZoom {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .divZoom > a > figure {
+        margin: 40px;
+    }
+
+    .divZoom > a > figure > img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: 40%;
+        max-width: 140px;
+        max-height: 250px;
+    }
+
+    /*_____Botão do instagram_____*/
+    .btn-Insta {
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn-Insta > button {
+        background-color: #084775;
+        border-radius: 10px;
+        display: flex;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .btn-Insta > button > a {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+
+    .btn-Insta > button > a > img {
+        max-width: 30px;
+    }
+
+    .btn-Insta > button > a > p {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
     }
 }

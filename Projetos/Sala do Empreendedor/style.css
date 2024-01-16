@@ -271,31 +271,31 @@ header {
 }
 
 /*______Footer 1______*/
-.footer1 {
+.section_4 {
     background-color: #212529;
     margin-top: 50px;
     border-bottom: 1px solid rgb(209, 209, 209);
 }
 
-.footer1 > .desenvolve {
+.section_4 > .desenvolve {
     padding: 30px;
     padding-left: 15%;
     padding-right: 15%;
 }
 
-.footer1 > .desenvolve > .textoFooter1 {
+.section_4 > .desenvolve > .textoFooter1 {
     padding-top: 10px;
     color: white;
 }
 
-.footer1 > .desenvolve > .textoFooter1 > p {
+.section_4 > .desenvolve > .textoFooter1 > p {
     display: block;
     text-align: justify;
     margin-top: -10px;
 }
 
 /*_____Icone Instagram_____*/
-.footer1 > .desenvolve > .iconInsta {
+.section_4 > .desenvolve > .iconInsta {
     display: block;
     float: left;
     margin: 20px;
@@ -305,7 +305,7 @@ header {
     padding: 10px;
 }
 
-.footer1 > .desenvolve > .iconInsta > img {
+.section_4 > .desenvolve > .iconInsta > img {
     max-width: 60px;
 }
 
@@ -328,6 +328,7 @@ header {
 /*_____Botão do instagram_____*/
 .btn-Insta {
     padding: 20px;
+    padding-bottom: 50px;
 }
 
 .btn-Insta > button {
@@ -355,7 +356,7 @@ header {
 }
 
 /*_____Serviços_____*/
-.flexServicos {
+.section_2 {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -365,12 +366,12 @@ header {
     padding-bottom: 4%;
 }
 
-.flexServicos > a > figure {
+.section_2 > a > figure {
    margin: 0px;
    padding: 7px;
 }
   
-.flexServicos > a > figure >img {
+.section_2 > a > figure >img {
     max-width: 270px;
     border-top: 1px solid rgb(226, 226, 226);
     border-radius: 10px;
@@ -395,18 +396,18 @@ header {
 }
 
 /*_____Fale Conosco_____*/
-.faleConosco {
+.section_3 {
     margin: 0 auto;
     max-width: 70%;
 }
 
-.faleConosco > h2 {
+.section_3 > h2 {
     font-family: sans-serif;
     font-size: 2rem;
     font-weight: 500;
 }
 
-.faleConosco > .divNumero {
+.section_3 > .divNumero {
     background-color: white;
     border-radius: 20px;
     box-shadow: -1px 7px 14px rgb(226, 226, 226);
@@ -417,12 +418,12 @@ header {
     justify-content: center;
 }
 
-.faleConosco > .divNumero > .numeros {
+.section_3 > .divNumero > .numeros {
     display: flex;
     margin: auto;
 }
 
-.faleConosco > .divNumero > div > p {
+.section_3 > .divNumero > div > p {
     display: flex;
     font-size: 1.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -430,12 +431,99 @@ header {
     padding: 0;
 }
 
-.faleConosco > .divNumero > div > img {
+.section_3 > .divNumero > div > img {
     display: flex;
     max-width: 27px;
     max-height: 27px;
     margin-right: 15px;
 
+}
+
+/*______Footer 2______*/
+.section_5 {
+    padding: 0;
+    margin: 0 auto;
+    background-color: #353C50;
+    display: flex;
+    padding-bottom: 35px;
+}
+
+/*___div 1 - Desenvolve 2___*/
+.section_5 > .desenvolve2 {
+    margin: auto;
+    padding-top: 50px;
+    color: white;
+}
+
+.section_5 > .desenvolve2 > p {
+    line-height: 1.5rem;
+    margin-top: 20px;
+}
+
+.section_5 > .desenvolve2 > img {
+    max-width: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*____Icone do facebook e do instagram____*/
+.section_5 > .desenvolve2 > .iconSocial2 {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 3%;
+}
+
+.section_5 > .desenvolve2 > .iconSocial2 > a > img{
+    max-width: 30px;
+}
+
+/*___Lista___*/
+.desenvolve2Lista {
+    margin: 0 auto;
+    padding-top: 20px;
+    color: white;
+    display: flex;
+}
+
+.desenvolve2Lista > .divLista {
+    margin: 20px;
+}
+
+.desenvolve2Lista > .divLista > h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.desenvolve2Lista > .divLista > ul > li {
+    margin: 10px;
+    font-size: 0.8rem;
+}
+
+.desenvolve2Lista > .divLista > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+/*____Último Footer____*/
+footer {
+    padding: 12px;
+    background-color: #3C3C3C;
+}
+
+footer > div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer > div > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer > div > a:hover {
+    color: rgb(34, 76, 190);
 }
 
 /*______Responsividade_____*/
@@ -642,28 +730,28 @@ header {
     }
 
     /*______Footer 1______*/
-    .footer1 {
+    .section_4 {
         background-color: #212529;
         margin-top: 50px;
         border-bottom: 1px solid rgb(209, 209, 209);
     }
 
-    .footer1 > .desenvolve {
+    .section_4 > .desenvolve {
         padding: 10px;
         padding-left: 15%;
         padding-right: 15%;
     }
 
-    .footer1 > .desenvolve > .textoFooter1 {
+    .section_4 > .desenvolve > .textoFooter1 {
         padding-top: 10px;
         color: white;
     }
 
-    .footer1 > .desenvolve > .textoFooter1 > h3 {
+    .section_4 > .desenvolve > .textoFooter1 > h3 {
         font-size: 0.8rem;
     }
 
-    .footer1 > .desenvolve > .textoFooter1 > p {
+    .section_4 > .desenvolve > .textoFooter1 > p {
         display: block;
         text-align: justify;
         margin-top: -10px;
@@ -671,7 +759,7 @@ header {
     }
 
     /*_____Icone Instagram_____*/
-    .footer1 > .desenvolve > .iconInsta {
+    .section_4 > .desenvolve > .iconInsta {
         display: block;
         float: left;
         margin-top: 40px;
@@ -681,7 +769,7 @@ header {
         padding: 4px;
     }
 
-    .footer1 > .desenvolve > .iconInsta > img {
+    .section_4 > .desenvolve > .iconInsta > img {
         max-width: 40px;
     }
 
@@ -740,7 +828,7 @@ header {
     }
 
     /*_____Serviços_____*/
-    .flexServicos {
+    .section_2 {
         display: flex;
         flex-wrap: wrap;
         max-width: 1200px;
@@ -750,12 +838,12 @@ header {
         padding-bottom: 4%;
     }
 
-    .flexServicos > a > figure {
-    margin: 0px;
-    padding: 3px;
+    .section_2 > a > figure {
+        margin: 0px;
+        padding: 3px;
     }
     
-    .flexServicos > a > figure >img {
+    .section_2 > a > figure >img {
         max-width: 92px;
         border-top: 1px solid rgb(226, 226, 226);
         border-radius: 10px;
@@ -780,19 +868,19 @@ header {
     }
 
     /*_____Fale Conosco_____*/
-    .faleConosco {
+    .section_3 {
         margin: 0 auto;
         max-width: 70%;
     }
 
-    .faleConosco > h2 {
+    .section_3 > h2 {
         font-family: sans-serif;
         font-size: 0.8rem;
         font-weight: 500;
         text-align: center;
     }
 
-    .faleConosco > .divNumero {
+    .section_3 > .divNumero {
         background-color: white;
         border-radius: 20px;
         box-shadow: -1px 7px 14px rgb(226, 226, 226);
@@ -803,12 +891,12 @@ header {
         justify-content: center;
     }
 
-    .faleConosco > .divNumero > .numeros {
+    .section_3 > .divNumero > .numeros {
         display: flex;
         margin: auto;
     }
 
-    .faleConosco > .divNumero > div > p {
+    .section_3 > .divNumero > div > p {
         display: flex;
         font-size: 0.7rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -816,12 +904,104 @@ header {
         padding: 0;
     }
 
-    .faleConosco > .divNumero > div > img {
+    .section_3 > .divNumero > div > img {
         display: flex;
         max-width: 12px;
         max-height: 12px;
         margin-right: 5px;
 
+    }
+
+    /*______Footer 2______*/
+    .section_5 {
+        padding: 0;
+        margin: 0 auto;
+        background-color: #353C50;
+        display: flex;
+        padding-bottom: 35px;
+        flex-wrap: wrap;
+    }
+
+    /*___div 1 - Desenvolve 2___*/
+    .section_5 > .desenvolve2 {
+        margin: auto;
+        padding-top: 40px;
+        color: white;
+        display: block;
+    }
+
+    .section_5 > .desenvolve2 > p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+        margin-top: 10px;
+    }
+
+    .section_5 > .desenvolve2 > img {
+        max-width: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /*____Icone do facebook e do instagram____*/
+    .section_5 > .desenvolve2 > .iconSocial2 {
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 2%;
+    }
+
+    .section_5 > .desenvolve2 > .iconSocial2 > a > img{
+        max-width: 20px;
+    }
+
+    /*___Lista___*/
+    .desenvolve2Lista {
+        margin: 0 auto;
+        padding-top: 20px;
+        color: white;
+        display: flex;
+    }
+
+    .desenvolve2Lista > .divLista {
+        margin: 0px;
+    }
+
+    .desenvolve2Lista > .divLista > h2 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 0.7rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li {
+        margin: 7px;
+        font-size: 0.6rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.6rem;
+    }
+
+    /*____Último Footer____*/
+    footer {
+        padding: 0px;
+        padding-bottom: 7px;
+        background-color: #3C3C3C;
+    }
+
+    footer > div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer > div > a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.35rem;
+    }
+
+    footer > div > a:hover {
+        color: rgb(34, 76, 190);
     }
 }
 
@@ -1028,28 +1208,28 @@ header {
     }
 
         /*______Footer 1______*/
-    .footer1 {
+    .section_4 {
         background-color: #212529;
         margin-top: 50px;
         border-bottom: 1px solid rgb(209, 209, 209);
     }
 
-    .footer1 > .desenvolve {
+    .section_4 > .desenvolve {
         padding: 10px;
         padding-left: 15%;
         padding-right: 15%;
     }
 
-    .footer1 > .desenvolve > .textoFooter1 {
+    .section_4 > .desenvolve > .textoFooter1 {
         padding-top: 10px;
         color: white;
     }
 
-    .footer1 > .desenvolve > .textoFooter1 > h3 {
+    .section_4 > .desenvolve > .textoFooter1 > h3 {
         font-size: 0.9rem;
     }
 
-    .footer1 > .desenvolve > .textoFooter1 > p {
+    .section_4 > .desenvolve > .textoFooter1 > p {
         display: block;
         text-align: justify;
         margin-top: -10px;
@@ -1057,7 +1237,7 @@ header {
     }
 
     /*_____Icone Instagram_____*/
-    .footer1 > .desenvolve > .iconInsta {
+    .section_4 > .desenvolve > .iconInsta {
         display: block;
         float: left;
         margin-top: 50px;
@@ -1067,7 +1247,7 @@ header {
         padding: 5px;
     }
 
-    .footer1 > .desenvolve > .iconInsta > img {
+    .section_4 > .desenvolve > .iconInsta > img {
         max-width: 40px;
     }
 
@@ -1126,7 +1306,7 @@ header {
     }
 
     /*_____Serviços_____*/
-    .flexServicos {
+    .section_2 {
         display: flex;
         flex-wrap: wrap;
         max-width: 1200px;
@@ -1136,12 +1316,12 @@ header {
         padding-bottom: 4%;
     }
 
-    .flexServicos > a > figure {
-    margin: 0px;
-    padding: 3px;
+    .section_2 > a > figure {
+        margin: 0px;
+        padding: 3px;
     }
     
-    .flexServicos > a > figure >img {
+    .section_2 > a > figure >img {
         max-width: 92px;
         border-top: 1px solid rgb(226, 226, 226);
         border-radius: 10px;
@@ -1166,19 +1346,19 @@ header {
     }
 
     /*_____Fale Conosco_____*/
-    .faleConosco {
+    .section_3 {
         margin: 0 auto;
         max-width: 70%;
     }
 
-    .faleConosco > h2 {
+    .section_3 > h2 {
         font-family: sans-serif;
         font-size: 0.9rem;
         font-weight: 500;
         text-align: center;
     }
 
-    .faleConosco > .divNumero {
+    .section_3 > .divNumero {
         background-color: white;
         border-radius: 20px;
         box-shadow: -1px 7px 14px rgb(226, 226, 226);
@@ -1189,12 +1369,12 @@ header {
         justify-content: center;
     }
 
-    .faleConosco > .divNumero > .numeros {
+    .section_3 > .divNumero > .numeros {
         display: flex;
         margin: auto;
     }
 
-    .faleConosco > .divNumero > div > p {
+    .section_3 > .divNumero > div > p {
         display: flex;
         font-size: 0.7rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1202,11 +1382,103 @@ header {
         padding: 0;
     }
 
-    .faleConosco > .divNumero > div > img {
+    .section_3 > .divNumero > div > img {
         display: flex;
         max-width: 12px;
         max-height: 12px;
         margin-right: 5px;
+    }
+
+    /*______Footer 2______*/
+    .section_5 {
+        padding: 0;
+        margin: 0 auto;
+        background-color: #353C50;
+        display: flex;
+        padding-bottom: 35px;
+        flex-wrap: wrap;
+    }
+
+    /*___div 1 - Desenvolve 2___*/
+    .section_5 > .desenvolve2 {
+        margin: auto;
+        padding-top: 40px;
+        color: white;
+        display: block;
+    }
+
+    .section_5 > .desenvolve2 > p {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        margin-top: 10px;
+    }
+
+    .section_5 > .desenvolve2 > img {
+        max-width: 170px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /*____Icone do facebook e do instagram____*/
+    .section_5 > .desenvolve2 > .iconSocial2 {
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 2%;
+    }
+
+    .section_5 > .desenvolve2 > .iconSocial2 > a > img{
+        max-width: 25px;
+    }
+
+    /*___Lista___*/
+    .desenvolve2Lista {
+        margin: 0 auto;
+        padding-top: 20px;
+        color: white;
+        display: flex;
+    }
+
+    .desenvolve2Lista > .divLista {
+        margin: 0px;
+    }
+
+    .desenvolve2Lista > .divLista > h2 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 0.9rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li {
+        margin: 7px;
+        font-size: 0.7rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    /*____Último Footer____*/
+    footer {
+        padding: 0px;
+        padding-bottom: 7px;
+        background-color: #3C3C3C;
+    }
+
+    footer > div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer > div > a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.4rem;
+    }
+
+    footer > div > a:hover {
+        color: rgb(34, 76, 190);
     }
 }
 
@@ -1414,28 +1686,28 @@ header {
     }
 
         /*______Footer 1______*/
-    .footer1 {
+    .section_4 {
         background-color: #212529;
         margin-top: 50px;
         border-bottom: 1px solid rgb(209, 209, 209);
     }
 
-    .footer1 > .desenvolve {
+    .section_4 > .desenvolve {
         padding: 10px;
         padding-left: 15%;
         padding-right: 15%;
     }
 
-    .footer1 > .desenvolve > .textoFooter1 {
+    .section_4 > .desenvolve > .textoFooter1 {
         padding-top: 10px;
         color: white;
     }
 
-    .footer1 > .desenvolve > .textoFooter1 > h3 {
+    .section_4 > .desenvolve > .textoFooter1 > h3 {
         font-size: 0.9rem;
     }
 
-    .footer1 > .desenvolve > .textoFooter1 > p {
+    .section_4 > .desenvolve > .textoFooter1 > p {
         display: block;
         text-align: justify;
         margin-top: -10px;
@@ -1443,7 +1715,7 @@ header {
     }
 
     /*_____Icone Instagram_____*/
-    .footer1 > .desenvolve > .iconInsta {
+    .section_4 > .desenvolve > .iconInsta {
         display: block;
         float: left;
         margin-top: 38px;
@@ -1453,7 +1725,7 @@ header {
         padding: 4px;
     }
 
-    .footer1 > .desenvolve > .iconInsta > img {
+    .section_4 > .desenvolve > .iconInsta > img {
         max-width: 50px;
     }
 
@@ -1512,7 +1784,7 @@ header {
     }
 
     /*_____Serviços_____*/
-    .flexServicos {
+    .section_2 {
         display: flex;
         flex-wrap: wrap;
         max-width: 1200px;
@@ -1522,12 +1794,12 @@ header {
         padding-bottom: 4%;
     }
 
-    .flexServicos > a > figure {
+    .section_2 > a > figure {
     margin: 0px;
     padding: 3px;
     }
     
-    .flexServicos > a > figure >img {
+    .section_2 > a > figure >img {
         max-width: 110px;
         border-top: 1px solid rgb(226, 226, 226);
         border-radius: 10px;
@@ -1552,19 +1824,19 @@ header {
     }
 
     /*_____Fale Conosco_____*/
-    .faleConosco {
+    .section_3 {
         margin: 0 auto;
         max-width: 70%;
     }
 
-    .faleConosco > h2 {
+    .section_3 > h2 {
         font-family: sans-serif;
         font-size: 0.9rem;
         font-weight: 500;
         text-align: center;
     }
 
-    .faleConosco > .divNumero {
+    .section_3 > .divNumero {
         background-color: white;
         border-radius: 20px;
         box-shadow: -1px 7px 14px rgb(226, 226, 226);
@@ -1575,12 +1847,12 @@ header {
         justify-content: center;
     }
 
-    .faleConosco > .divNumero > .numeros {
+    .section_3 > .divNumero > .numeros {
         display: flex;
         margin: auto;
     }
 
-    .faleConosco > .divNumero > div > p {
+    .section_3 > .divNumero > div > p {
         display: flex;
         font-size: 0.7rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1588,10 +1860,102 @@ header {
         padding: 0;
     }
 
-    .faleConosco > .divNumero > div > img {
+    .section_3 > .divNumero > div > img {
         display: flex;
         max-width: 15px;
         max-height: 15px;
         margin-right: 5px;
+    }
+
+    /*______Footer 2______*/
+    .section_5 {
+        padding: 0;
+        margin: 0 auto;
+        background-color: #353C50;
+        display: flex;
+        padding-bottom: 35px;
+        flex-wrap: wrap;
+    }
+
+    /*___div 1 - Desenvolve 2___*/
+    .section_5 > .desenvolve2 {
+        margin: auto;
+        padding-top: 40px;
+        color: white;
+        display: block;
+    }
+
+    .section_5 > .desenvolve2 > p {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        margin-top: 10px;
+    }
+
+    .section_5 > .desenvolve2 > img {
+        max-width: 180px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /*____Icone do facebook e do instagram____*/
+    .section_5 > .desenvolve2 > .iconSocial2 {
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 2%;
+    }
+
+    .section_5 > .desenvolve2 > .iconSocial2 > a > img{
+        max-width: 25px;
+    }
+
+    /*___Lista___*/
+    .desenvolve2Lista {
+        margin: 0 auto;
+        padding-top: 20px;
+        color: white;
+        display: flex;
+    }
+
+    .desenvolve2Lista > .divLista {
+        margin: 0px;
+    }
+
+    .desenvolve2Lista > .divLista > h2 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 0.9rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li {
+        margin: 7px;
+        font-size: 0.7rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    /*____Último Footer____*/
+    footer {
+        padding: 0px;
+        padding-bottom: 7px;
+        background-color: #3C3C3C;
+    }
+
+    footer > div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer > div > a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.5rem;
+    }
+
+    footer > div > a:hover {
+        color: rgb(34, 76, 190);
     }
 }

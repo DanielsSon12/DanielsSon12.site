@@ -678,11 +678,11 @@ header {
         margin-right: 20px;
         border: 1px solid white;
         border-radius: 80px;
-        padding: 8px;
+        padding: 4px;
     }
 
     .footer1 > .desenvolve > .iconInsta > img {
-        max-width: 30px;
+        max-width: 40px;
     }
 
     /*_____Fotos que dão zoom_____*/
@@ -737,6 +737,91 @@ header {
         text-decoration: none;
         color: white;
         font-size: 0.7rem;
+    }
+
+    /*_____Serviços_____*/
+    .flexServicos {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 2px;
+        padding-bottom: 4%;
+    }
+
+    .flexServicos > a > figure {
+    margin: 0px;
+    padding: 3px;
+    }
+    
+    .flexServicos > a > figure >img {
+        max-width: 92px;
+        border-top: 1px solid rgb(226, 226, 226);
+        border-radius: 10px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+    }
+
+    /*___Título Serviços___*/
+    .servicos {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 1.5%;
+        text-align: left;
+
+    }
+
+    .servicos > h2 {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    /*_____Fale Conosco_____*/
+    .faleConosco {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    .faleConosco > h2 {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .faleConosco > .divNumero {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+        border-top: 1px solid rgb(226, 226, 226);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .faleConosco > .divNumero > .numeros {
+        display: flex;
+        margin: auto;
+    }
+
+    .faleConosco > .divNumero > div > p {
+        display: flex;
+        font-size: 0.7rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: -3px;
+        padding: 0;
+    }
+
+    .faleConosco > .divNumero > div > img {
+        display: flex;
+        max-width: 12px;
+        max-height: 12px;
+        margin-right: 5px;
+
     }
 }
 
@@ -979,11 +1064,11 @@ header {
         margin-right: 20px;
         border: 1px solid white;
         border-radius: 80px;
-        padding: 10px;
+        padding: 5px;
     }
 
     .footer1 > .desenvolve > .iconInsta > img {
-        max-width: 30px;
+        max-width: 40px;
     }
 
     /*_____Fotos que dão zoom_____*/
@@ -1038,6 +1123,90 @@ header {
         text-decoration: none;
         color: white;
         font-size: 0.8rem;
+    }
+
+    /*_____Serviços_____*/
+    .flexServicos {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 2px;
+        padding-bottom: 4%;
+    }
+
+    .flexServicos > a > figure {
+    margin: 0px;
+    padding: 3px;
+    }
+    
+    .flexServicos > a > figure >img {
+        max-width: 92px;
+        border-top: 1px solid rgb(226, 226, 226);
+        border-radius: 10px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+    }
+
+    /*___Título Serviços___*/
+    .servicos {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 1.5%;
+        text-align: left;
+
+    }
+
+    .servicos > h2 {
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    /*_____Fale Conosco_____*/
+    .faleConosco {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    .faleConosco > h2 {
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .faleConosco > .divNumero {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+        border-top: 1px solid rgb(226, 226, 226);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .faleConosco > .divNumero > .numeros {
+        display: flex;
+        margin: auto;
+    }
+
+    .faleConosco > .divNumero > div > p {
+        display: flex;
+        font-size: 0.7rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: -3px;
+        padding: 0;
+    }
+
+    .faleConosco > .divNumero > div > img {
+        display: flex;
+        max-width: 12px;
+        max-height: 12px;
+        margin-right: 5px;
     }
 }
 
@@ -1281,11 +1450,11 @@ header {
         margin-right: 20px;
         border: 1px solid white;
         border-radius: 80px;
-        padding: 10px;
+        padding: 4px;
     }
 
     .footer1 > .desenvolve > .iconInsta > img {
-        max-width: 30px;
+        max-width: 50px;
     }
 
     /*_____Fotos que dão zoom_____*/
@@ -1340,5 +1509,89 @@ header {
         text-decoration: none;
         color: white;
         font-size: 0.8rem;
+    }
+
+    /*_____Serviços_____*/
+    .flexServicos {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 2px;
+        padding-bottom: 4%;
+    }
+
+    .flexServicos > a > figure {
+    margin: 0px;
+    padding: 3px;
+    }
+    
+    .flexServicos > a > figure >img {
+        max-width: 110px;
+        border-top: 1px solid rgb(226, 226, 226);
+        border-radius: 10px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+    }
+
+    /*___Título Serviços___*/
+    .servicos {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 1.5%;
+        text-align: left;
+
+    }
+
+    .servicos > h2 {
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    /*_____Fale Conosco_____*/
+    .faleConosco {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    .faleConosco > h2 {
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .faleConosco > .divNumero {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+        border-top: 1px solid rgb(226, 226, 226);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .faleConosco > .divNumero > .numeros {
+        display: flex;
+        margin: auto;
+    }
+
+    .faleConosco > .divNumero > div > p {
+        display: flex;
+        font-size: 0.7rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: -1px;
+        padding: 0;
+    }
+
+    .faleConosco > .divNumero > div > img {
+        display: flex;
+        max-width: 15px;
+        max-height: 15px;
+        margin-right: 5px;
     }
 }

@@ -183,6 +183,7 @@ header {
 }
 
 .nav-2 > div > p {
+    font-weight: 500;
     font-size: 2.2rem;
     color: #343434;
 }
@@ -357,7 +358,7 @@ header {
 
 /*_____Ícones dentro das figuras que dão Zoom_____*/
 .divZoom > .linksShow {
-    display: block;
+    display: none;
     position: relative;
 }
 
@@ -709,15 +710,18 @@ footer > div > a:hover {
     /*______Segunda Nav______*/
     .nav-2 > div > a {
         display: flex;
-        padding: 5px;
+        padding: 2px;
     }
 
     .nav-2 > div > a > img {
         max-width: 60px;
+        padding: 0px;
     }
 
     .nav-2 > div > p {
-        font-size: 0.6rem;
+        padding: 0;
+        font-weight: 500;
+        font-size: 0.8rem;
         display: flex;
     }
 
@@ -726,8 +730,8 @@ footer > div > a:hover {
         display: flex;
         padding: 0px;
         margin: 1px;
-        margin-right: 25px;
-        margin-top: 14px;
+        margin-right: 10px;
+        margin-top: 10px;
     }
 
     .nav-2 > .iconSocial > a > img {
@@ -1059,7 +1063,7 @@ footer > div > a:hover {
         display: flex;
         font-size: 0.7rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: -3px;
+        margin: -2px;
         padding: 0;
     }
 
@@ -1263,15 +1267,18 @@ footer > div > a:hover {
     /*______Segunda Nav______*/
     .nav-2 > div > a {
         display: flex;
-        padding: 1px;
+        padding: 2px;
     }
     
     .nav-2 > div > a > img {
         max-width: 70px;
+        padding: 0px;
     }
     
     .nav-2 > div > p {
-        font-size: 0.7rem;
+        font-weight: 500;
+        padding: 0;
+        font-size: 0.82rem;
         display: flex;
     }
 
@@ -1280,13 +1287,13 @@ footer > div > a:hover {
         display: flex;
         padding: 0px;
         margin: 1px;
-        margin-right: 14px;
-        margin-top: 14px;
+        margin-right: 8px;
+        margin-top: 13px;
     }
     
     .nav-2 > .iconSocial > a > img {
         display: flex;
-        max-width: 11px;
+        max-width: 9px;
         padding: 0px;
         margin: 0px auto;
         color: #343434;
@@ -1609,7 +1616,7 @@ footer > div > a:hover {
         display: flex;
         font-size: 0.7rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: -3px;
+        margin: -2px;
         padding: 0;
     }
 
@@ -1812,15 +1819,18 @@ footer > div > a:hover {
     /*______Segunda Nav______*/
     .nav-2 > div > a {
         display: flex;
-        padding: 5px;
+        padding: 3px;
     }
     
     .nav-2 > div > a > img {
         max-width: 80px;
+        padding: 0px;
     }
     
     .nav-2 > div > p {
-        font-size: 0.7rem;
+        font-weight: 500;
+        padding: 0;
+        font-size: 0.9rem;
         display: flex;
     }
 
@@ -1830,7 +1840,7 @@ footer > div > a:hover {
         padding: 0px;
         margin: 1px;
         margin-right: 25px;
-        margin-top: 14px;
+        margin-top: 13px;
     }
     
     .nav-2 > .iconSocial > a > img {
@@ -2024,21 +2034,21 @@ footer > div > a:hover {
 
     .divZoom > .linksShow > a > .imgFacebook {
         position: absolute;
-        left: -25vw;
+        left: -28vw;
         padding: 4.3px;
         max-width: 10px;
     }
 
     .divZoom > .linksShow > a > .imgTwitter {
         position: absolute;
-        left: -19.5vw;
+        left: -22vw;
         padding: 4.3px;
         max-width: 10px;
     }
 
     .divZoom > .linksShow > a > .pinterestIcon{
         position: absolute;
-        left: -14vw;
+        left: -16vw;
         max-width: 31px;
         padding: 4.3px;
         max-width: 10px;
@@ -2158,7 +2168,7 @@ footer > div > a:hover {
         display: flex;
         font-size: 0.7rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: -1px;
+        margin: -0.5px;
         padding: 0;
     }
 

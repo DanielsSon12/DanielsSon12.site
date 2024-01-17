@@ -1,3 +1,4 @@
+//Dropdown menu
 function showMenu() {
     let mobileMenu = document.querySelector('.mobile-menu');
 
@@ -8,4 +9,13 @@ function showMenu() {
         mobileMenu.classList.add('open');
         document.querySelector('.icon').src = "imgs/x.png";
     }
+}
+
+//Função para os icones que ficam dentro da imagem que da zoom ao passar o mouse
+function showIconZoom(className) {
+    document.querySelector(`.${className}`).classList.add('showIcon');
+}
+
+function hideIconZoom(className) {
+    document.querySelector(`.${className}`).classList.remove('showIcon');
 }

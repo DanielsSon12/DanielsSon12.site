@@ -8,7 +8,9 @@ body{
 }
 
 header {
+    position: -webkit-sticky;
     position: sticky;
+    top: 0;
 }
 
 /*______Primeira Nav______*/
@@ -213,7 +215,7 @@ header {
 .iconesRedondos {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 3rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
     justify-content: center;
 }
@@ -316,13 +318,92 @@ header {
     padding: 50px;
 }
 
-.divZoom > a > figure > img {
+.divZoom > .imgZoom {
+    position: relative;
+}
+
+.divZoom > .imgZoom > a {
+    display: block;
+    overflow: hidden;
+}
+
+.divZoom > .imgZoom > a > figure {
+    margin: 5px;
+    overflow: hidden;
+}
+
+.divZoom > .imgZoom > a > figure > img {
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: 40%;
     max-width: 250px;
-    max-height: 250px;
-    margin: -35px;
+    max-height: 280px;
+    transition: all 1.8s;
+    z-index: 0;
+}
+
+.divZoom > .imgZoom > .camera {
+    max-width: 25px;
+    position: absolute;
+    top: 2%;
+    left: 85%;
+}
+
+.divZoom > .imgZoom > a > figure > .img-z:hover{
+    transform: scale(1.1);
+}
+
+/*_____Ícones dentro das figuras que dão Zoom_____*/
+.divZoom > .linksShow {
+    display: none;
+    position: relative;
+}
+
+.divZoom > .linksShow > a > img{
+    max-width: 40px;
+    transition: all 0.4s;
+    opacity: 0.5;
+    top: 75%;
+    border: 1px white solid;
+    border-radius: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.divZoom > .linksShow > a > .imgFacebook {
+    position: absolute;
+    left: -11vw;
+    padding: 5px;
+    max-width: 20px;
+}
+
+.divZoom > .linksShow > a > .imgTwitter {
+    position: absolute;
+    left: -8.5vw;
+    padding: 5px;
+    max-width: 20px;
+}
+
+.divZoom > .linksShow > a > .pinterestIcon{
+    position: absolute;
+    left: -5.92vw;
+    max-width: 31px;
+    padding: 5px;
+    max-width: 20px;
+}
+
+/*___JS___*/
+.showIcon {
+    display: block !important;
+}
+/*________*/
+
+.divZoom > .linksShow > a {
+    text-decoration: none;
+}
+
+.divZoom > .linksShow > a > img:hover{
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 /*_____Botão do instagram_____*/
@@ -784,16 +865,27 @@ footer > div > a:hover {
         margin-bottom: 20px;
     }
 
-    .divZoom > a > figure {
-        margin: 40px;
+    .divZoom > .imgZoom > a {
+        display: block;
+        overflow: hidden;
     }
 
-    .divZoom > a > figure > img {
+    .divZoom > .imgZoom > a > figure {
+        margin: 5px;
+        overflow: hidden;
+    }
+
+    .divZoom > .imgZoom > a > figure > img {
         aspect-ratio: 1/1;
         object-fit: cover;
         object-position: 40%;
         max-width: 100px;
         max-height: 250px;
+        transition: all 1.8s;
+    }
+
+    .divZoom > .imgZoom > a > figure:hover img {
+        transform: scale(1.1);
     }
 
     /*_____Botão do instagram_____*/
@@ -1262,16 +1354,27 @@ footer > div > a:hover {
         margin-bottom: 20px;
     }
 
-    .divZoom > a > figure {
-        margin: 40px;
+    .divZoom > .imgZoom {
+        display: block;
+        overflow: hidden;
     }
 
-    .divZoom > a > figure > img {
+    .divZoom > .imgZoom > a > figure {
+        margin: 5px;
+        overflow: hidden;
+    }
+
+    .divZoom > .imgZoom > a > figure > img {
         aspect-ratio: 1/1;
         object-fit: cover;
         object-position: 40%;
         max-width: 120px;
         max-height: 250px;
+        transition: all 1.8s;
+    }
+
+    .divZoom > .imgZoom > a > figure:hover img {
+        transform: scale(1.1);
     }
 
     /*_____Botão do instagram_____*/
@@ -1740,16 +1843,27 @@ footer > div > a:hover {
         margin-bottom: 20px;
     }
 
-    .divZoom > a > figure {
-        margin: 40px;
+    .divZoom > .imgZoom {
+        display: block;
+        overflow: hidden;
     }
 
-    .divZoom > a > figure > img {
+    .divZoom > .imgZoom > a > figure {
+        margin: 5px;
+        overflow: hidden;
+    }
+
+    .divZoom > .imgZoom > a > figure > img {
         aspect-ratio: 1/1;
         object-fit: cover;
         object-position: 40%;
         max-width: 140px;
         max-height: 250px;
+        transition: all 1.8s;
+    }
+
+    .divZoom > .imgZoom > a > figure:hover img {
+        transform: scale(1.1);
     }
 
     /*_____Botão do instagram_____*/

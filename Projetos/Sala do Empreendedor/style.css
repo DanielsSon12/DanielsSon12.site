@@ -10,6 +10,7 @@ body{
 header {
     position: -webkit-sticky;
     position: sticky;
+    z-index: 1;
     top: 0;
 }
 
@@ -100,6 +101,7 @@ header {
     border: 1px solid rgb(204, 204, 204);
     display: none;
     padding: 10px;
+
 } 
 
 .dropdown-menu > p {
@@ -637,15 +639,14 @@ footer > div > a:hover {
     /*_____Opções do Menu_____*/
 
     .mobile-menu {
-        border-right: 1px solid rgb(204, 204, 204);
+        margin-left: 20%;
     }
 
     .mobile-menu > .options-Menu {
         display: flex;
         flex-direction: column;
         padding-top: 0.5rem;
-        align-items:end;
-
+        align-items: center;
     }
 
     .mobile-menu > .options-Menu > li {
@@ -664,16 +665,17 @@ footer > div > a:hover {
         display: flex;
         margin: 12px;
         padding: 0.1rem;
-        float: inline-end;
+        width: 100%;
     }
 
     .mobile-menu > .btn-Login > img {
         margin: 0;
+        margin-left: 32%;
         padding-top: 0.3rem;
     }
 
     .mobile-menu > .btn-Login > a {
-        margin: 0 auto;
+        margin: 0;
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
     }
@@ -902,7 +904,7 @@ footer > div > a:hover {
 
     /*_____Ícones dentro das figuras que dão Zoom_____*/
     .divZoom > .linksShow {
-        display: none;
+        display: block;
         position: relative;
     }
 
@@ -910,7 +912,7 @@ footer > div > a:hover {
         max-width: 18px;
         transition: all 0.4s;
         opacity: 0.5;
-        top: 77%;
+        top: 75%;
         border: 1px white solid;
         border-radius: 200px;
         background-color: rgba(0, 0, 0, 0.5);
@@ -1191,14 +1193,14 @@ footer > div > a:hover {
     /*_____Opções do Menu_____*/
 
     .mobile-menu {
-        border-right: 1px solid rgb(204, 204, 204);
+        margin-left: 23%;
     }
 
     .mobile-menu > .options-Menu {
         display: flex;
         flex-direction: column;
         padding-top: 0.5rem;
-        align-items:end;
+        align-items: center;
 
     }
 
@@ -1218,16 +1220,17 @@ footer > div > a:hover {
         display: flex;
         margin: 12px;
         padding: 0.1rem;
-        float: inline-end;
+        width: 100%;
     }
 
     .mobile-menu > .btn-Login > img {
         margin: 0;
+        margin-left: 28%;
         padding-top: 0.3rem;
     }
 
     .mobile-menu > .btn-Login > a {
-        margin: 0 auto;
+        margin: 0;
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
     }
@@ -1463,7 +1466,7 @@ footer > div > a:hover {
     .divZoom > .linksShow > a > img{
         max-width: 18px;
         transition: all 0.4s;
-        opacity: 0.5;
+        opacity: 0.6;
         top: 77%;
         border: 1px white solid;
         border-radius: 200px;
@@ -1472,21 +1475,21 @@ footer > div > a:hover {
 
     .divZoom > .linksShow > a > .imgFacebook {
         position: absolute;
-        left: -24vw;
+        left: -25vw;
         padding: 3px;
         max-width: 8px;
     }
 
     .divZoom > .linksShow > a > .imgTwitter {
         position: absolute;
-        left: -18.5vw;
+        left: -19.5vw;
         padding: 3px;
         max-width: 8px;
     }
 
     .divZoom > .linksShow > a > .pinterestIcon{
         position: absolute;
-        left: -13vw;
+        left: -14vw;
         max-width: 31px;
         padding: 3px;
         max-width: 8px;
@@ -1500,11 +1503,6 @@ footer > div > a:hover {
 
     .divZoom > .linksShow > a {
         text-decoration: none;
-    }
-
-    .divZoom > .linksShow > a > img:hover{
-        opacity: 1;
-        transform: scale(1.1);
     }
 
     /*_____Botão do instagram_____*/
@@ -1744,15 +1742,14 @@ footer > div > a:hover {
     /*_____Opções do Menu_____*/
 
     .mobile-menu {
-        border-right: 1px solid rgb(204, 204, 204);
+        margin-left: 23%;
     }
 
     .mobile-menu > .options-Menu {
         display: flex;
         flex-direction: column;
         padding-top: 0.5rem;
-        align-items:end;
-
+        align-items: center;
     }
 
     .mobile-menu > .options-Menu > li {
@@ -1771,16 +1768,17 @@ footer > div > a:hover {
         display: flex;
         margin: 12px;
         padding: 0.1rem;
-        float: inline-end;
+        width: 100%;
     }
 
     .mobile-menu > .btn-Login > img {
         margin: 0;
+        margin-left: 36%;
         padding-top: 0.3rem;
     }
 
     .mobile-menu > .btn-Login > a {
-        margin: 0 auto;
+        margin: 0;
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
     }
@@ -2017,7 +2015,7 @@ footer > div > a:hover {
     .divZoom > .linksShow > a > img{
         max-width: 18px;
         transition: all 0.4s;
-        opacity: 0.5;
+        opacity: 0.6;
         top: 77%;
         border: 1px white solid;
         border-radius: 200px;
@@ -2054,11 +2052,6 @@ footer > div > a:hover {
 
     .divZoom > .linksShow > a {
         text-decoration: none;
-    }
-
-    .divZoom > .linksShow > a > img:hover{
-        opacity: 1;
-        transform: scale(1.1);
     }
 
     /*_____Botão do instagram_____*/

@@ -11,7 +11,7 @@ function showMenu() {
     }
 }
 
-//Função para os icones que ficam dentro da imagem que da zoom ao passar o mouse
+//Função para os icones que ficam dentro da imagem que da zoom
 function showIconZoom(className) {
     document.querySelector(`.${className}`).classList.add('showIcon');
 }

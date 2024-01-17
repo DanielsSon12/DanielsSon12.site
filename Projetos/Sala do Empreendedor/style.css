@@ -355,7 +355,7 @@ header {
 
 /*_____Ícones dentro das figuras que dão Zoom_____*/
 .divZoom > .linksShow {
-    display: none;
+    display: block;
     position: relative;
 }
 
@@ -363,7 +363,7 @@ header {
     max-width: 40px;
     transition: all 0.4s;
     opacity: 0.5;
-    top: 75%;
+    top: 77%;
     border: 1px white solid;
     border-radius: 200px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -371,21 +371,21 @@ header {
 
 .divZoom > .linksShow > a > .imgFacebook {
     position: absolute;
-    left: -11vw;
+    left: -10vw;
     padding: 5px;
     max-width: 20px;
 }
 
 .divZoom > .linksShow > a > .imgTwitter {
     position: absolute;
-    left: -8.5vw;
+    left: -7.8vw;
     padding: 5px;
     max-width: 20px;
 }
 
 .divZoom > .linksShow > a > .pinterestIcon{
     position: absolute;
-    left: -5.92vw;
+    left: -5.6vw;
     max-width: 31px;
     padding: 5px;
     max-width: 20px;
@@ -865,6 +865,10 @@ footer > div > a:hover {
         margin-bottom: 20px;
     }
 
+    .divZoom > .imgZoom {
+        position: relative;
+    }
+
     .divZoom > .imgZoom > a {
         display: block;
         overflow: hidden;
@@ -882,12 +886,73 @@ footer > div > a:hover {
         max-width: 100px;
         max-height: 250px;
         transition: all 1.8s;
+        z-index: 0;
+    }
+
+    .divZoom > .imgZoom > .camera {
+        max-width: 16px;
+        position: absolute;
+        top: 5%;
+        left: 76%;
     }
 
     .divZoom > .imgZoom > a > figure:hover img {
         transform: scale(1.1);
     }
 
+    /*_____Ícones dentro das figuras que dão Zoom_____*/
+    .divZoom > .linksShow {
+        display: none;
+        position: relative;
+    }
+
+    .divZoom > .linksShow > a > img{
+        max-width: 18px;
+        transition: all 0.4s;
+        opacity: 0.5;
+        top: 77%;
+        border: 1px white solid;
+        border-radius: 200px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .divZoom > .linksShow > a > .imgFacebook {
+        position: absolute;
+        left: -25vw;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    .divZoom > .linksShow > a > .imgTwitter {
+        position: absolute;
+        left: -18vw;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    .divZoom > .linksShow > a > .pinterestIcon{
+        position: absolute;
+        left: -11.7vw;
+        max-width: 31px;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    /*___JS___*/
+    .showIcon {
+        display: block !important;
+    }
+    /*________*/
+
+    .divZoom > .linksShow > a {
+        text-decoration: none;
+    }
+
+    .divZoom > .linksShow > a > img:hover{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
     /*_____Botão do instagram_____*/
     .btn-Insta {
         padding: 0;
@@ -1355,6 +1420,10 @@ footer > div > a:hover {
     }
 
     .divZoom > .imgZoom {
+        position: relative;
+    }
+
+    .divZoom > .imgZoom > a {
         display: block;
         overflow: hidden;
     }
@@ -1371,9 +1440,70 @@ footer > div > a:hover {
         max-width: 120px;
         max-height: 250px;
         transition: all 1.8s;
+        z-index: 0;
+    }
+
+    .divZoom > .imgZoom > .camera {
+        max-width: 16px;
+        position: absolute;
+        top: 5%;
+        left: 77%;
     }
 
     .divZoom > .imgZoom > a > figure:hover img {
+        transform: scale(1.1);
+    }
+
+    /*_____Ícones dentro das figuras que dão Zoom_____*/
+    .divZoom > .linksShow {
+        display: block;
+        position: relative;
+    }
+
+    .divZoom > .linksShow > a > img{
+        max-width: 18px;
+        transition: all 0.4s;
+        opacity: 0.5;
+        top: 77%;
+        border: 1px white solid;
+        border-radius: 200px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .divZoom > .linksShow > a > .imgFacebook {
+        position: absolute;
+        left: -24vw;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    .divZoom > .linksShow > a > .imgTwitter {
+        position: absolute;
+        left: -18.5vw;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    .divZoom > .linksShow > a > .pinterestIcon{
+        position: absolute;
+        left: -13vw;
+        max-width: 31px;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    /*___JS___*/
+    .showIcon {
+        display: block !important;
+    }
+    /*________*/
+
+    .divZoom > .linksShow > a {
+        text-decoration: none;
+    }
+
+    .divZoom > .linksShow > a > img:hover{
+        opacity: 1;
         transform: scale(1.1);
     }
 
@@ -1844,6 +1974,10 @@ footer > div > a:hover {
     }
 
     .divZoom > .imgZoom {
+        position: relative;
+    }
+
+    .divZoom > .imgZoom > a{
         display: block;
         overflow: hidden;
     }
@@ -1860,9 +1994,70 @@ footer > div > a:hover {
         max-width: 140px;
         max-height: 250px;
         transition: all 1.8s;
+        z-index: 0;
+    }
+
+    .divZoom > .imgZoom > .camera {
+        max-width: 16px;
+        position: absolute;
+        top: 5%;
+        left: 82%;
     }
 
     .divZoom > .imgZoom > a > figure:hover img {
+        transform: scale(1.1);
+    }
+
+    /*_____Ícones dentro das figuras que dão Zoom_____*/
+    .divZoom > .linksShow {
+        display: block;
+        position: relative;
+    }
+
+    .divZoom > .linksShow > a > img{
+        max-width: 18px;
+        transition: all 0.4s;
+        opacity: 0.5;
+        top: 77%;
+        border: 1px white solid;
+        border-radius: 200px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .divZoom > .linksShow > a > .imgFacebook {
+        position: absolute;
+        left: -25vw;
+        padding: 4.3px;
+        max-width: 10px;
+    }
+
+    .divZoom > .linksShow > a > .imgTwitter {
+        position: absolute;
+        left: -19.5vw;
+        padding: 4.3px;
+        max-width: 10px;
+    }
+
+    .divZoom > .linksShow > a > .pinterestIcon{
+        position: absolute;
+        left: -14vw;
+        max-width: 31px;
+        padding: 4.3px;
+        max-width: 10px;
+    }
+
+    /*___JS___*/
+    .showIcon {
+        display: block !important;
+    }
+    /*________*/
+
+    .divZoom > .linksShow > a {
+        text-decoration: none;
+    }
+
+    .divZoom > .linksShow > a > img:hover{
+        opacity: 1;
         transform: scale(1.1);
     }
 

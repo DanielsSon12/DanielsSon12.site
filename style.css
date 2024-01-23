@@ -1,152 +1,414 @@
+/*
+-> Cores usadas:
+teste1:
+rgb(49, 27, 177);
+rgb(32, 18, 110);
+rgb(70, 70, 70);
+rgb(148, 148, 148);
 
-*{
-    margin: 0;
+teste2:
+rgb(19, 19, 19);
+rgb(27, 27, 27);
+rgb(0, 238, 255);
+rgb(0, 174, 255);
+rgb(104, 104, 104);
+rgb(196, 196, 196);
+*/
+/*
+Sobre a forma abreviada de Animation:
+
+animation: name duration timing-function delay interation-count direction; 
+*/
+/*________Animations Structures_______*/
+@keyframes animationMoveToRight {
+    0% {
+        transform: translateX(-1500px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes animationRotateImg {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/*_______Essêncial_______*/
+* {
     padding: 0;
-}
-
-a{
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-}   
-
-a:hover{
-    opacity: 0.7;
-}
-
-.logo{
-   font-size: 24px;
-   text-transform: uppercase;  /*transformar o texto em maiusculo*/
-   letter-spacing: 4px; /*espaçamento de letras*/
-}
-
-/*___________Menu___________*/
-nav{
-    display: flex;
-    justify-content: space-around; /*Ira fazer com que o espaço ao redor seja a metade do espaço entre eles*/
-    align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #232338;
-    height: 10vh; /*vh ou vw é uma medida responsiva que se adapta a altura ou largura da tela de visualização do usuário, sendo que 100 cobre a tela inteira*/
-}
-
-.nav-list{
-    list-style: none;
-    display: flex;
-    position: sticky;
-    top: 0px;
-}
-
-.nav-list li{
-    letter-spacing: 3px;
-    margin-left: 32px;
-    /*Apenas para afastar um menu do outro*/
-}
-
-/*______Background______*/
-body{
-    background-color: #2a2a44; /*center center são os eixos X e Y respectivamente do site*/
-    background-size: cover; /*Caso a resolução do monitor for maior do que a imagem*/
-    height: 92vh;
-    background-attachment:scroll;
-}
-
-/*______Maneira de rolamento da tela______*/
-html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.03rem;
+    line-height: 1.4rem;
     scroll-behavior: smooth;
 }
 
-/*______Atividades______*/
-.listas{
-    list-style: none;
-    display: inline-block;
-    padding-top: 20px;
-    padding: 7px;
-    font-weight: bold;
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(236, 236, 236);
 }
 
-.listas li{
-    letter-spacing: 2.3px;
-    padding: 10px;
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
 }
 
-.listas:hover{
-    color: rgb(71, 72, 77);
-}
-
-/*______Tópicos______*/
-section{
-    
-    padding: 17px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #dadada;
-}
-
-section p{
-    border:8px;
+/*_______NavBar_______*/
+nav {
+    background-color: rgb(19, 19, 19);
+    border-bottom: 2px solid rgb(0, 238, 255);
     display: flex;
-    width: 960px;
-    padding-top: 13px;
-    padding-left: 15px;
-    letter-spacing: 2px;
-    font-size: 19px;
-    text-align: justify;
-    word-spacing: 4px; /*Define o espaçamento entre as letras de um paragrafo*/
-    line-height: 34px ; /*Define o espaçamento entre linhas em um parágrafo*/
+    justify-content: center;
+    padding: 0.7rem;
 }
 
-/*______Titulo da apresentação______*/
-.AP{
-    padding-top: 17px;
+.div_logo, .div_opcoesMenu, .div_redeSocial {
+    display: flex;
 }
 
-/*______Título de cada tópico______*/
-.AtiviTitulo{
-    padding: 17px;
+/*__Logo__*/
+.div_logo > h2 {
+    font-size: 2.1rem;
+    color: whitesmoke;
 }
 
-/*______O básico dos títulos_____*/
-h2{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 10px;
+/*__Opções do Menu__*/
+.div_opcoesMenu > ul {
+    display: flex;
+    margin: auto;
+    list-style: none;
+    flex-direction: row;
+    float: left;
+    max-width: 100vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
 }
 
-h3{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.div_opcoesMenu > ul > li {
+    max-width: 70vw;
+    padding: 1.6rem;
+    font-size: 1.2rem;
 }
 
-h4{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding-left: 16px;
+.div_opcoesMenu > ul > li > a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    background-image: none;
+    transition: 
+    background-position 0.5s,
+    color 0.8s;
 }
 
-/*______Ícones dos tópicos______*/
-i{
-    padding: 10px;
-    font-size: 29px;
-    color: #dddddd;
-    text-shadow: 0px 0px 30px #ffffff;
-    animation: flutu 10s infinite ease-in-out;
+.div_opcoesMenu > ul > li > a:hover {
+    background-image: linear-gradient(to right, transparent 50%, rgb(0, 174, 255) 50%);
+    background-size: 200%;
+    background-position: -100%;
+    color: rgb(27, 27, 27);
+    border-radius: 200px;
 }
 
-@keyframes flutu {
-    0%, 100%{
-        transform: translateY(0px) ;
-    }
-    50%{
-        transform: translateY(-4px);
-    }
-    75%{
-        transform: translateY(2px);
-    }
+/*__Github e Instagram__*/
+.div_redeSocial > a {
+    margin: auto;
+    display: flex;
+    padding: 0.5rem;
 }
 
+.div_redeSocial > a > img {
+    max-width: 70%;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.div_redeSocial > a > img:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/*_______Primeira Section (Sobre Mim)_______*/
+.section_sobreMim {
+    max-width: 100vw;
+    max-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.section_sobreMim > .div_sobreMim {
+    display: flex;
+    justify-content: center;
+}
+
+.div_sobreMim {
+    padding: 8rem;
+}
+
+/*__borda__*/
+.div_bordaSobreMim {
+    display: flex;
+    background-color: rgb(19, 19, 19);
+    border-radius: 70px;
+    box-shadow: 1px 8px 20px rgb(0, 174, 255);
+    padding: 3.5rem;
+    animation: animationMoveToRight 1.7s ease-out;
+}
+
+/*__imagem__*/
+.div_imgSobreMim > a > img {
+    max-width: 15rem;
+    border-radius: 200px;
+    box-shadow: 1px 1px 27px rgb(0, 174, 255);
+    transition: all 1.5s;
+    animation: animationRotateImg 1.5s 1.3s;
+}
+
+.div_imgSobreMim > a > img:hover {
+    transform:rotateY(360deg);
+}
+
+/*__texto__*/
+.div_textSobreMim {
+    margin: 2rem;
+}
+
+.div_textSobreMim > h2 {
+    font-size: 2.4rem;
+    color: white;
+}
+
+.div_textSobreMim > p {
+    max-width: 45rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: white;
+}
+
+/*_______Animação de scroll_______*/
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    animation: animationMoveToRight 1.7s ease-in-out;
+}
+
+/*_______Segunda Section (Conhecimentos)_______*/
+.section_conhecimentos {
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 25rem;
+    text-align: center;
+}
+
+/*___Titulo e texto___*/
+.div_tituloConhecimentos > h2 {
+    font-size: 3rem;
+}
+
+.div_tituloConhecimentos > p {
+    font-size: 1.4rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.2rem;
+    color: rgb(104, 104, 104);
+}
+
+/*___Conhecimentos___*/
+.div_conhecimentos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70rem;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.div_conhecimentos > div {
+    border: 4px solid rgb(27, 27, 27);;
+    border-radius: 5px;
+    box-shadow: 1px 1px 11px rgb(0, 238, 255);
+    padding: 2rem;
+    margin: 3rem;
+    background-color: rgb(27, 27, 27);
+    transition: all 0.5s;
+}
+
+.div_conhecimentos > div:hover {
+    transform: scale(1.12);
+    cursor: pointer;
+    box-shadow: 1px 1px 25px rgb(0, 238, 255);
+}
+
+.div_conhecimentos > div > a {
+    text-decoration: none;
+}
+
+.div_conhecimentos > div > a > h4 {
+    font-size: 1.3rem;
+    margin-top: -0.5rem;
+    color: whitesmoke;
+    /*color: rgb(19, 19, 19);*/
+}
+
+.div_conhecimentos > div > a > p {
+    margin-top: -0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: whitesmoke;
+    /*color: rgb(104, 104, 104);*/
+}
+
+.div_conhecimentos > div > a > img {
+    max-width: 5rem;
+    max-height: 5rem;
+    margin: 1.5rem;
+    padding: 0;
+}
+
+/*_______Terceira Section (Atividades de Informática)_______*/
+.section_AtivInfo {
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0 auto;
+    padding-top: 15rem;
+    text-align: center;
+}
+
+.backgroundSection {
+    background: linear-gradient( rgb(236, 236, 236), rgb(172, 171, 171) 20%, rgb(172, 171, 171) 90%, rgb(236, 236, 236));
+}
+
+.section_AtivInfo > div > ul {
+    display: flex;
+    justify-content: center;
+}
+
+/*__Listas__*/
+.list {
+    padding: 2rem;
+    list-style: none;
+}
+
+.list > div > h4 {
+    font-size: 1.3rem;
+    color: whitesmoke;
+    padding: 1.1rem;
+    border-radius: 15px;
+    background-color: rgb(19, 19, 19);
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgb(0, 238, 255);
+    transition: all 0.5s;
+}
+
+.list > div > h4:hover {
+    box-shadow: 1px 1px 20px rgb(0, 238, 255);
+}
+
+.list > div > ul {
+    opacity: 0;
+    transition: all 0.5s;
+    border: 2px solid rgb(27, 27, 27);
+    border-style:dashed;
+    border-top: none;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.list > div > ul > li > a{
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+    font-size: 1.2rem;
+    cursor: default;
+    border-radius: 20px;
+    padding: 0.7rem;
+}
+
+.list > div > ul > li {
+    list-style: none;
+    padding: 0.8rem;
+    transition: all 0.3s;
+}
+
+.list > div > ul > li:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 1px 1px 20px rgb(0, 238, 255);
+}
+
+.list > div > h4:hover + ul {
+    opacity: 1;
+}
+
+/*__Introdução__*/
+.div_tituTextAtivInfo > h2 {
+    font-size: 3rem;
+}
+
+.div_tituTextAtivInfo > p {
+    font-size: 1.4rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.2rem;
+    color: rgb(59, 59, 59);
+}
+
+/*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
+.section_projetos {
+    padding-top: 25rem;
+    padding-bottom: 15rem;
+    text-align: center;
+}
+
+.section_projetos > div > h4 {
+    font-size: 3rem;
+}
+
+.section_projetos > div > p {
+    font-size: 1.4rem;
+    padding-top: 0.7rem;
+    padding-bottom: 1.2rem;
+    color: rgb(59, 59, 59);
+}
+
+.section_projetos > div > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 2rem;
+}
+
+.section_projetos > div > ul > li {
+    background-color: rgb(27, 27, 27);
+    padding: 1.3rem;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 0px 4px rgb(0, 238, 255);
+    margin: 1rem;
+}
+
+.section_projetos > div > ul > li:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 30px rgb(0, 238, 255);
+}
+
+.section_projetos > div > ul > li > a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    padding: 1rem;
+}

@@ -1,0 +1,65 @@
+*{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+body{
+    background-color: rgb(255, 242, 227);
+}
+main{
+    position: relative;
+    top: 60px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline solid;
+    color: #021F59;
+    font-size: xx-large; 
+}
+
+.divfutebol p{
+    line-height: 170%;
+    color: black;
+    font-size: larger;
+    position: relative;
+    top: 30px;
+    width: auto;
+    height: auto;
+    max-width: 960px;
+}
+
+.lampard{
+    position: relative;
+    text-align: center;
+    top: 70px;
+}
+
+.lampard div{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.lampard div img{
+    width: auto;
+    height: auto;
+    max-width: 560px;
+    max-height: 680px;
+    position: relative;
+    border: 5px solid #021F59;
+    top: 40px;
+}
+
+.lampard ul{
+    text-align: center;
+    list-style-position: inside;
+}
+.lampard ul li{
+    font-size: x-large;
+    color: black;
+    text-align: center;
+    top: 60px;
+    position: relative;
+    line-height: 180%;
+}

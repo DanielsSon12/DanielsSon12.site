@@ -1,0 +1,45 @@
+*{
+   text-align: center;
+}
+
+body{
+    background-color: rgb(255, 242, 227);
+}
+main{
+    position: relative;
+    top: 20px;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline solid #021F59;
+    color: #021F59;
+    font-size: xx-large;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: larger;
+    width: auto;
+    height: auto;
+    max-width: 800px;
+    line-height: 180%;
+    margin: auto;
+    position: relative;
+    top: 20px;
+
+}
+
+img{
+    display:inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+    max-width: 770px;
+    max-height: 700px;
+    border: 5px solid #8C1C25;
+    top: 50px;
+}

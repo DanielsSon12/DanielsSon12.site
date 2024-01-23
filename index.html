@@ -1,124 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="shortcut icon" href="./imgSite/PurpleFox.ico">
-        <title> Site pessoal</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://github.com/DanielsSon12/DanielsSon12.site/blob/main/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a class="logo" href="#"><i class="fa-solid fa-ghost"></i>The Amateur</a>
-                <ul class="nav-list">
-                    <li><a href="#Ativi-Curso" target="">Atividades do Curso</a></li>
-                    <li><a href="#Guia" target="">Guia do Site</a></li>
-                    <li><a href="#Proje" target="">Projetos pessoais</a></li>
-                    <li><a href="#sobre-mim" target="">Sobre mim</a></li>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./imgSite/PurpleFox.ico">
+    <title> Site pessoal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://github.com/DanielsSon12/DanielsSon12.site/blob/main/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- NavBar -->
+        <nav>
+            <div class="div_logo">
+                <div class="bordaNome"></div>
+                <h2>Site Pessoal</h2>
+            </div>
+
+            <div class="div_opcoesMenu">
+                <ul>
+                    <li><a href="#sobreMim">Sobre mim</a></li>
+                    <li><a href="#conhecimentos">Conhecimentos</a></li>
+                    <li><a href="#AtivInfo">Atividades de Informática</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <br>
-            <section class="topico01">
-                <div>
-                    <h2 id="sobre-mim"><i class="fa-solid fa-user"></i>Sobre mim</h2>
-                    <h4 class="AP">Apresentação</h4>
-                    <p>
-                        Olá, me chamo Daniel Ouverney da Silva Guimarães tenho 17 anos, e estudo no Cefet-RJ
-                        de Nova Friburgo. Estudei HTML e CSS no 1º ano, por mais que CSS eu aprendo
-                        toda vez que vou programar, e atualmente estou aprendendo JavaScript e PHP no 2º ano.
-                    </p>
-                    <p>
-                        Entrei no Cefet em 2022, e estou no 2º ano do ensino médio.
-                    </p>
+                <div class="div_redeSocial">
+                    <a href="https://github.com/DanielsSon12"><img src="./imgSite/icons8-github-48.png" alt="Error"></a>
+                    <a href="https://www.instagram.com/daniell_ouverney?igsh=YXBqYXMwbHZydWZ5"><img src="./imgSite/icons8-instagram-48.png" alt="Error"></a>
                 </div>
-            </section>
-            <br>
-            <section class="topico02">
-                <div>
-                    
-                    <h2 id="Guia"><i class="fa-sharp fa-solid fa-location-dot"></i></i>Guia do Site</h2>
-                    <p>Este site foi criado para o divulgamento de atividades e projetos pessoais feitos por mim.</p>
-                    <p>Temos a parte "Sobre mim", que como o próprio nome diz eu falo mais sobre mim.</p>
-                    <p>Temos a parte do "Guia do Site", que servira para um bom entendimento e localização deste site.</p>
-                    <p>Temos a parte das "Atividades do Curso", que mostrara os exercicios propostos pelos professores do curso de informática do Cefet
-                        , esta parte também serve para o sistema avaliativo de certos professores do curso.
-                    </p>
-                    <p>E por fim temos os "Projetos Pessoais", esta parte esta ligada aos defasios propostos por mim mesmo, com o intuito de me desafiar
-                        e superar cada vez mais meus limites e aprendizado como programador.
-                    </p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Sobre Mim -->
+        <section class="section_sobreMim hidden" id="sobreMim">
+            <div class="div_sobreMim">
+                <div class="div_bordaSobreMim">
+                    <div class="div_imgSobreMim">
+                        <a href="">
+                            <img src="./imgSite/BoyIcon-removebg-preview.png" alt="Error">
+                        </a>
+                    </div>
+                    <div class="div_textSobreMim">
+                        <h2>Quem sou eu?</h2>
+                        <p>Me chamo Daniel Ouverney da Silva Guimarães, tenho 17 anos, estudo no CEFET-RJ de Nova Friburgo e estou
+                            no 3º ano do Ensino Médio fazendo o curso de informática. Estou aprendendo aos
+                            poucos novas linguagens de programação. Todas as atividades do curso, e projetos pessoais
+                            irei colocar neste site.
+                        </p>
+                    </div>
                 </div>
-            </section>
-            <br>
-            <section class="topico03">
-                <div>
-                    <h2 id="Ativi-Curso"><i class="fa-sharp fa-solid fa-code"></i>Atividades do Curso</h2>
-                    <h3 class="AtiviTitulo"><i class="fa-brands fa-html5"></i>Exercicios básicos de HTML:</h3>
-                    <ul class="listas">
-                        <li><a href="./lab01Site/lab01atividade01.html">Atividade 1</a></li>
-                        <li><a href="./lab01Site/lab01atividade02.html">Atividade 2</a></li>
-                        <li><a href="./lab01Site/lab01atividade03.html">Atividade 3</a></li>
-                        <li><a href="./lab02Site/lab02atividade01.html">Atividade 4</a></li>
-                        <li><a href="./lab02Site/lab02atividade02.html">Atividade 5</a></li>
-                        <li><a href="./lab02Site/lab02atividade03.html">Atividade 6</a></li>
-                        <li><a href="./lab02Site/lab02atividade04.html">Atividade 7</a></li>
-                        <li><a href="./lab02Site/lab02atividade05.html">Atividade 8</a></li>
-                        <li><a href="./lab02Site/lab02atividade06.html">Atividade 9</a></li>
-                    </ul>
-                </div>
+            </div>
+        </section>
 
-                <br>
-
+        <!-- Conhecimentos -->
+        <section class="section_conhecimentos hidden" id="conhecimentos">
+            <div class="div_tituloConhecimentos">
+                <h2>Conhecimentos gerais na área de TI</h2>
+                <p>Cada linguagem esta associada a um nível de conhecimento que tenho.</p>
+            </div>
+            <div class="div_conhecimentos">
                 <div>
-                    <h3 class="AtiviTitulo"><i class="fa-brands fa-css3-alt"></i>Exercicios incluindo CSS:</h3>
-                    <ul class="listas">
-                        <li><a href="./ExerCSS/lab01/CssExerc_lab01.html">Atividade 1/lab01</a></li>
-                        <li><a href="./ExerCSS/lab02/CssExerc_lab02.html">Atividade 2/lab02</a></li>
-                        <li><a href="./ExerCSS/lab03/CssExerc_lab03.html">Atividade 3/lab03</a></li>
-                    </ul>
+                    <a href="">
+                        <img src="./imgSite/html-5.png" alt="Error">
+                        <h4>HTML</h4>
+                        <p>Intermediário</p>
+                    </a>
                 </div>
-
-                <br>
-
                 <div>
-                    <h3 class="AtiviTitulo"><i class="fa-solid fa-scroll"></i>Introdução a XML (bem superficial): </h3>
-                    <ul class="listas">
-                        <li><a href="./AtiviXML/Curriculo.xml">Atividade 1/Currículo</a></li>
-                        <li><a href="./AtiviXML/Formulário.xml">Atividade 2/Formulário</a></li>
-                        <li><a href="./AtiviXML/Receituario.xml">Atividade 3/Receituario</a></li>
-                    </ul>
+                    <a href="">
+                        <img src="./imgSite/css-3.png" alt="Error">
+                        <h4>CSS</h4>
+                        <p>Intermediário</p>
+                    </a>
                 </div>
-
-                <br>
-
                 <div>
-                    <h3 class="AtiviTitulo"><i class="fa-brands fa-js"></i>Exercicios de JavaScript:</h3>
-                    <ul class="listas">
-                        <li><a href="./ExercJS/Laboratorio de Strings/StringsEDatas.html">Laboratório de Strings</a></li>
-                        <li><a href="./ExercJS/Exercicios DOM Numeros/DOMnum.html">Exercicios DOM e Números</a></li>
-                        <li><a href="./ExercJS/LaboratórioAJAX/catalogo_filmes/index.html">Laboratório AJAX(Catalogo Filmes)</a></li>
-                        <li><a href="./ExercJS/Laboratório Script/index.html">Laboratório Script</a></li>
-                        <li><a href="./ExercJS/Lab Cafeteria/lab_cafeteira/ativ_cafeteira.html">Laboratório Cafeteria</a></li>
-                        <li><a href="./ExercJS/App Restaurante/index.html">Aplicativo Restaurante</a></li>
-                        <li><a href="./ExercJS/Atividade03_11/2a_cham_rec2.html">Atividade 03/11</a></li>
-                        <li><a href="./ExercJS/AppControleFinanceiro/controle-de-despesas-master/index.html">Aplicativo Controle Financeiro</a></li>
-                    </ul>
+                    <a href="">
+                        <img src="./imgSite/js.png" alt="Error">
+                        <h4>JavaScript</h4>
+                        <p>Básico</p>
+                    </a>
                 </div>
-            </section>
-            <section class="topico04">
                 <div>
-                    <h2 id="Proje"><i class="fa-solid fa-diagram-project"></i>Projetos</h2>
-                    <p>Meus projetos pessoais ficarão aqui.</p>
-                    <ul class="listas">
-                        <li><a href="./Projetos/Sala do Empreendedor/index.html">Projeto Estágio</a></li>
-                    </ul>
+                    <a href="">
+                        <img src="./imgSite/c++.png" alt="Error">
+                        <h4>C++</h4>
+                        <p>Intermediário</p>
+                    </a>
                 </div>
-            </section>
-        </main>
-        <script src="mobile-navbar.js"></script>
-        <script src="https://kit.fontawesome.com/0e3353732c.js" crossorigin="anonymous"></script>
-    </body>
+                <div>
+                    <a href="">
+                        <img src="./imgSite/base-de-dados.png" alt="Error">
+                        <h4>SQL</h4>
+                        <p>Intermediário</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./imgSite/php.png" alt="Error">
+                        <h4>PHP</h4>
+                        <p>Básico</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./imgSite/word.png" alt="Error">
+                        <h4>Word</h4>
+                        <p>Avançado</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./imgSite/excel.png" alt="Error">
+                        <h4>Excel</h4>
+                        <p>Intermediário</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./imgSite/power-point.png" alt="Error">
+                        <h4>PowerPoint</h4>
+                        <p>Básico</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atividades de Informática -->
+        <section class="backgroundSection">
+        <section class="section_AtivInfo hidden" id="AtivInfo">
+            <div>
+                <div class="div_tituTextAtivInfo">
+                    <h2>Atividades de Informática</h2>
+                    <p>Cada atividade é focada em uma linguagem de marcação, estilo e/ou programação.</p>
+                </div>
+                <ul>
+                    <li class="list HTML">
+                        <div>
+                            <h4 class="listTitulo">HTML</h4>
+                            <ul class="ulList">
+                                <li><a href="./Ativ_HTML/lab01Site/lab01atividade01.html">Atividade 1</a></li>
+                                <li><a href="./Ativ_HTML/lab01Site/lab01atividade02.html">Atividade 2</a></li>
+                                <li><a href="./Ativ_HTML/lab01Site/lab01atividade03.html">Atividade 3</a></li>
+                                <li><a href="./Ativ_HTML/lab02Site/lab02atividade01.html">Atividade 4</a></li>
+                                <li><a href="./Ativ_HTML/lab02Site/lab02atividade02.html">Atividade 5</a></li>
+                                <li><a href="./Ativ_HTML/lab02Site/lab02atividade03.html">Atividade 6</a></li>
+                                <li><a href="./Ativ_HTML/lab02Site/lab02atividade04.html">Atividade 7</a></li>
+                                <li><a href="./Ativ_HTML/lab02Site/lab02atividade05.html">Atividade 8</a></li>
+                                <li><a href="./Ativ_HTML/lab02Site/lab02atividade06.html">Atividade 9</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="list CSS">
+                        <div>
+                            <h4 class="listTitulo">HTML e CSS</h4>
+                            <ul class="ulList">
+                                <li><a href="./Ativ_CSS/lab01/CssExerc_lab01.html">Atividade 1</a></li>
+                                <li><a href="./Ativ_CSS/lab02/CssExerc_lab02.html">Atividade 2</a></li>
+                                <li><a href="./Ativ_CSS/lab03/CssExerc_lab03.html">Atividade 3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="list JS">
+                        <div>
+                            <h4 class="listTitulo">JavaScript</h4>
+                            <ul class="ulList">
+                                <li><a href="./Ativ_JS/Exercicio 1/exerc1.html">Atividade 1</a></li>
+                                <li><a href="./Ativ_JS/Exercicio 2/exerc2.html">Atividade 2</a></li>
+                                <li><a href="./Ativ_JS/Laboratorio de Strings/StringsEDatas.html">Atividade 3</a></li>
+                                <li><a href="./Ativ_JS/Laboratório Script/index.html">Atividade 4</a></li>
+                                <li><a href="./Ativ_JS/LaboratórioAJAX/catalogo_filmes/index.html">Atividade 5</a></li>
+                                <li><a href="./Ativ_JS/Exercicios DOM Numeros/DOMnum.html">Atividade 6</a></li>
+                                <li><a href="./Ativ_JS/Lab Cafeteria/lab_cafeteira/ativ_cafeteira.html">Atividade 7</a></li>
+                                <li><a href="./Ativ_JS/App Restaurante/index.html">Atividade 8</a></li>
+                                <li><a href="./Ativ_JS/AppControleFinanceiro/controle-de-despesas-master/index.html">Atividade 9</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="list XML">
+                        <div>
+                            <h4 class="listTitulo">XML</h4>
+                            <ul class="ulList">
+                                <li><a href="./Ativ_XML/Curriculo.xml">Atividade 1</a></li>
+                                <li><a href="./Ativ_XML/Formulário.xml">Atividade 2</a></li>
+                                <li><a href="./Ativ_XML/Receituario.xml">Atividade 3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+        <!-- Projetos, pessoais e do estágio -->
+        <section class="section_projetos hidden" id="projetos">
+            <div>
+                <h4>Projetos (Estágio e Pessoal)</h4>
+                <p>Todo projeto foi e será feito com o intuito de aprimorar meu aprendizado.</p>
+                <ul>
+                    <li><a href="./Projetos/projeto_Inglaterra/index.html">Projeto Inglaterra (Pessoal)</a></li>
+                    <li><a href="./Projetos/Sala do Empreendedor/index.html">Site Responsivo (Estágio)</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js" defer></script>
+</body>
+
 </html>

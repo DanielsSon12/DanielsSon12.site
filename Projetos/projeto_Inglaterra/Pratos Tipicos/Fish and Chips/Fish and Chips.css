@@ -1,0 +1,66 @@
+*{
+    text-align: justify;
+}
+
+body{
+    background-color: rgb(255, 242, 227);
+}
+main{
+    position: relative;
+    top: 60px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline solid;
+    color: #021F59;
+    font-size: xx-large; 
+}
+.divcuri{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divcuri p{
+    line-height: 170%;
+    font-size: larger;
+    color: black;
+    width: auto;
+    height: auto;
+    max-width: 1000px;
+    position: relative;
+    top: 20px;
+    margin: auto;
+}
+
+.fish{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 55px;
+}
+
+.fish p{
+    width: auto;
+    height: auto;
+    font-size: larger;
+    line-height: 170%;
+    color: black;
+    max-width: 800px;
+    position: relative;
+    top: 20px;
+    margin:auto;
+}
+
+.fish div img{
+    border: 5px solid #8C1C25;
+    width: auto;
+    height: auto;
+    max-width: 720px;
+    max-height: 700px;
+    position: relative;
+    top: 80px;
+}
+.fish div{
+    position: relative;
+    text-align: center;
+}
+

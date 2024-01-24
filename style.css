@@ -429,6 +429,7 @@ nav {
 }
 
 /*_______RESPONSIVIDADE_______*/
+/*Para telas menores*/
 @media (max-width: 320px) { 
     h2, h3, h4 {
         line-height: 2rem;
@@ -691,6 +692,7 @@ nav {
     }
 }
 
+/*Para telas menores e médias*/
 @media (min-width: 321px) and (max-width: 375px) {
     h2, h3, h4 {
         line-height: 2rem;
@@ -800,6 +802,7 @@ nav {
         padding: 8px;
         display: flex;
         flex-wrap: wrap;
+        animation: none;
     }
 
     /*__imagem__*/
@@ -952,6 +955,7 @@ nav {
     }
 }
 
+/*Para telas médias e grandes*/
 @media (min-width: 376px) and (max-width: 425px) {
     h2, h3, h4 {
         line-height: 2rem;
@@ -1061,6 +1065,7 @@ nav {
         padding: 15px;
         display: flex;
         flex-wrap: wrap;
+        animation: none;
     }
 
     /*__imagem__*/
@@ -1211,4 +1216,272 @@ nav {
         font-size: 0.85rem;
         padding: 5px;
     }   
+}
+
+/*Para telas em paisagem*/
+@media (max-width: 862px) and (orientation: landscape) {
+    h2, h3, h4 {
+        line-height: 2rem;
+    }
+
+    /*_______Mobile Menu_______*/
+    .div_opcoesMenu {
+        display: none;
+    }
+
+    .div_redeSocial {
+        display: none;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon > button > img {
+        max-width: 30px;
+        margin: 18px;
+    }
+    
+    /*_______Opções do Menu_______*/
+    .mobile-menu > .div_opcoesMenu {
+        display: block;
+        padding-top: 16px;
+        text-align: center;
+        margin: auto;
+        list-style: none;
+    }
+
+    .mobile-menu > .div_opcoesMenu > li {
+        flex-direction: column;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .mobile-menu > .div_opcoesMenu > li > a {
+        font-size: 0.9rem;
+        transition: none;
+        line-height: 2rem;
+        padding: 0;
+    }
+    /*__Github e Instagram__*/
+    .mobile-menu > .div_redeSocial {
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-menu > .div_redeSocial > a {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 0px;
+    }
+
+    .mobile-menu > .div_redeSocial > a > img {
+        max-width: 50%
+    }
+
+    /*___JS___*/
+    .open {
+        display: block;
+    }
+
+    /*_______Seções animation_______*/
+    .section_sobreMim {
+        animation: animationMoveToBottom 1.3s ease-in;
+    }
+
+    .section_conhecimentos {
+        animation: animationMoveToBottom 0.8s ease-in;
+    }
+
+    .section_AtivInfo {
+        animation: animationMoveToBottom 0.7s ease-in;
+    }
+
+    .section_projetos {
+        animation: animationMoveToBottom 0.5s ease-in;
+    }
+
+    /*_______NavBar Titulo_______*/    
+    .div_logo {
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .div_logo > h2 {
+        font-size: 1.3rem;
+        color: whitesmoke;
+    }
+
+    /*_______Primeira Section (Sobre Mim)_______*/
+    .section_sobreMim {
+        padding-top: 40px;
+        padding-bottom: 95px;
+    }
+
+    .div_sobreMim {
+        padding: 10px;
+    }
+
+    /*__borda__*/
+    .div_bordaSobreMim {
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        animation: none;
+        justify-content: center;
+    }
+
+    /*__imagem__*/
+    .div_imgSobreMim {
+        padding-top: 40px;
+    }
+
+    .div_imgSobreMim > img {
+        max-width: 150px;
+        animation: animationRotateImg 1.5s 1.3s;
+    }
+    
+    /*__texto__*/
+    .div_textSobreMim {
+        margin: 20px;
+    }
+
+    .div_textSobreMim > h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .div_textSobreMim > p {
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    /*_______Segunda Section (Conhecimentos)_______*/
+    .section_conhecimentos {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        border-top: 2px solid rgb(27, 27, 27);
+    }
+    
+    /*___Titulo e texto___*/
+    .div_tituloConhecimentos {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .div_tituloConhecimentos > h2 {
+        font-size: 1.5rem;
+    }
+
+    .div_tituloConhecimentos > p {
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    /*___Conhecimentos___*/
+    .div_conhecimentos > div {
+        padding: 11px;
+        margin: 15px;
+    }
+
+    .div_conhecimentos > div > h4 {
+        font-size: 0.8rem;
+        margin-top: -8px;
+    }
+
+    .div_conhecimentos > div > p {
+        font-size: 0.6rem;
+    }
+
+    .div_conhecimentos > div > img {
+        max-width: 40px;
+        max-height: 40px;
+        margin: 20px;
+    }
+
+    /*_______Terceira Section (Atividades de Informática)_______*/
+    .section_AtivInfo {
+        padding-top: 50px;
+        border-top: 2px solid rgb(27, 27, 27);
+    }
+
+    /*__Introdução__*/
+    .div_tituTextAtivInfo {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .div_tituTextAtivInfo > h2 {
+        font-size: 1.5rem;
+    }
+
+    .div_tituTextAtivInfo > p {
+        font-size: 1rem;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+    /*__Listas__*/
+    .list {
+        padding: 4px;
+    }
+
+    .list > div > h4 {
+        font-size: 0.6rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .list > div > ul > li > a{
+        font-size: 0.8rem;
+        padding: 1px;
+    }
+
+    .list > div > ul > li {
+        padding: 10px;
+    } 
+
+    /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
+    .section_projetos {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-top: 2px solid rgb(27, 27, 27);
+    }
+
+
+    .section_projetos > div > h4, p {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .section_projetos > div > h4 {
+        font-size: 1.5rem;
+    }
+
+    .section_projetos > div > p {
+        font-size: 1rem;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .section_projetos > div > ul {
+        padding-top: 1px;
+    }
+
+    .section_projetos > div > ul > li {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .section_projetos > div > ul > li > a {
+        font-size: 0.85rem;
+        padding: 5px;
+    } 
 }

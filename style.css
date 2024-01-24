@@ -549,6 +549,7 @@ nav {
 
     .div_imgSobreMim > img {
         max-width: 130px;
+        animation: animationRotateImg 1.5s 1.3s;
     }
     
     /*__texto__*/
@@ -639,7 +640,7 @@ nav {
     }
 
     .list > div > h4 {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         padding-top: 5px;
         padding-bottom: 5px;
     }
@@ -809,6 +810,7 @@ nav {
 
     .div_imgSobreMim > img {
         max-width: 130px;
+        animation: animationRotateImg 1.5s 1.3s;
     }
     
     /*__texto__*/
@@ -899,7 +901,7 @@ nav {
     }
 
     .list > div > h4 {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         padding-top: 5px;
         padding-bottom: 5px;
     }
@@ -1069,6 +1071,7 @@ nav {
 
     .div_imgSobreMim > img {
         max-width: 150px;
+        animation: animationRotateImg 1.5s 1.3s;
     }
     
     /*__texto__*/
@@ -1158,7 +1161,7 @@ nav {
     }
 
     .list > div > h4 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         padding-top: 5px;
         padding-bottom: 5px;
     }

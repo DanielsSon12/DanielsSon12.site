@@ -34,9 +34,11 @@ var listItems = document.querySelectorAll('.list > div');
       
       title.addEventListener('mouseover', function() {
         sublist.style.opacity = '1';
+        sublist.style.pointerEvents = 'auto';
       });
       
       item.addEventListener('mouseleave', function() {
         sublist.style.opacity = '0';
+        sublist.style.pointerEvents = 'none';
       });
     });

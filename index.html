@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./imgSite/PurpleFox.ico">
     <title> Site pessoal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://github.com/DanielsSon12/DanielsSon12.site/blob/main/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -20,17 +20,32 @@
                 <h2>Site Pessoal</h2>
             </div>
 
-            <div class="div_opcoesMenu">
-                <ul>
-                    <li><a href="#sobreMim">Sobre mim</a></li>
-                    <li><a href="#conhecimentos">Conhecimentos</a></li>
-                    <li><a href="#AtivInfo">Atividades de Informática</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                </ul>
-                <div class="div_redeSocial">
-                    <a href="https://github.com/DanielsSon12"><img src="./imgSite/icons8-github-48.png" alt="Error"></a>
-                    <a href="https://www.instagram.com/daniell_ouverney?igsh=YXBqYXMwbHZydWZ5"><img src="./imgSite/icons8-instagram-48.png" alt="Error"></a>
-                </div>
+            <ul class="div_opcoesMenu">
+                <li><a href="#sobreMim">Sobre mim</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#AtivInfo">Atividades de Informática</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+            <div class="div_redeSocial">
+                <a href="https://github.com/DanielsSon12"><img src="./imgSite/icons8-github-48.png" alt="Error"></a>
+                <a href="https://www.instagram.com/daniell_ouverney?igsh=YXBqYXMwbHZydWZ5"><img src="./imgSite/icons8-instagram-48.png" alt="Error"></a>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu-icon">
+                <button onclick="showMenu()"><img src="./imgSite/menu-Icon.png" alt="Error" class="icon"></button>
+            </div>
+            <div class="mobile-menu">
+                    <ul class="div_opcoesMenu">
+                        <li><a href="#sobreMim">Sobre mim</a></li>
+                        <li><a href="#conhecimentos">Conhecimentos</a></li>
+                        <li><a href="#AtivInfo">Atividades de Informática</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                    </ul>
+                    <div class="div_redeSocial">
+                        <a href="https://github.com/DanielsSon12"><img src="./imgSite/icons8-github-48.png" alt="Error"></a>
+                        <a href="https://www.instagram.com/daniell_ouverney?igsh=YXBqYXMwbHZydWZ5"><img src="./imgSite/icons8-instagram-48.png" alt="Error"></a>
+                    </div>
             </div>
         </nav>
     </header>
@@ -140,7 +155,7 @@
                 <ul>
                     <li class="list HTML">
                         <div>
-                            <h4 class="listTitulo">HTML</h4>
+                            <h4 class="listTitulo html">HTML</h4>
                             <ul class="ulList">
                                 <li><a href="./Ativ_HTML/lab01Site/lab01atividade01.html">Atividade 1</a></li>
                                 <li><a href="./Ativ_HTML/lab01Site/lab01atividade02.html">Atividade 2</a></li>
@@ -157,7 +172,7 @@
 
                     <li class="list CSS">
                         <div>
-                            <h4 class="listTitulo">HTML e CSS</h4>
+                            <h4 class="listTitulo htmlCSS">HTML e CSS</h4>
                             <ul class="ulList">
                                 <li><a href="./Ativ_CSS/lab01/CssExerc_lab01.html">Atividade 1</a></li>
                                 <li><a href="./Ativ_CSS/lab02/CssExerc_lab02.html">Atividade 2</a></li>
@@ -168,7 +183,7 @@
 
                     <li class="list JS">
                         <div>
-                            <h4 class="listTitulo">JavaScript</h4>
+                            <h4 class="listTitulo JavaScript">JavaScript</h4>
                             <ul class="ulList">
                                 <li><a href="./Ativ_JS/Exercicio 1/exerc1.html">Atividade 1</a></li>
                                 <li><a href="./Ativ_JS/Exercicio 2/exerc2.html">Atividade 2</a></li>
@@ -185,7 +200,7 @@
 
                     <li class="list XML">
                         <div>
-                            <h4 class="listTitulo">XML</h4>
+                            <h4 class="listTitulo xml">XML</h4>
                             <ul class="ulList">
                                 <li><a href="./Ativ_XML/Curriculo.xml">Atividade 1</a></li>
                                 <li><a href="./Ativ_XML/Formulário.xml">Atividade 2</a></li>

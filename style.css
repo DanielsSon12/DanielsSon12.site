@@ -67,8 +67,9 @@ nav {
     background-color: rgb(19, 19, 19);
     border-bottom: 2px solid rgb(0, 238, 255);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 0.7rem;
+    padding: 0.7rem;/*11.2px = 0.7rem*/
 }
 
 .div_logo, .div_opcoesMenu, .div_redeSocial {
@@ -82,24 +83,24 @@ nav {
 }
 
 /*__Opções do Menu__*/
-.div_opcoesMenu > ul {
+.div_opcoesMenu{
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     list-style: none;
     flex-direction: row;
     float: left;
-    max-width: 100vw;
-    margin-right: 5vw;
-    margin-left: 5vw;
+    margin-right: 49px;/*49px = 5vw*/
+    margin-left: 49px;/*49px = 5vw*/
 }
 
-.div_opcoesMenu > ul > li {
+.div_opcoesMenu > li {
     max-width: 70vw;
-    padding: 1.6rem;
+    padding: 25.6px;/*25.6px = 1.6rem*/
     font-size: 1.2rem;
 }
 
-.div_opcoesMenu > ul > li > a {
+.div_opcoesMenu > li > a {
     color: whitesmoke;
     text-decoration: none;
     padding: 0.5rem;
@@ -111,7 +112,7 @@ nav {
     color 0.8s;
 }
 
-.div_opcoesMenu > ul > li > a:hover {
+.div_opcoesMenu > li > a:hover {
     background-image: linear-gradient(to right, transparent 50%, rgb(0, 174, 255) 50%);
     background-size: 200%;
     background-position: -100%;
@@ -123,7 +124,7 @@ nav {
 .div_redeSocial > a {
     margin: auto;
     display: flex;
-    padding: 0.5rem;
+    padding: 8px;/*8px = 0.5rem*/
 }
 
 .div_redeSocial > a > img {
@@ -139,10 +140,8 @@ nav {
 
 /*_______Primeira Section (Sobre Mim)_______*/
 .section_sobreMim {
-    max-width: 100vw;
-    max-height: 100vh;
-    padding-top: 5rem;
-    padding-bottom: 10rem;
+    padding-top: 80px;/*80px = 5rem*/
+    padding-bottom: 160px;/*160px = 10rem*/
 }
 
 .section_sobreMim > .div_sobreMim {
@@ -151,7 +150,7 @@ nav {
 }
 
 .div_sobreMim {
-    padding: 8rem;
+    padding: 128px;/*128px = 8rem*/
 }
 
 /*__borda__*/
@@ -160,13 +159,13 @@ nav {
     background-color: rgb(19, 19, 19);
     border-radius: 70px;
     box-shadow: 1px 8px 20px rgb(0, 174, 255);
-    padding: 3.5rem;
+    padding: 56px;/*56px = 3.5rem*/
     animation: animationMoveToRight 1.7s ease-out;
 }
 
 /*__imagem__*/
 .div_imgSobreMim > a > img {
-    max-width: 15rem;
+    max-width: 240px;/*240px = 15rem*/
     border-radius: 200px;
     box-shadow: 1px 1px 27px rgb(0, 174, 255);
     transition: all 1.5s;
@@ -179,7 +178,7 @@ nav {
 
 /*__texto__*/
 .div_textSobreMim {
-    margin: 2rem;
+    margin: 32px;/*32px = 2rem*/
 }
 
 .div_textSobreMim > h2 {
@@ -188,9 +187,9 @@ nav {
 }
 
 .div_textSobreMim > p {
-    max-width: 45rem;
+    max-width: 720px;/*720px = 45rem*/
     font-size: 1.2rem;
-    line-height: 1.7rem;
+    line-height: 27.2px;/*27.2px = 1.7rem*/
     color: white;
 }
 
@@ -207,11 +206,9 @@ nav {
 
 /*_______Segunda Section (Conhecimentos)_______*/
 .section_conhecimentos {
-    max-width: 100vw;
-    max-height: 100vh;
     margin: 0 auto;
-    padding-top: 5rem;
-    padding-bottom: 25rem;
+    padding-top: 80px;/*80px = 5rem*/
+    padding-bottom: 400px;/*400px = 25rem*/
     text-align: center;
 }
 
@@ -222,8 +219,8 @@ nav {
 
 .div_tituloConhecimentos > p {
     font-size: 1.4rem;
-    padding-top: 1.1rem;
-    padding-bottom: 1.2rem;
+    padding-top: 17.6px;/*17.6px = 1.1rem*/
+    padding-bottom: 19.2px;/*19.2px = 1.2rem*/
     color: rgb(104, 104, 104);
 }
 
@@ -231,7 +228,7 @@ nav {
 .div_conhecimentos {
     display: flex;
     flex-wrap: wrap;
-    max-width: 70rem;
+    max-width: 1120px;/*1120px = 70rem*/
     margin: 0 auto;
     justify-content: center;
 }
@@ -240,8 +237,8 @@ nav {
     border: 4px solid rgb(27, 27, 27);;
     border-radius: 5px;
     box-shadow: 1px 1px 11px rgb(0, 238, 255);
-    padding: 2rem;
-    margin: 3rem;
+    padding: 32px;/*32px = 2rem*/
+    margin: 38px;/*38px = 3rem*/
     background-color: rgb(27, 27, 27);
     transition: all 0.5s;
 }
@@ -258,13 +255,13 @@ nav {
 
 .div_conhecimentos > div > a > h4 {
     font-size: 1.3rem;
-    margin-top: -0.5rem;
+    margin-top: -8px;/*-8px = -0.5rem*/
     color: whitesmoke;
     /*color: rgb(19, 19, 19);*/
 }
 
 .div_conhecimentos > div > a > p {
-    margin-top: -0.5rem;
+    margin-top: -8px;/*-8px = -0.5rem*/
     font-size: 1rem;
     font-weight: 600;
     color: whitesmoke;
@@ -272,18 +269,16 @@ nav {
 }
 
 .div_conhecimentos > div > a > img {
-    max-width: 5rem;
-    max-height: 5rem;
-    margin: 1.5rem;
+    max-width: 80px;/*80px = 5rem*/
+    max-height: 80px;/*80px = 5rem*/
+    margin: 24px;/*24px = 1.5rem*/
     padding: 0;
 }
 
 /*_______Terceira Section (Atividades de Informática)_______*/
 .section_AtivInfo {
-    max-width: 100vw;
-    max-height: 100vh;
     margin: 0 auto;
-    padding-top: 15rem;
+    padding-top: 240px;/*240px = 15rem*/
     text-align: center;
 }
 
@@ -293,22 +288,23 @@ nav {
 
 .section_AtivInfo > div > ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 /*__Listas__*/
 .list {
-    padding: 2rem;
+    padding: 32px;/*32px = 2rem*/
     list-style: none;
 }
 
 .list > div > h4 {
     font-size: 1.3rem;
     color: whitesmoke;
-    padding: 1.1rem;
+    padding: 17.6px;/*17.6px = 1.1rem*/
     border-radius: 15px;
     background-color: rgb(19, 19, 19);
-    margin-top: 1rem;
+    margin-top: 16px;/*16px = 1rem*/
     cursor: pointer;
     box-shadow: 1px 1px 5px rgb(0, 238, 255);
     transition: all 0.5s;
@@ -325,7 +321,7 @@ nav {
     border-style:dashed;
     border-top: none;
     border-radius: 15px;
-    padding: 1rem;
+    padding: 16px;/*16px = 1rem*/
 }
 
 .list > div > ul > li > a{
@@ -334,12 +330,12 @@ nav {
     font-size: 1.2rem;
     cursor: default;
     border-radius: 20px;
-    padding: 0.7rem;
+    padding: 11.2px;/*11.2px = 0.7rem*/
 }
 
 .list > div > ul > li {
     list-style: none;
-    padding: 0.8rem;
+    padding: 12.8px;/*12.8px = 0.8rem*/
     transition: all 0.3s;
 }
 
@@ -361,15 +357,15 @@ nav {
 
 .div_tituTextAtivInfo > p {
     font-size: 1.4rem;
-    padding-top: 1.1rem;
-    padding-bottom: 1.2rem;
+    padding-top: 17.6px;/*17.6px = 1.1rem*/
+    padding-bottom: 19.2px;/*19.2px = 1.2rem*/
     color: rgb(59, 59, 59);
 }
 
 /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
 .section_projetos {
-    padding-top: 25rem;
-    padding-bottom: 15rem;
+    padding-top: 400px;/*400px = 25rem*/
+    padding-bottom: 240px;/*240px = 15rem*/
     text-align: center;
 }
 
@@ -379,8 +375,8 @@ nav {
 
 .section_projetos > div > p {
     font-size: 1.4rem;
-    padding-top: 0.7rem;
-    padding-bottom: 1.2rem;
+    padding-top: 11.2px;/*11.2px = 0.7rem*/
+    padding-bottom: 19.2px ;/*19.2px = 1.2rem*/
     color: rgb(59, 59, 59);
 }
 
@@ -388,17 +384,17 @@ nav {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding-top: 2rem;
+    padding-top: 32px;/*32px = 2rem*/
 }
 
 .section_projetos > div > ul > li {
     background-color: rgb(27, 27, 27);
-    padding: 1.3rem;
+    padding: 20.8px;/*20.8px = 1.3rem*/
     border-radius: 10px;
     transition: all 0.5s;
     cursor: pointer;
     box-shadow: 1px 0px 4px rgb(0, 238, 255);
-    margin: 1rem;
+    margin: 16px;/*16px = 1rem*/
 }
 
 .section_projetos > div > ul > li:hover {
@@ -410,5 +406,759 @@ nav {
     text-decoration: none;
     font-size: 1.2rem;
     color: whitesmoke;
-    padding: 1rem;
+    padding: 16px;/*16px = 1rem*/
+}
+
+/*_______Mobile Menu_______*/
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/*_______RESPONSIVIDADE_______*/
+@media (max-width: 320px) { 
+    h2, h3, h4 {
+        line-height: 2rem;
+    }
+
+    /*_______Mobile Menu_______*/
+    .div_opcoesMenu {
+        display: none;
+    }
+
+    .div_redeSocial {
+        display: none;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon > button > img {
+        max-width: 30px;
+        margin: 18px;
+    }
+    
+    /*_______Opções do Menu_______*/
+    .mobile-menu > .div_opcoesMenu {
+        display: block;
+        padding-top: 16px;
+        text-align: center;
+        margin: auto;
+        list-style: none;
+    }
+
+    .mobile-menu > .div_opcoesMenu > li {
+        flex-direction: column;
+        margin: 0px;
+        padding: 15px;
+    }
+
+    .mobile-menu > .div_opcoesMenu > li > a {
+        font-size: 1rem;
+        transition: none;
+        line-height: 2rem;
+        padding: 0;
+    }
+    /*__Github e Instagram__*/
+    .mobile-menu > .div_redeSocial {
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-menu > .div_redeSocial > a {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 0px;
+    }
+
+    .mobile-menu > .div_redeSocial > a > img {
+        max-width: 60%
+    }
+
+    /*___JS___*/
+    .open {
+        display: block;
+    }
+
+    /*_______Seções animation_______*/
+    .section_AtivInfo {
+        animation: none;
+    }
+
+    .section_projetos {
+        animation: none;
+    }
+
+    .section_conhecimentos {
+        animation: none;
+    }
+
+    .section_sobreMim {
+        animation: none;
+    }
+
+    /*_______NavBar Titulo_______*/    
+    .div_logo > h2 {
+        font-size: 1.3rem;
+        color: whitesmoke;
+    }
+
+    /*_______Primeira Section (Sobre Mim)_______*/
+    .section_sobreMim {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .div_sobreMim {
+        padding: 10px;
+    }
+
+    /*__borda__*/
+    .div_bordaSobreMim {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*__imagem__*/
+    .div_imgSobreMim {
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .div_imgSobreMim > a > img {
+        max-width: 130px;
+    }
+    
+    /*__texto__*/
+    .div_textSobreMim {
+        margin: 20px;
+    }
+
+    .div_textSobreMim > h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .div_textSobreMim > p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    /*_______Segunda Section (Conhecimentos)_______*/
+    .section_conhecimentos {
+        padding-top: 20px;
+        padding-bottom: 130px;
+    }
+    
+    /*___Titulo e texto___*/
+    .div_tituloConhecimentos > h2 {
+        font-size: 1.4rem;
+    }
+
+    .div_tituloConhecimentos > p {
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    /*___Conhecimentos___*/
+    .div_conhecimentos > div {
+        padding: 10px;
+        margin: 12px;
+    }
+
+    .div_conhecimentos > div > a > h4 {
+        font-size: 0.8rem;
+        margin-top: -8px;
+    }
+
+    .div_conhecimentos > div > a > p {
+        font-size: 0.6rem;
+    }
+
+    .div_conhecimentos > div > a > img {
+        max-width: 40px;
+        max-height: 40px;
+        margin: 20px;
+    }
+
+    /*_______Terceira Section (Atividades de Informática)_______*/
+    .section_AtivInfo {
+        padding-top: 20px
+    }
+
+    .ulList {
+        display: none;
+    }
+
+    .list > div > h4:hover + .ulList {
+        display: block;
+    }
+
+    /*__Listas__*/
+    .list {
+        padding: 5px;
+    }
+
+    .list > div > h4 {
+        font-size: 0.9rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .list > div > ul > li > a{
+        font-size: 0.8rem;
+        padding: 1px;
+    }
+
+    .list > div > ul > li {
+        padding: 10px;
+    } 
+    /*__Introdução__*/
+    .div_tituTextAtivInfo > h2 {
+        font-size: 1.4rem;
+    }
+
+    .div_tituTextAtivInfo > p {
+        font-size: 0.8rem;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+    /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
+    .section_projetos {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section_projetos > div > h4 {
+        font-size: 1.4rem;
+    }
+
+    .section_projetos > div > p {
+        font-size: 0.8rem;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    
+    .section_projetos > div > ul {
+        padding-top: 1px;
+    }
+
+    .section_projetos > div > ul > li {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .section_projetos > div > ul > li > a {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    h2, h3, h4 {
+        line-height: 2rem;
+    }
+
+    /*_______Mobile Menu_______*/
+    .div_opcoesMenu {
+        display: none;
+    }
+
+    .div_redeSocial {
+        display: none;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon > button > img {
+        max-width: 30px;
+        margin: 18px;
+    }
+    
+    /*_______Opções do Menu_______*/
+    .mobile-menu > .div_opcoesMenu {
+        display: block;
+        padding-top: 16px;
+        text-align: center;
+        margin: auto;
+        list-style: none;
+    }
+
+    .mobile-menu > .div_opcoesMenu > li {
+        flex-direction: column;
+        margin: 0px;
+        padding: 15px;
+    }
+
+    .mobile-menu > .div_opcoesMenu > li > a {
+        font-size: 1rem;
+        transition: none;
+        line-height: 2rem;
+        padding: 0;
+    }
+    /*__Github e Instagram__*/
+    .mobile-menu > .div_redeSocial {
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-menu > .div_redeSocial > a {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 0px;
+    }
+
+    .mobile-menu > .div_redeSocial > a > img {
+        max-width: 60%
+    }
+
+    /*___JS___*/
+    .open {
+        display: block;
+    }
+
+    /*_______Seções animation_______*/
+    .section_AtivInfo {
+        animation: none;
+    }
+
+    .section_projetos {
+        animation: none;
+    }
+
+    .section_conhecimentos {
+        animation: none;
+    }
+
+    .section_sobreMim {
+        animation: none;
+    }
+
+    /*_______NavBar Titulo_______*/    
+    .div_logo > h2 {
+        font-size: 1.3rem;
+        color: whitesmoke;
+    }
+
+    /*_______Primeira Section (Sobre Mim)_______*/
+    .section_sobreMim {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .div_sobreMim {
+        padding: 10px;
+    }
+
+    /*__borda__*/
+    .div_bordaSobreMim {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*__imagem__*/
+    .div_imgSobreMim {
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .div_imgSobreMim > a > img {
+        max-width: 130px;
+    }
+    
+    /*__texto__*/
+    .div_textSobreMim {
+        margin: 20px;
+    }
+
+    .div_textSobreMim > h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .div_textSobreMim > p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    /*_______Segunda Section (Conhecimentos)_______*/
+    .section_conhecimentos {
+        padding-top: 20px;
+        padding-bottom: 130px;
+    }
+    
+    /*___Titulo e texto___*/
+    .div_tituloConhecimentos > h2 {
+        font-size: 1.4rem;
+    }
+
+    .div_tituloConhecimentos > p {
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    /*___Conhecimentos___*/
+    .div_conhecimentos > div {
+        padding: 10px;
+        margin: 12px;
+    }
+
+    .div_conhecimentos > div > a > h4 {
+        font-size: 0.8rem;
+        margin-top: -8px;
+    }
+
+    .div_conhecimentos > div > a > p {
+        font-size: 0.6rem;
+    }
+
+    .div_conhecimentos > div > a > img {
+        max-width: 40px;
+        max-height: 40px;
+        margin: 20px;
+    }
+
+    /*_______Terceira Section (Atividades de Informática)_______*/
+    .section_AtivInfo {
+        padding-top: 20px
+    }
+
+    .ulList {
+        display: none;
+    }
+
+    .list > div > h4:hover + .ulList {
+        display: block;
+    }
+
+    /*__Listas__*/
+    .list {
+        padding: 5px;
+    }
+
+    .list > div > h4 {
+        font-size: 0.9rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .list > div > ul > li > a{
+        font-size: 0.8rem;
+        padding: 1px;
+    }
+
+    .list > div > ul > li {
+        padding: 10px;
+    } 
+    /*__Introdução__*/
+    .div_tituTextAtivInfo > h2 {
+        font-size: 1.4rem;
+    }
+
+    .div_tituTextAtivInfo > p {
+        font-size: 0.8rem;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+    /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
+    .section_projetos {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section_projetos > div > h4 {
+        font-size: 1.4rem;
+    }
+
+    .section_projetos > div > p {
+        font-size: 0.8rem;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    
+    .section_projetos > div > ul {
+        padding-top: 1px;
+    }
+
+    .section_projetos > div > ul > li {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .section_projetos > div > ul > li > a {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    h2, h3, h4 {
+        line-height: 2rem;
+    }
+
+    /*_______Mobile Menu_______*/
+    .div_opcoesMenu {
+        display: none;
+    }
+
+    .div_redeSocial {
+        display: none;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon > button > img {
+        max-width: 30px;
+        margin: 18px;
+    }
+    
+    /*_______Opções do Menu_______*/
+    .mobile-menu > .div_opcoesMenu {
+        display: block;
+        padding-top: 16px;
+        text-align: center;
+        margin: auto;
+        list-style: none;
+    }
+
+    .mobile-menu > .div_opcoesMenu > li {
+        flex-direction: column;
+        margin: 0px;
+        padding: 15px;
+    }
+
+    .mobile-menu > .div_opcoesMenu > li > a {
+        font-size: 1rem;
+        transition: none;
+        line-height: 2rem;
+        padding: 0;
+    }
+    /*__Github e Instagram__*/
+    .mobile-menu > .div_redeSocial {
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-menu > .div_redeSocial > a {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 0px;
+    }
+
+    .mobile-menu > .div_redeSocial > a > img {
+        max-width: 60%
+    }
+
+    /*___JS___*/
+    .open {
+        display: block;
+    }
+
+    /*_______Seções animation_______*/
+    .section_AtivInfo {
+        animation: none;
+    }
+
+    .section_projetos {
+        animation: none;
+    }
+
+    .section_conhecimentos {
+        animation: none;
+    }
+
+    .section_sobreMim {
+        animation: none;
+    }
+
+    /*_______NavBar Titulo_______*/    
+    .div_logo > h2 {
+        font-size: 1.3rem;
+        color: whitesmoke;
+    }
+
+    /*_______Primeira Section (Sobre Mim)_______*/
+    .section_sobreMim {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .div_sobreMim {
+        padding: 10px;
+    }
+
+    /*__borda__*/
+    .div_bordaSobreMim {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*__imagem__*/
+    .div_imgSobreMim {
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .div_imgSobreMim > a > img {
+        max-width: 130px;
+    }
+    
+    /*__texto__*/
+    .div_textSobreMim {
+        margin: 20px;
+    }
+
+    .div_textSobreMim > h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .div_textSobreMim > p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    /*_______Segunda Section (Conhecimentos)_______*/
+    .section_conhecimentos {
+        padding-top: 20px;
+        padding-bottom: 130px;
+    }
+    
+    /*___Titulo e texto___*/
+    .div_tituloConhecimentos > h2 {
+        font-size: 1.4rem;
+    }
+
+    .div_tituloConhecimentos > p {
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    /*___Conhecimentos___*/
+    .div_conhecimentos > div {
+        padding: 10px;
+        margin: 12px;
+    }
+
+    .div_conhecimentos > div > a > h4 {
+        font-size: 0.8rem;
+        margin-top: -8px;
+    }
+
+    .div_conhecimentos > div > a > p {
+        font-size: 0.6rem;
+    }
+
+    .div_conhecimentos > div > a > img {
+        max-width: 40px;
+        max-height: 40px;
+        margin: 20px;
+    }
+
+    /*_______Terceira Section (Atividades de Informática)_______*/
+    .section_AtivInfo {
+        padding-top: 20px
+    }
+
+    .ulList {
+        display: none;
+    }
+
+    .list > div > h4:hover + .ulList {
+        display: block;
+    }
+
+    /*__Listas__*/
+    .list {
+        padding: 5px;
+    }
+
+    .list > div > h4 {
+        font-size: 0.9rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .list > div > ul > li > a{
+        font-size: 0.8rem;
+        padding: 1px;
+    }
+
+    .list > div > ul > li {
+        padding: 10px;
+    } 
+    /*__Introdução__*/
+    .div_tituTextAtivInfo > h2 {
+        font-size: 1.4rem;
+    }
+
+    .div_tituTextAtivInfo > p {
+        font-size: 0.8rem;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+    /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
+    .section_projetos {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .section_projetos > div > h4 {
+        font-size: 1.4rem;
+    }
+
+    .section_projetos > div > p {
+        font-size: 0.8rem;
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    
+    .section_projetos > div > ul {
+        padding-top: 1px;
+    }
+
+    .section_projetos > div > ul > li {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .section_projetos > div > ul > li > a {
+        font-size: 0.7rem;
+        padding: 5px;
+    }   
 }

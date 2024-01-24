@@ -1,3 +1,16 @@
+//Mobile Menu
+function showMenu() {
+  let mobileMenu = document.querySelector('.mobile-menu');
+
+  if (mobileMenu.classList.contains('open')) {
+    mobileMenu.classList.remove('open');
+    document.querySelector('.icon').src = "imgSite/menu-Icon.png";
+  } else {
+    mobileMenu.classList.add('open');
+    document.querySelector('.icon').src = "imgSite/menu-IconX.png";
+  }
+}
+
 //Animação de scroll
 const scrollAnimated = new IntersectionObserver((sections) => {
     sections.forEach((section) => {

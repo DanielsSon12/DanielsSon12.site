@@ -42,3 +42,17 @@ var listItems = document.querySelectorAll('.list > div');
         sublist.style.pointerEvents = 'none';
       });
     });
+
+//Botão pra mudar a cor do site
+function changeTheme(themeName) {
+  document.querySelector('.theme-css').href = themeName;
+  localStorage.setItem('selectedTheme', themeName);
+}
+
+//Verifica se tem algum tema salvo no localStorage ao carregar a página
+document.addEventListener('DOMContentLoaded', function() {
+  const savedTheme = localStorage.getItem('selectedTheme');
+  if (savedTheme) {
+    document.querySelector('.theme-css').href = savedTheme;
+  }
+});

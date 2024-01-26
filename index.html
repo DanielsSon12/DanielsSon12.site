@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./imgSite/PurpleFox.ico">
     <title> Site pessoal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css" class="theme-css">
 </head>
 
 <body>
@@ -23,14 +23,13 @@
             <ul class="div_opcoesMenu">
                 <li><a href="#sobreMim">Sobre mim</a></li>
                 <li><a href="#conhecimentos">Conhecimentos</a></li>
-                <li><a href="#AtivInfo">Atividades de Informática</a></li>
                 <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#AtivInfo">Atividades de Informática</a></li>
             </ul>
             <div class="div_redeSocial">
                 <a href="https://github.com/DanielsSon12"><img src="./imgSite/icons8-github-48.png" alt="Error"></a>
                 <a href="https://www.instagram.com/daniell_ouverney?igsh=YXBqYXMwbHZydWZ5"><img src="./imgSite/icons8-instagram-48.png" alt="Error"></a>
             </div>
-
             <!-- Mobile Menu -->
             <div class="mobile-menu-icon">
                 <button onclick="showMenu()"><img src="./imgSite/menu-Icon.png" alt="Error" class="icon"></button>
@@ -39,8 +38,8 @@
                     <ul class="div_opcoesMenu">
                         <li><a href="#sobreMim">Sobre mim</a></li>
                         <li><a href="#conhecimentos">Conhecimentos</a></li>
-                        <li><a href="#AtivInfo">Atividades de Informática</a></li>
                         <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#AtivInfo">Atividades de Informática</a></li>
                     </ul>
                     <div class="div_redeSocial">
                         <a href="https://github.com/DanielsSon12"><img src="./imgSite/icons8-github-48.png" alt="Error"></a>
@@ -50,6 +49,14 @@
         </nav>
     </header>
     <main>
+        <section class="section_changeCSS">
+            <div class="div_changeCSS">
+                <button class="btn-normal" onclick="changeTheme('style.css')">Tema Branco</button>
+                <button class="btn-neonAzul" onclick="changeTheme('styleNEONazul.css')">Tema NeonBlue</button>
+                <button class="btn-neonVermelho" onclick="changeTheme('styleNEONvermelho.css')">Tema NeonRed</button>
+            </div>
+        </section>
+
         <!-- Sobre Mim -->
         <section class="section_sobreMim hidden" id="sobreMim">
             <div class="div_sobreMim">
@@ -124,7 +131,19 @@
             </div>
         </section>
 
-        <!-- Atividades de Informática -->
+        <!-- Projetos, pessoais e do estágio -->
+        <section class="section_projetos hidden" id="projetos">
+            <div>
+                <h4>Projetos (Estágio e Pessoal)</h4>
+                <p>Todo projeto foi e será feito com o intuito de aprimorar meu aprendizado.</p>
+                <ul>
+                    <li><a href="./Projetos/projeto_Inglaterra/index.html">Projeto Inglaterra (Pessoal)</a></li>
+                    <li><a href="./Projetos/Sala do Empreendedor/index.html">Site Responsivo (Estágio)</a></li>
+                </ul>
+            </div>
+        </section>
+
+                <!-- Atividades de Informática -->
         <section class="backgroundSection">
         <section class="section_AtivInfo hidden" id="AtivInfo">
             <div>
@@ -192,17 +211,6 @@
             </div>
         </section>
     </section>
-        <!-- Projetos, pessoais e do estágio -->
-        <section class="section_projetos hidden" id="projetos">
-            <div>
-                <h4>Projetos (Estágio e Pessoal)</h4>
-                <p>Todo projeto foi e será feito com o intuito de aprimorar meu aprendizado.</p>
-                <ul>
-                    <li><a href="./Projetos/projeto_Inglaterra/index.html">Projeto Inglaterra (Pessoal)</a></li>
-                    <li><a href="./Projetos/Sala do Empreendedor/index.html">Site Responsivo (Estágio)</a></li>
-                </ul>
-            </div>
-        </section>
     </main>
     <script src="./script.js" defer></script>
 </body>

@@ -7,13 +7,25 @@ rgb(70, 70, 70);
 rgb(148, 148, 148);
 
 teste2:
-rgb(10, 10, 10);
 rgb(19, 19, 19);
 rgb(27, 27, 27);
 rgb(0, 238, 255);
 rgb(0, 174, 255);
 rgb(104, 104, 104);
 rgb(196, 196, 196);
+
+NEON azul:
+rgb(19, 19, 19);
+rgb(10, 10, 10);
+rgba(0, 238, 255, 0.897);
+rgba(0, 238, 255, 0.836);
+rgb(0, 238, 255);
+
+NEON vermelho:
+rgb(red, red, red);
+rgba(255, 0, 0, 0.822);
+rgb(197, 0, 0);
+rgb(255, 0, 0);
 */
 /*
 Sobre a forma abreviada de Animation:
@@ -65,7 +77,7 @@ animation: name duration timing-function delay interation-count direction;
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(19, 19, 19);
 }
 
 header {
@@ -78,7 +90,8 @@ header {
 /*_______NavBar_______*/
 nav {
     background-color: rgb(19, 19, 19);
-    border-bottom: 2px solid rgb(0, 238, 255);
+    border-bottom: 2px solid rgba(255, 0, 0, 0.822);
+    box-shadow: 1px 10px 25px red;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -92,7 +105,9 @@ nav {
 /*__Logo__*/
 .div_logo > h2 {
     font-size: 2.1rem;
-    color: whitesmoke;
+    letter-spacing: 0.2rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
 }
 
 /*__Opções do Menu__*/
@@ -118,19 +133,19 @@ nav {
     text-decoration: none;
     padding: 0.5rem;
     cursor: pointer;
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
 
     background-image: none;
     transition: 
     background-position 0.5s,
-    color 0.8s;
 }
 
 .div_opcoesMenu > li > a:hover {
-    background-image: linear-gradient(to right, transparent 50%, rgb(0, 174, 255) 50%);
+    background-image: linear-gradient(to right, transparent 50%, rgba(31, 31, 31, 0.801) 50%);
     background-size: 200%;
     background-position: -100%;
-    color: rgb(27, 27, 27);
     border-radius: 200px;
+    color: white;
 }
 
 /*__Github e Instagram__*/
@@ -142,7 +157,7 @@ nav {
 
 .div_redeSocial > a > img {
     max-width: 70%;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: all 0.3s;
 }
 
@@ -155,7 +170,7 @@ nav {
 .section_changeCSS {
     padding: 20px;
     background-color: rgb(27, 27, 27);
-    border-bottom: 3px solid rgb(0, 238, 255);
+    border-bottom: 3px solid rgb(197, 0, 0);
 }
 
 .div_changeCSS {
@@ -227,8 +242,9 @@ nav {
 .div_bordaSobreMim {
     display: flex;
     background-color: rgb(19, 19, 19);
+    border: 5px solid rgb(197, 0, 0);
     border-radius: 70px;
-    box-shadow: 1px 8px 20px rgb(0, 174, 255);
+    box-shadow: 1px 1px 23px rgb(255, 0, 0);
     padding: 56px;/*56px = 3.5rem*/
     animation: animationMoveToRight 1.7s ease-out;
 }
@@ -237,7 +253,8 @@ nav {
 .div_imgSobreMim > img {
     max-width: 240px;/*240px = 15rem*/
     border-radius: 200px;
-    box-shadow: 1px 1px 27px rgb(0, 174, 255);
+    border: 2px solid rgb(197, 0, 0);
+    box-shadow: inset 1px 1px 10px rgb(197, 0, 0);
     transition: all 1.5s;
     animation: animationRotateImg 1.5s 1.3s;
 }
@@ -253,14 +270,16 @@ nav {
 
 .div_textSobreMim > h2 {
     font-size: 2.4rem;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
 }
 
 .div_textSobreMim > p {
     max-width: 720px;/*720px = 45rem*/
     font-size: 1.2rem;
     line-height: 27.2px;/*27.2px = 1.7rem*/
-    color: white;
+    color: whitesmoke;
+    text-shadow: 1px 0px 5px whitesmoke;
 }
 
 /*_______Animação de scroll_______*/
@@ -285,13 +304,16 @@ nav {
 /*___Titulo e texto___*/
 .div_tituloConhecimentos > h2 {
     font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
 }
 
 .div_tituloConhecimentos > p {
     font-size: 1.4rem;
     padding-top: 17.6px;/*17.6px = 1.1rem*/
     padding-bottom: 19.2px;/*19.2px = 1.2rem*/
-    color: rgb(104, 104, 104);
+    color: whitesmoke;
+    text-shadow: 1px 0px 5px whitesmoke;
 }
 
 /*___Conhecimentos___*/
@@ -304,25 +326,26 @@ nav {
 }
 
 .div_conhecimentos > div {
-    border: 4px solid rgb(27, 27, 27);;
+    border: 4px solid rgb(197, 0, 0);
     border-radius: 5px;
-    box-shadow: 1px 1px 11px rgb(0, 238, 255);
+    box-shadow: 1px 1px 20px red;
     padding: 32px;/*32px = 2rem*/
     margin: 38px;/*38px = 3rem*/
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(10, 10, 10);
     transition: all 0.5s;
 }
 
 .div_conhecimentos > div:hover {
     transform: scale(1.12);
     cursor: pointer;
-    box-shadow: 1px 1px 25px rgb(0, 238, 255);
+    box-shadow: 1px 1px 23px red;
 }
 
 .div_conhecimentos > div > h4 {
     font-size: 1.3rem;
     margin-top: -8px;/*-8px = -0.5rem*/
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
     /*color: rgb(19, 19, 19);*/
 }
 
@@ -330,7 +353,8 @@ nav {
     margin-top: -8px;/*-8px = -0.5rem*/
     font-size: 1rem;
     font-weight: 600;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
     /*color: rgb(104, 104, 104);*/
 }
 
@@ -343,20 +367,23 @@ nav {
 
 /*_______Terceira Section (Projetos do estágio ou pessoal)_______*/
 .section_projetos {
-    padding-top: 20px;
-    padding-bottom: 200px;
+    padding-top: 50px;/*400px = 25rem*/
+    padding-bottom: 200px;/*240px = 15rem*/
     text-align: center;
 }
 
 .section_projetos > div > h4 {
     font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
 }
 
 .section_projetos > div > p {
     font-size: 1.4rem;
     padding-top: 11.2px;/*11.2px = 0.7rem*/
     padding-bottom: 19.2px ;/*19.2px = 1.2rem*/
-    color: rgb(59, 59, 59);
+    color: whitesmoke;
+    text-shadow: 1px 0px 10px whitesmoke;
 }
 
 .section_projetos > div > ul {
@@ -367,24 +394,26 @@ nav {
 }
 
 .section_projetos > div > ul > li {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(10, 10, 10);
     padding: 20.8px;/*20.8px = 1.3rem*/
     border-radius: 10px;
     transition: all 0.5s;
     cursor: pointer;
-    box-shadow: 1px 0px 4px rgb(0, 238, 255);
+    border: 2px solid rgb(197, 0, 0);
+    box-shadow: 1px 0px 15px red;
     margin: 16px;/*16px = 1rem*/
 }
 
 .section_projetos > div > ul > li:hover {
     transform: scale(1.1);
-    box-shadow: 1px 1px 30px rgb(0, 238, 255);
+    box-shadow: 1px 1px 30px red;
 }
 
 .section_projetos > div > ul > li > a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
     padding: 16px;/*16px = 1rem*/
 }
 
@@ -396,7 +425,7 @@ nav {
 }
 
 .backgroundSection {
-    background: linear-gradient( rgb(236, 236, 236), rgb(172, 171, 171) 30%, rgb(172, 171, 171) 70%, rgb(236, 236, 236));
+    background: linear-gradient( rgb(19, 19, 19), rgb(0, 0, 0) 30%, rgb(0, 0, 0) 70%, rgb(19, 19, 19));
 }
 
 .section_AtivInfo > div > ul {
@@ -413,26 +442,28 @@ nav {
 
 .list > div > h4 {
     font-size: 1.3rem;
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
     padding: 17.6px;/*17.6px = 1.1rem*/
     border-radius: 15px;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(10, 10, 10);
     margin-top: 16px;/*16px = 1rem*/
     cursor: pointer;
-    box-shadow: 1px 1px 5px rgb(0, 238, 255);
+    border: 2px solid rgb(197, 0, 0);
+    box-shadow: 1px 0px 15px red;
     transition: all 0.5s;
 }
 
 .list > div > h4:hover {
-    box-shadow: 1px 1px 20px rgb(0, 238, 255);
+    box-shadow: 1px 1px 25px red;
 }
 
 .list > div > ul {
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s;
-    border: 2px solid rgb(27, 27, 27);
-    border-style:dashed;
+    box-shadow: 1px 10px 10px red;
+    border: 2px solid rgb(197, 0, 0);
     border-top: none;
     border-radius: 15px;
     padding: 16px;/*16px = 1rem*/
@@ -440,7 +471,8 @@ nav {
 
 .list > div > ul > li > a{
     text-decoration: none;
-    color: rgb(19, 19, 19);
+    color: whitesmoke;
+    text-shadow: 1px 0px 10px whitesmoke;
     font-size: 1.2rem;
     cursor: default;
     border-radius: 20px;
@@ -456,8 +488,9 @@ nav {
 .list > div > ul > li:hover{
     transform: scale(1.1);
     border-radius: 20px;
-    background-color: rgb(221, 221, 221);
-    box-shadow: 1px 1px 20px rgb(0, 238, 255);
+    background-color: rgb(10, 10, 10);
+    border: 1px solid rgb(197, 0, 0);
+    box-shadow: 1px 1px 20px red;
 }
 
 .list > div > h4:hover + ul {
@@ -468,13 +501,16 @@ nav {
 /*__Introdução__*/
 .div_tituTextAtivInfo > h2 {
     font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(255, 0, 0);
 }
 
 .div_tituTextAtivInfo > p {
     font-size: 1.4rem;
     padding-top: 17.6px;/*17.6px = 1.1rem*/
     padding-bottom: 19.2px;/*19.2px = 1.2rem*/
-    color: rgb(59, 59, 59);
+    color: whitesmoke;
+    text-shadow: 1px 0px 10px whitesmoke;
 }
 
 /*_______Mobile Menu_______*/
@@ -501,7 +537,7 @@ nav {
     .div_redeSocial {
         display: none;
     }
-
+    
     .mobile-menu-icon {
         display: block;
     }
@@ -540,7 +576,7 @@ nav {
     }
     /*__Github e Instagram__*/
     .mobile-menu > .div_redeSocial {
-        display: flex;
+        display: block;
         text-align: center;
     }
 
@@ -612,6 +648,8 @@ nav {
         display: flex;
         flex-wrap: wrap;
         animation: none;
+        border: 2px solid rgb(197, 0, 0);
+        box-shadow: 1px 1px 20px rgb(255, 0, 0);
     }
 
     /*__imagem__*/
@@ -665,6 +703,8 @@ nav {
 
     /*___Conhecimentos___*/
     .div_conhecimentos > div {
+        border: 2px solid rgb(197, 0, 0);
+        box-shadow: 1px 1px 10px red;
         padding: 10px;
         margin: 12px;
     }
@@ -684,7 +724,43 @@ nav {
         margin: 20px;
     }
 
-    /*_______Terceira Section (Atividades de Informática)_______*/
+    /*_______Terceira Section (Projetos do estágio ou pessoal)_______*/
+    .section_projetos {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        border-top: 2px solid rgb(27, 27, 27);
+    }
+
+    .section_projetos > div > h4, p {
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    .section_projetos > div > h4 {
+        font-size: 1.4rem;
+    }
+
+    .section_projetos > div > p {
+        font-size: 0.8rem;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .section_projetos > div > ul {
+        padding-top: 1px;
+    }
+
+    .section_projetos > div > ul > li {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .section_projetos > div > ul > li > a {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+
+    /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 30px;
         border-top: 2px solid rgb(27, 27, 27);
@@ -726,42 +802,6 @@ nav {
     .list > div > ul > li {
         padding: 10px;
     } 
-
-    /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
-    .section_projetos {
-        padding-top: 90px;
-        padding-bottom: 90px;
-        border-top: 2px solid rgb(27, 27, 27);
-    }
-
-    .section_projetos > div > h4, p {
-        max-width: 270px;
-        margin: 0 auto;
-    }
-
-    .section_projetos > div > h4 {
-        font-size: 1.4rem;
-    }
-
-    .section_projetos > div > p {
-        font-size: 0.8rem;
-        padding-top: 30px;
-        padding-bottom: 10px;
-    }
-    
-    .section_projetos > div > ul {
-        padding-top: 1px;
-    }
-
-    .section_projetos > div > ul > li {
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .section_projetos > div > ul > li > a {
-        font-size: 0.7rem;
-        padding: 5px;
-    }
 }
 
 /*Para telas menores e médias*/
@@ -838,7 +878,6 @@ nav {
 
     .section_changeCSS > .div_changeCSS {
         display: flex;
-        justify-content: center;
     }
 
     .section_changeCSS > .div_changeCSS > button {
@@ -890,6 +929,8 @@ nav {
         display: flex;
         flex-wrap: wrap;
         animation: none;
+        border: 2px solid rgb(197, 0, 0);
+        box-shadow: 1px 1px 20px rgb(255, 0, 0);
     }
 
     /*__imagem__*/
@@ -943,6 +984,8 @@ nav {
 
     /*___Conhecimentos___*/
     .div_conhecimentos > div {
+        border: 2px solid rgb(0, 238, 255);
+        box-shadow: 1px 1px 10px rgb(0, 238, 255);
         padding: 10px;
         margin: 12px;
     }
@@ -962,7 +1005,43 @@ nav {
         margin: 20px;
     }
 
-    /*_______Terceira Section (Atividades de Informática)_______*/
+    /*_______Terceira Section (Projetos do estágio ou pessoal)_______*/
+    .section_projetos {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        border-top: 2px solid rgb(27, 27, 27);
+    }
+
+    .section_projetos > div > h4, p {
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    .section_projetos > div > h4 {
+        font-size: 1.4rem;
+    }
+
+    .section_projetos > div > p {
+        font-size: 0.8rem;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .section_projetos > div > ul {
+        padding-top: 1px;
+    }
+
+    .section_projetos > div > ul > li {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .section_projetos > div > ul > li > a {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+
+    /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 40px;
         border-top: 2px solid rgb(27, 27, 27);
@@ -1004,42 +1083,6 @@ nav {
     .list > div > ul > li {
         padding: 10px;
     } 
-
-    /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
-    .section_projetos {
-        padding-top: 90px;
-        padding-bottom: 90px;
-        border-top: 2px solid rgb(27, 27, 27);
-    }
-
-    .section_projetos > div > h4, p {
-        max-width: 270px;
-        margin: 0 auto;
-    }
-
-    .section_projetos > div > h4 {
-        font-size: 1.4rem;
-    }
-
-    .section_projetos > div > p {
-        font-size: 0.8rem;
-        padding-top: 30px;
-        padding-bottom: 10px;
-    }
-    
-    .section_projetos > div > ul {
-        padding-top: 1px;
-    }
-
-    .section_projetos > div > ul > li {
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .section_projetos > div > ul > li > a {
-        font-size: 0.7rem;
-        padding: 5px;
-    }
 }
 
 /*Para telas médias e grandes*/
@@ -1168,6 +1211,8 @@ nav {
         display: flex;
         flex-wrap: wrap;
         animation: none;
+        border: 3px solid rgb(197, 0, 0);
+        box-shadow: 1px 1px 20px rgb(255, 0, 0);
     }
 
     /*__imagem__*/
@@ -1221,6 +1266,8 @@ nav {
 
     /*___Conhecimentos___*/
     .div_conhecimentos > div {
+        border: 3px solid rgb(0, 238, 255);
+        box-shadow: 1px 1px 10px rgb(0, 238, 255);
         padding: 11px;
         margin: 15px;
     }
@@ -1240,7 +1287,44 @@ nav {
         margin: 20px;
     }
 
-    /*_______Terceira Section (Atividades de Informática)_______*/
+    /*_______Terceira Section (Projetos do estágio ou pessoal)_______*/
+    .section_projetos {
+        padding-top: 110px;
+        padding-bottom: 110px;
+        border-top: 2px solid rgb(27, 27, 27);
+    }
+
+
+    .section_projetos > div > h4, p {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .section_projetos > div > h4 {
+        font-size: 1.5rem;
+    }
+
+    .section_projetos > div > p {
+        font-size: 1rem;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .section_projetos > div > ul {
+        padding-top: 1px;
+    }
+
+    .section_projetos > div > ul > li {
+        padding: 8px;
+        margin: 5px;
+    }
+
+    .section_projetos > div > ul > li > a {
+        font-size: 0.85rem;
+        padding: 5px;
+    }  
+
+    /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 50px;
         border-top: 2px solid rgb(27, 27, 27);
@@ -1280,44 +1364,7 @@ nav {
 
     .list > div > ul > li {
         padding: 10px;
-    } 
-
-    /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
-    .section_projetos {
-        padding-top: 110px;
-        padding-bottom: 110px;
-        border-top: 2px solid rgb(27, 27, 27);
-    }
-
-
-    .section_projetos > div > h4, p {
-        max-width: 280px;
-        margin: 0 auto;
-    }
-
-    .section_projetos > div > h4 {
-        font-size: 1.5rem;
-    }
-
-    .section_projetos > div > p {
-        font-size: 1rem;
-        padding-top: 40px;
-        padding-bottom: 10px;
-    }
-    
-    .section_projetos > div > ul {
-        padding-top: 1px;
-    }
-
-    .section_projetos > div > ul > li {
-        padding: 8px;
-        margin: 5px;
-    }
-
-    .section_projetos > div > ul > li > a {
-        font-size: 0.85rem;
-        padding: 5px;
-    }   
+    }  
 }
 
 /*Para telas em paisagem*/
@@ -1523,7 +1570,44 @@ nav {
         margin: 20px;
     }
 
-    /*_______Terceira Section (Atividades de Informática)_______*/
+    /*_______Terceira Section (Projetos do estágio ou pessoal)_______*/
+    .section_projetos {
+        padding-top: 110px;
+        padding-bottom: 110px;
+        border-top: 2px solid rgb(27, 27, 27);
+    }
+
+
+    .section_projetos > div > h4, p {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .section_projetos > div > h4 {
+        font-size: 1.5rem;
+    }
+
+    .section_projetos > div > p {
+        font-size: 1rem;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .section_projetos > div > ul {
+        padding-top: 1px;
+    }
+
+    .section_projetos > div > ul > li {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .section_projetos > div > ul > li > a {
+        font-size: 0.85rem;
+        padding: 5px;
+    } 
+
+    /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 50px;
         border-top: 2px solid rgb(27, 27, 27);
@@ -1563,43 +1647,6 @@ nav {
 
     .list > div > ul > li {
         padding: 10px;
-    } 
-
-    /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
-    .section_projetos {
-        padding-top: 110px;
-        padding-bottom: 110px;
-        border-top: 2px solid rgb(27, 27, 27);
-    }
-
-
-    .section_projetos > div > h4, p {
-        max-width: 450px;
-        margin: 0 auto;
-    }
-
-    .section_projetos > div > h4 {
-        font-size: 1.5rem;
-    }
-
-    .section_projetos > div > p {
-        font-size: 1rem;
-        padding-top: 40px;
-        padding-bottom: 10px;
-    }
-    
-    .section_projetos > div > ul {
-        padding-top: 1px;
-    }
-
-    .section_projetos > div > ul > li {
-        padding: 15px;
-        margin: 5px;
-    }
-
-    .section_projetos > div > ul > li > a {
-        font-size: 0.85rem;
-        padding: 5px;
     } 
 }
 
@@ -1801,7 +1848,44 @@ nav {
         margin: 20px;
     }
 
-    /*_______Terceira Section (Atividades de Informática)_______*/
+    /*_______Terceira Section (Projetos do estágio ou pessoal)_______*/
+    .section_projetos {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        border-top: 2px solid rgb(27, 27, 27);
+    }
+
+
+    .section_projetos > div > h4, p {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .section_projetos > div > h4 {
+        font-size: 1.5rem;
+    }
+
+    .section_projetos > div > p {
+        font-size: 1rem;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .section_projetos > div > ul {
+        padding-top: 1px;
+    }
+
+    .section_projetos > div > ul > li {
+        padding: 8px;
+        margin: 5px;
+    }
+
+    .section_projetos > div > ul > li > a {
+        font-size: 0.85rem;
+        padding: 5px;
+    }
+
+    /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 50px;
         border-top: 2px solid rgb(27, 27, 27);
@@ -1842,44 +1926,7 @@ nav {
 
     .list > div > ul > li {
         padding: 10px;
-    } 
-
-    /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
-    .section_projetos {
-        padding-top: 120px;
-        padding-bottom: 120px;
-        border-top: 2px solid rgb(27, 27, 27);
-    }
-
-
-    .section_projetos > div > h4, p {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .section_projetos > div > h4 {
-        font-size: 1.5rem;
-    }
-
-    .section_projetos > div > p {
-        font-size: 1rem;
-        padding-top: 40px;
-        padding-bottom: 10px;
-    }
-    
-    .section_projetos > div > ul {
-        padding-top: 1px;
-    }
-
-    .section_projetos > div > ul > li {
-        padding: 8px;
-        margin: 5px;
-    }
-
-    .section_projetos > div > ul > li > a {
-        font-size: 0.85rem;
-        padding: 5px;
-    }   
+    }    
 }
 
 /*Para Tablets*/
@@ -2080,7 +2127,44 @@ nav {
         margin: 20px;
     }
 
-    /*_______Terceira Section (Atividades de Informática)_______*/
+    /*_______Terceira Section (Projetos do estágio ou pessoal)_______*/
+    .section_projetos {
+        padding-top: 130px;
+        padding-bottom: 130px;
+        border-top: 2px solid rgb(27, 27, 27);
+    }
+
+
+    .section_projetos > div > h4, p {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .section_projetos > div > h4 {
+        font-size: 1.5rem;
+    }
+
+    .section_projetos > div > p {
+        font-size: 1rem;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .section_projetos > div > ul {
+        padding-top: 1px;
+    }
+
+    .section_projetos > div > ul > li {
+        padding: 8px;
+        margin: 5px;
+    }
+
+    .section_projetos > div > ul > li > a {
+        font-size: 0.85rem;
+        padding: 5px;
+    }
+
+    /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 50px;
         border-top: 2px solid rgb(27, 27, 27);
@@ -2121,44 +2205,7 @@ nav {
 
     .list > div > ul > li {
         padding: 10px;
-    } 
-
-    /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
-    .section_projetos {
-        padding-top: 130px;
-        padding-bottom: 130px;
-        border-top: 2px solid rgb(27, 27, 27);
-    }
-
-
-    .section_projetos > div > h4, p {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .section_projetos > div > h4 {
-        font-size: 1.5rem;
-    }
-
-    .section_projetos > div > p {
-        font-size: 1rem;
-        padding-top: 40px;
-        padding-bottom: 10px;
-    }
-    
-    .section_projetos > div > ul {
-        padding-top: 1px;
-    }
-
-    .section_projetos > div > ul > li {
-        padding: 8px;
-        margin: 5px;
-    }
-
-    .section_projetos > div > ul > li > a {
-        font-size: 0.85rem;
-        padding: 5px;
-    }   
+    }    
 }
 
 @media (min-width: 769px) and (max-width: 1510px) {
@@ -2191,7 +2238,6 @@ nav {
     }
     
     /*_______Opções do Menu_______*/
-
     .mobile-menu > .div_opcoesMenu {
         display: block;
         padding-top: 16px;
@@ -2224,7 +2270,7 @@ nav {
     }
 
     .mobile-menu > .div_redeSocial > a > img {
-        max-width: 70%
+        max-width: 70%;
     }
 
     /*__Botão para troca de tema__*/
@@ -2241,7 +2287,7 @@ nav {
         font-size: 0.8rem;
         padding: 7px;
     }
-
+    
     /*___JS___*/
     .open {
         display: block;
@@ -2355,7 +2401,43 @@ nav {
         margin: 30px;
     }
 
-    /*_______Terceira Section (Atividades de Informática)_______*/
+    /*_______Terceira Section (Projetos do estágio ou pessoal)_______*/
+    .section_projetos {
+        padding-top: 140px;
+        padding-bottom: 160px;
+        border-top: 2px solid rgb(27, 27, 27);
+    }
+
+
+    .section_projetos > div > h4, p {
+        margin: 0 auto;
+    }
+
+    .section_projetos > div > h4 {
+        font-size: 2rem;
+    }
+
+    .section_projetos > div > p {
+        font-size: 1.3rem;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .section_projetos > div > ul {
+        padding-top: 5px;
+    }
+
+    .section_projetos > div > ul > li {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .section_projetos > div > ul > li > a {
+        font-size: 1rem;
+        padding: 10px;
+    }  
+
+    /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 50px;
         border-top: 2px solid rgb(27, 27, 27);
@@ -2394,41 +2476,5 @@ nav {
 
     .list > div > ul > li {
         padding: 0px;
-    } 
-
-    /*_______Quarta Section (Projetos do estágio ou pessoal)_______*/
-    .section_projetos {
-        padding-top: 140px;
-        padding-bottom: 160px;
-        border-top: 2px solid rgb(27, 27, 27);
-    }
-
-
-    .section_projetos > div > h4, p {
-        margin: 0 auto;
-    }
-
-    .section_projetos > div > h4 {
-        font-size: 2rem;
-    }
-
-    .section_projetos > div > p {
-        font-size: 1.3rem;
-        padding-top: 40px;
-        padding-bottom: 10px;
-    }
-    
-    .section_projetos > div > ul {
-        padding-top: 5px;
-    }
-
-    .section_projetos > div > ul > li {
-        padding: 15px;
-        margin: 10px;
-    }
-
-    .section_projetos > div > ul > li > a {
-        font-size: 1rem;
-        padding: 10px;
-    }   
+    }  
 }

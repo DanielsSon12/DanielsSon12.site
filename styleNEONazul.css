@@ -101,7 +101,6 @@ nav {
     font-size: 2.1rem;
     letter-spacing: 0.2rem;
     color: whitesmoke;
-    text-shadow: 1px 1px 10px whitesmoke;
 }
 
 /*__Opções do Menu__*/
@@ -264,7 +263,6 @@ nav {
 .div_textSobreMim > h2 {
     font-size: 2.4rem;
     color: whitesmoke;
-    text-shadow: 1px 0px 10px whitesmoke;
 }
 
 .div_textSobreMim > p {
@@ -297,7 +295,6 @@ nav {
 .div_tituloConhecimentos > h2 {
     font-size: 3rem;
     color: whitesmoke;
-    text-shadow: 1px 0px 10px whitesmoke;
 }
 
 .div_tituloConhecimentos > p {
@@ -336,7 +333,6 @@ nav {
     font-size: 1.3rem;
     margin-top: -8px;/*-8px = -0.5rem*/
     color: whitesmoke;
-    text-shadow: 1px 0px 5px whitesmoke;
     /*color: rgb(19, 19, 19);*/
 }
 
@@ -365,7 +361,6 @@ nav {
 .section_projetos > div > h4 {
     font-size: 3rem;
     color: whitesmoke;
-    text-shadow: 1px 0px 10px whitesmoke;
 }
 
 .section_projetos > div > p {
@@ -488,7 +483,6 @@ nav {
 .div_tituTextAtivInfo > h2 {
     font-size: 3rem;
     color: whitesmoke;
-    text-shadow: 1px 0px 10px whitesmoke;
 }
 
 .div_tituTextAtivInfo > p {

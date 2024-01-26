@@ -26,6 +26,10 @@ rgb(red, red, red);
 rgba(255, 0, 0, 0.822);
 rgb(197, 0, 0);
 rgb(255, 0, 0);
+
+NEON verde:
+rgb(0, 155, 0);
+rgb(0, 190, 0);
 */
 /*
 Sobre a forma abreviada de Animation:
@@ -90,8 +94,8 @@ header {
 /*_______NavBar_______*/
 nav {
     background-color: rgb(19, 19, 19);
-    border-bottom: 2px solid rgba(255, 0, 0, 0.822);
-    box-shadow: 1px 10px 25px red;
+    border-bottom: 2px solid rgb(0, 155, 0);;
+    box-shadow: 1px 10px 25px rgb(0, 190, 0);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -107,7 +111,7 @@ nav {
     font-size: 2.1rem;
     letter-spacing: 0.2rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 10px rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px rgb(0, 190, 0);
 }
 
 /*__Opções do Menu__*/
@@ -133,7 +137,7 @@ nav {
     text-decoration: none;
     padding: 0.5rem;
     cursor: pointer;
-    text-shadow: 1px 1px 5px rgb(255, 0, 0);
+    text-shadow: 1px 1px 5px rgb(0, 190, 0);
 
     background-image: none;
     transition: 
@@ -170,8 +174,8 @@ nav {
 .section_changeCSS {
     padding: 20px;
     background-color: rgb(27, 27, 27);
-    border-bottom: 3px solid rgb(197, 0, 0);
-    box-shadow: 0px 0px 10px red;
+    border-bottom: 3px solid rgb(0, 155, 0);
+    box-shadow: 0px 0px 10px rgb(0, 190, 0);
 }
 
 .div_changeCSS {
@@ -243,9 +247,9 @@ nav {
 .div_bordaSobreMim {
     display: flex;
     background-color: rgb(19, 19, 19);
-    border: 5px solid rgb(197, 0, 0);
+    border: 5px solid rgb(0, 155, 0);
     border-radius: 70px;
-    box-shadow: 1px 1px 23px rgb(255, 0, 0);
+    box-shadow: 1px 1px 23px rgb(0, 190, 0);
     padding: 56px;/*56px = 3.5rem*/
     animation: animationMoveToRight 1.7s ease-out;
 }
@@ -254,8 +258,8 @@ nav {
 .div_imgSobreMim > img {
     max-width: 240px;/*240px = 15rem*/
     border-radius: 200px;
-    border: 2px solid rgb(197, 0, 0);
-    box-shadow: 1px 1px 10px rgb(197, 0, 0);
+    border: 2px solid rgb(0, 190, 0);
+    box-shadow: 1px 1px 10px rgb(0, 190, 0);
     transition: all 1.5s;
     animation: animationRotateImg 1.5s 1.3s;
 }
@@ -272,7 +276,7 @@ nav {
 .div_textSobreMim > h2 {
     font-size: 2.4rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 10px rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px rgb(0, 190, 0);
 }
 
 .div_textSobreMim > p {
@@ -305,7 +309,7 @@ nav {
 .div_tituloConhecimentos > h2 {
     font-size: 3rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 10px rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px rgb(0, 190, 0);
 }
 
 .div_tituloConhecimentos > p {
@@ -325,9 +329,9 @@ nav {
 }
 
 .div_conhecimentos > div {
-    border: 4px solid rgb(197, 0, 0);
+    border: 4px solid rgb(0, 155, 0);
     border-radius: 5px;
-    box-shadow: 1px 1px 15px red;
+    box-shadow: 1px 1px 15px rgb(0, 190, 0);
     padding: 32px;/*32px = 2rem*/
     margin: 38px;/*38px = 3rem*/
     background-color: rgb(10, 10, 10);
@@ -337,14 +341,13 @@ nav {
 .div_conhecimentos > div:hover {
     transform: scale(1.12);
     cursor: pointer;
-    box-shadow: 1px 1px 18px red;
+    box-shadow: 1px 1px 18px rgb(0, 190, 0);
 }
 
 .div_conhecimentos > div > h4 {
     font-size: 1.3rem;
     margin-top: -8px;/*-8px = -0.5rem*/
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 10px rgb(255, 0, 0);
     /*color: rgb(19, 19, 19);*/
 }
 
@@ -373,7 +376,7 @@ nav {
 .section_projetos > div > h4 {
     font-size: 3rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 10px rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px rgb(0, 190, 0);
 }
 
 .section_projetos > div > p {
@@ -396,14 +399,14 @@ nav {
     border-radius: 10px;
     transition: all 0.5s;
     cursor: pointer;
-    border: 2px solid rgb(197, 0, 0);
-    box-shadow: 1px 0px 15px red;
+    border: 2px solid rgb(0, 155, 0);
+    box-shadow: 1px 0px 15px rgb(0, 190, 0);
     margin: 16px;/*16px = 1rem*/
 }
 
 .section_projetos > div > ul > li:hover {
     transform: scale(1.1);
-    box-shadow: 1px 1px 30px red;
+    box-shadow: 1px 1px 30px rgb(0, 190, 0);
 }
 
 .section_projetos > div > ul > li > a {
@@ -444,21 +447,21 @@ nav {
     background-color: rgb(10, 10, 10);
     margin-top: 16px;/*16px = 1rem*/
     cursor: pointer;
-    border: 2px solid rgb(197, 0, 0);
-    box-shadow: 1px 0px 15px red;
+    border: 2px solid rgb(0, 155, 0);
+    box-shadow: 1px 0px 15px rgb(0, 190, 0);
     transition: all 0.5s;
 }
 
 .list > div > h4:hover {
-    box-shadow: 1px 1px 25px red;
+    box-shadow: 1px 1px 25px rgb(0, 190, 0);
 }
 
 .list > div > ul {
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s;
-    box-shadow: 1px 10px 10px red;
-    border: 2px solid rgb(197, 0, 0);
+    box-shadow: 1px 10px 10px rgb(0, 190, 0);
+    border: 2px solid rgb(0, 155, 0);
     border-top: none;
     border-radius: 15px;
     padding: 16px;/*16px = 1rem*/
@@ -484,8 +487,8 @@ nav {
     transform: scale(1.1);
     border-radius: 20px;
     background-color: rgb(10, 10, 10);
-    border: 1px solid rgb(197, 0, 0);
-    box-shadow: 1px 1px 20px red;
+    border: 1px solid rgb(0, 155, 0);
+    box-shadow: 1px 1px 20px rgb(0, 190, 0);
 }
 
 .list > div > h4:hover + ul {
@@ -497,7 +500,7 @@ nav {
 .div_tituTextAtivInfo > h2 {
     font-size: 3rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 10px rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px rgb(0, 190, 0);
 }
 
 .div_tituTextAtivInfo > p {
@@ -642,8 +645,8 @@ nav {
         display: flex;
         flex-wrap: wrap;
         animation: none;
-        border: 2px solid rgb(197, 0, 0);
-        box-shadow: 1px 1px 20px rgb(255, 0, 0);
+        border: 2px solid rgb(0, 155, 0);
+        box-shadow: 1px 1px 20px rgb(0, 190, 0);
     }
 
     /*__imagem__*/
@@ -676,8 +679,8 @@ nav {
     .section_conhecimentos {
         padding-top: 40px;
         padding-bottom: 80px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
     
     /*___Titulo e texto___*/
@@ -698,8 +701,8 @@ nav {
 
     /*___Conhecimentos___*/
     .div_conhecimentos > div {
-        border: 2px solid rgb(197, 0, 0);
-        box-shadow: 1px 1px 10px red;
+        border: 2px solid rgb(0, 155, 0);
+        box-shadow: 1px 1px 10px rgb(0, 190, 0);
         padding: 10px;
         margin: 12px;
     }
@@ -723,8 +726,8 @@ nav {
     .section_projetos {
         padding-top: 90px;
         padding-bottom: 90px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
     .section_projetos > div > h4, p {
@@ -759,8 +762,8 @@ nav {
     /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 30px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
 
@@ -926,8 +929,8 @@ nav {
         display: flex;
         flex-wrap: wrap;
         animation: none;
-        border: 2px solid rgb(197, 0, 0);
-        box-shadow: 1px 1px 20px rgb(255, 0, 0);
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 20px rgb(0, 190, 0);
     }
 
     /*__imagem__*/
@@ -960,8 +963,8 @@ nav {
     .section_conhecimentos {
         padding-top: 40px;
         padding-bottom: 90px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
     
     /*___Titulo e texto___*/
@@ -982,8 +985,8 @@ nav {
 
     /*___Conhecimentos___*/
     .div_conhecimentos > div {
-        border: 2px solid rgb(197, 0, 0);
-        box-shadow: 1px 1px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 1px 1px 10px rgb(0, 190, 0);
         padding: 10px;
         margin: 12px;
     }
@@ -1007,8 +1010,8 @@ nav {
     .section_projetos {
         padding-top: 90px;
         padding-bottom: 90px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
     .section_projetos > div > h4, p {
@@ -1043,8 +1046,8 @@ nav {
     /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 40px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
     /*__Introdução__*/
@@ -1211,8 +1214,8 @@ nav {
         display: flex;
         flex-wrap: wrap;
         animation: none;
-        border: 3px solid rgb(197, 0, 0);
-        box-shadow: 1px 1px 20px rgb(255, 0, 0);
+        border-top: 3px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 20px rgb(0, 190, 0);
     }
 
     /*__imagem__*/
@@ -1245,8 +1248,8 @@ nav {
     .section_conhecimentos {
         padding-top: 50px;
         padding-bottom: 100px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
     
     /*___Titulo e texto___*/
@@ -1267,8 +1270,8 @@ nav {
 
     /*___Conhecimentos___*/
     .div_conhecimentos > div {
-        border: 3px solid rgb(197, 0, 0);
-        box-shadow: 1px 1px 10px red;
+        border-top: 3px solid rgb(0, 155, 0);
+        box-shadow: 1px 1px 10px rgb(0, 190, 0);
         padding: 11px;
         margin: 15px;
     }
@@ -1292,8 +1295,8 @@ nav {
     .section_projetos {
         padding-top: 110px;
         padding-bottom: 110px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
 
@@ -1329,8 +1332,8 @@ nav {
     /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 50px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
     /*__Introdução__*/
@@ -1533,8 +1536,8 @@ nav {
     .section_conhecimentos {
         padding-top: 50px;
         padding-bottom: 100px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
     
     /*___Titulo e texto___*/
@@ -1578,8 +1581,8 @@ nav {
     .section_projetos {
         padding-top: 110px;
         padding-bottom: 110px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
 
@@ -1615,8 +1618,8 @@ nav {
     /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 50px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
     /*__Introdução__*/
@@ -1814,8 +1817,8 @@ nav {
     .section_conhecimentos {
         padding-top: 50px;
         padding-bottom: 100px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
     
     /*___Titulo e texto___*/
@@ -1859,8 +1862,8 @@ nav {
     .section_projetos {
         padding-top: 120px;
         padding-bottom: 120px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
 
@@ -1896,8 +1899,8 @@ nav {
     /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 50px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
     /*__Introdução__*/
@@ -2096,8 +2099,8 @@ nav {
     .section_conhecimentos {
         padding-top: 50px;
         padding-bottom: 100px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
     
     /*___Titulo e texto___*/
@@ -2141,8 +2144,8 @@ nav {
     .section_projetos {
         padding-top: 130px;
         padding-bottom: 130px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
 
@@ -2178,8 +2181,8 @@ nav {
     /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 50px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
     /*__Introdução__*/
@@ -2374,8 +2377,8 @@ nav {
     .section_conhecimentos {
         padding-top: 50px;
         padding-bottom: 100px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
     
     /*___Titulo e texto___*/
@@ -2418,8 +2421,8 @@ nav {
     .section_projetos {
         padding-top: 140px;
         padding-bottom: 160px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
 
@@ -2454,8 +2457,8 @@ nav {
     /*_______Quarta Section (Atividades de Informática)_______*/
     .section_AtivInfo {
         padding-top: 50px;
-        border-top: 2px solid rgb(197, 0, 0);
-        box-shadow: 0px 0px 10px red;
+        border-top: 2px solid rgb(0, 155, 0);
+        box-shadow: 0px 0px 10px rgb(0, 190, 0);
     }
 
     /*__Introdução__*/

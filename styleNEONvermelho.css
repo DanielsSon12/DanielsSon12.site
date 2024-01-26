@@ -984,8 +984,8 @@ nav {
 
     /*___Conhecimentos___*/
     .div_conhecimentos > div {
-        border: 2px solid rgb(0, 238, 255);
-        box-shadow: 1px 1px 10px rgb(0, 238, 255);
+        border: 2px solid rgb(197, 0, 0);
+        box-shadow: 1px 1px 10px red;
         padding: 10px;
         margin: 12px;
     }
@@ -1266,8 +1266,8 @@ nav {
 
     /*___Conhecimentos___*/
     .div_conhecimentos > div {
-        border: 3px solid rgb(0, 238, 255);
-        box-shadow: 1px 1px 10px rgb(0, 238, 255);
+        border: 3px solid rgb(197, 0, 0);
+        box-shadow: 1px 1px 10px red;
         padding: 11px;
         margin: 15px;
     }

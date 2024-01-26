@@ -44,15 +44,23 @@ var listItems = document.querySelectorAll('.list > div');
     });
 
 //Botão pra mudar a cor do site
-function changeTheme(themeName) {
+function changeTheme(themeName, profileImage) {
+  //Sobre o tema do css
   document.querySelector('.theme-css').href = themeName;
   localStorage.setItem('selectedTheme', themeName);
+
+  //Sobre a foto de perfil
+  document.querySelector('.imgSobreMim').src = profileImage;
+  localStorage.setItem('selectedProfileImage', profileImage);
 }
 
 //Verifica se tem algum tema salvo no localStorage ao carregar a página
 document.addEventListener('DOMContentLoaded', function() {
   const savedTheme = localStorage.getItem('selectedTheme');
-  if (savedTheme) {
+  const savedProfileImage = localStorage.getItem('selectedProfileImage');
+
+  if (savedTheme && savedProfileImage) {
     document.querySelector('.theme-css').href = savedTheme;
+    document.querySelector('.imgSobreMim').src = savedProfileImage;
   }
 });

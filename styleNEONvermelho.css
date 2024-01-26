@@ -107,7 +107,7 @@ nav {
     font-size: 2.1rem;
     letter-spacing: 0.2rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 15px rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px rgb(255, 0, 0);
 }
 
 /*__Opções do Menu__*/
@@ -133,7 +133,7 @@ nav {
     text-decoration: none;
     padding: 0.5rem;
     cursor: pointer;
-    text-shadow: 1px 1px 15px rgb(255, 0, 0);
+    text-shadow: 1px 1px 5px rgb(255, 0, 0);
 
     background-image: none;
     transition: 
@@ -272,7 +272,7 @@ nav {
 .div_textSobreMim > h2 {
     font-size: 2.4rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 15px rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px rgb(255, 0, 0);
 }
 
 .div_textSobreMim > p {
@@ -280,7 +280,6 @@ nav {
     font-size: 1.2rem;
     line-height: 27.2px;/*27.2px = 1.7rem*/
     color: whitesmoke;
-    text-shadow: 1px 0px 5px whitesmoke;
 }
 
 /*_______Animação de scroll_______*/
@@ -306,7 +305,7 @@ nav {
 .div_tituloConhecimentos > h2 {
     font-size: 3rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 15px rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px rgb(255, 0, 0);
 }
 
 .div_tituloConhecimentos > p {
@@ -314,7 +313,6 @@ nav {
     padding-top: 17.6px;/*17.6px = 1.1rem*/
     padding-bottom: 19.2px;/*19.2px = 1.2rem*/
     color: whitesmoke;
-    text-shadow: 1px 0px 5px whitesmoke;
 }
 
 /*___Conhecimentos___*/
@@ -329,7 +327,7 @@ nav {
 .div_conhecimentos > div {
     border: 4px solid rgb(197, 0, 0);
     border-radius: 5px;
-    box-shadow: 1px 1px 20px red;
+    box-shadow: 1px 1px 15px red;
     padding: 32px;/*32px = 2rem*/
     margin: 38px;/*38px = 3rem*/
     background-color: rgb(10, 10, 10);
@@ -339,14 +337,14 @@ nav {
 .div_conhecimentos > div:hover {
     transform: scale(1.12);
     cursor: pointer;
-    box-shadow: 1px 1px 23px red;
+    box-shadow: 1px 1px 18px red;
 }
 
 .div_conhecimentos > div > h4 {
     font-size: 1.3rem;
     margin-top: -8px;/*-8px = -0.5rem*/
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 15px rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px rgb(255, 0, 0);
     /*color: rgb(19, 19, 19);*/
 }
 
@@ -355,7 +353,6 @@ nav {
     font-size: 1rem;
     font-weight: 600;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 15px rgb(255, 0, 0);
     /*color: rgb(104, 104, 104);*/
 }
 
@@ -376,7 +373,7 @@ nav {
 .section_projetos > div > h4 {
     font-size: 3rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 15px rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px rgb(255, 0, 0);
 }
 
 .section_projetos > div > p {
@@ -384,7 +381,6 @@ nav {
     padding-top: 11.2px;/*11.2px = 0.7rem*/
     padding-bottom: 19.2px ;/*19.2px = 1.2rem*/
     color: whitesmoke;
-    text-shadow: 1px 0px 10px whitesmoke;
 }
 
 .section_projetos > div > ul {
@@ -414,7 +410,6 @@ nav {
     text-decoration: none;
     font-size: 1.2rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 15px rgb(255, 0, 0);
     padding: 16px;/*16px = 1rem*/
 }
 
@@ -444,7 +439,6 @@ nav {
 .list > div > h4 {
     font-size: 1.3rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 15px rgb(255, 0, 0);
     padding: 17.6px;/*17.6px = 1.1rem*/
     border-radius: 15px;
     background-color: rgb(10, 10, 10);
@@ -503,7 +497,7 @@ nav {
 .div_tituTextAtivInfo > h2 {
     font-size: 3rem;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 15px rgb(255, 0, 0);
+    text-shadow: 1px 1px 10px rgb(255, 0, 0);
 }
 
 .div_tituTextAtivInfo > p {
@@ -511,7 +505,6 @@ nav {
     padding-top: 17.6px;/*17.6px = 1.1rem*/
     padding-bottom: 19.2px;/*19.2px = 1.2rem*/
     color: whitesmoke;
-    text-shadow: 1px 0px 10px whitesmoke;
 }
 
 /*_______Mobile Menu_______*/

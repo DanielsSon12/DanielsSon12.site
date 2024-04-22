@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>POKEDEX</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>PokeDex API</h1>
+            <p>Essa pokedex foi feita com JS, HTML e CSS a partir de uma api de pokemon, obtida no site PokeAPI.</p>
+        </div>
+    </header>
+    <main>
+        <section class="section_pokedex" id="section_pokedex">
+            <!-- Pokedex -->
+            <div class="pokedex" id="pokedex">
+                <!-- Dentro da imagem da pokedex irei colocar o gif dos pokemons, além de dois botões(próximo e anterior) e uma caixa de pesquisa(para procurar o pokemon desejado) -->
+                <div class="divPaiIMG">
+                    <div class="div-pokedex" id="div-pokedex">
+                        <!-- foto, nome e id do Pokemon irão ficar aqui-->
+                    </div>
+                </div>
+
+                <div class="search" id="search">
+                    <!-- Botão para ir para o próximo pokemon -->
+                    <button class="btn-proximo" id="btn-proximo">Próximo</button>
+                    <!-- Botão para voltar ao pokemon anterior -->
+                    <button class="btn-anterior" id="btn-anterior">Anterior</button>
+                    <!-- Input para procurar o pokemon desejado pelo usuario -->
+                    <input type="text" placeholder="Number ID / Name" id="pesquisaPoke" class="pesquisaPoke">
+                </div>
+            </div>
+
+            <!-- Informações extras -->
+            <div class="extraPokedex" id="extraPokedex">
+                <!-- Aqui ficara as informações extras de cada pokemon, como status iniciais, habilidades, etc -->
+            </div>
+        </section>
+    </main>
+    <script src="./script.js" defer></script>
+</body>
+
+</html>

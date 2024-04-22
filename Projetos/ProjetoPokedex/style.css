@@ -1,0 +1,459 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(111, 111, 111);
+    width: 50%;
+    border-radius: 50px;
+    box-shadow: 1px 2px 10px rgb(31, 31, 31);
+}
+
+header > div > h1 {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+header > div > p {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: large;
+}
+
+body {
+    background-color: rgb(252, 233, 208);
+    background-image: url(./imgs/7980451.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Section da Pokedex e seus agregados */
+.section_pokedex {
+    display: block;
+    text-align: center;
+}
+
+/* Div das informações da Pokedex */
+.div-pokedex {
+    display: block;
+    position: relative;
+    padding: 2%;
+}
+
+/* Search */
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search > button {
+    display: flex;
+    padding: 1rem;
+    border-radius: 20px;
+    border-style: none;
+    border: 3px solid rgb(31, 31, 31);
+    background-color: gray;
+    color: white;
+    font-weight: bolder;
+    margin: 1%;
+}
+
+.search > button:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+.search > input {
+    border-radius: 20px;
+    border-style: none;
+    border: 3px solid rgb(31, 31, 31);
+    margin: 10px;
+}
+
+/* Pokedex */
+.pokedex {
+    background-color: rgb(196, 27, 64);
+    border: 4px solid rgb(31, 31, 31);
+    box-shadow: 1px 2px 30px rgb(31, 31, 31);
+    border-radius: 50px;
+    padding: 4%;
+    width: 30%;
+    margin: 0 auto;
+
+}
+
+/* Div que irá conter as informações extras do pokemon, como tipo e status */
+.extraPokedex {
+    border-radius: 30px;
+    border: 4px solid rgb(31, 31, 31);
+    background-color: rgb(196, 27, 64);
+    width: 40%;
+    margin: 0 auto; 
+    margin-top: 0.5%;
+    box-shadow: 1px 2px 30px rgb(31, 31, 31);
+}
+
+/* Imagem do Pokemon */
+.imgPoke {
+    width: 30%;
+    margin: -1%;
+    transform:translate(5%, 0%);
+    box-shadow: 0px 1px 10px white;
+    border: 3px solid black;
+    border-radius: 100px;
+    background: linear-gradient(180deg, rgb(238, 47, 47), rgb(238, 47, 47), rgb(238, 47, 47), rgb(238, 47, 47), rgb(238, 47, 47), rgb(238, 47, 47), rgb(238, 47, 47), rgb(238, 47, 47), rgb(238, 47, 47), rgb(238, 47, 47), rgb(238, 47, 47), rgb(238, 47, 47), black, white, white, white, white, white, white, white, white, white, white, white);
+}
+
+
+/* Lista que contem o nome e o id do pokemon */
+.listNameId {
+    display: flex;
+    margin: 3%;
+    justify-content: center;
+    list-style: none;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+/* li nome */
+.nomePoke {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: 3px 1.5px 5px black;
+    letter-spacing: 0.1rem;
+}
+
+.nomePoke::first-letter{
+    text-transform: capitalize;
+}
+
+/* li id */
+.idPoke {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: 3px 1.5px 5px black;
+    letter-spacing: 0.15rem;
+}
+
+/* Lista que vai conter os tipos de cada pokemon */
+.listTypes {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+
+/* tipo do pokemon */
+.typesPoke {
+    border: 2px solid rgb(31, 31, 31);
+    font-size: 1.3rem;
+    margin: 1%;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(209, 209, 209);
+}
+
+.typesPoke::first-letter {
+    text-transform: capitalize;
+}
+
+/* Lista que vai conter os status do pokemon */
+.listStatus {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* cada status do pokemon */
+.statsPoke {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1.5%;
+    border: 2px solid rgb(31, 31, 31);
+    border-radius: 10px;
+    background-color: rgb(209, 209, 209);
+    width: 30%;   
+}
+
+.statsPoke::first-letter {
+    text-transform: capitalize;
+}
+
+/* Responsividade */
+@media (max-width: 320px) {
+    header {
+        width: 100%;
+        padding: 0;
+    }
+    
+    header > div > h1 {
+        font-size: 1.2rem;
+    }
+    
+    header > div > p {
+        font-size: 0.8rem;
+    }
+
+    body {
+        background-image: none;
+        background-color: rgb(0, 183, 255);
+    }
+
+    /* Div das informações da Pokedex */
+    .div-pokedex {
+        display: block;
+        padding: 0.1rem;
+        width: 100%;
+    }
+    
+    /* Search */
+    .search {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    }
+
+    .search > button {
+        padding: 0.8rem; /* Reduz o preenchimento interno */
+        margin: 3%; /* Reduz a margem */
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+    }
+
+    .search > input {
+        margin: 10px; /* Reduz a margem */
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        width: 100%; /* Faz o input ocupar toda a largura disponível */
+    }
+    
+    /* Pokedex */
+    .pokedex {
+        padding: 0;
+        width: 100%;
+    }
+    
+    /* Div que irá conter as informações extras do pokemon, como tipo e status */
+    .extraPokedex {
+        width: 100%; 
+        margin-top: 2%;
+        padding: 0;
+    }
+    
+    /* Imagem do Pokemon */
+    .imgPoke {
+        width: 60%;
+        margin: 10%;
+        padding: 0;
+    }
+    
+    /* Lista que contem o nome e o id do pokemon */
+    .listNameId {
+        margin: -5%;
+        font-size: 1.4rem;
+    }
+    
+    .listTypes {
+        padding: 1rem;
+    }
+
+    /* tipo do pokemon */
+    .typesPoke {
+        font-size: 1.2rem;
+    }
+    
+    .listStatus {
+        padding: 1rem;
+    }
+
+    /* cada status do pokemon */
+    .statsPoke {
+        width: 70%;   
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    header {
+        width: 100%;
+        padding: 0;
+    }
+    
+    header > div > h1 {
+        font-size: 1.2rem;
+    }
+    
+    header > div > p {
+        font-size: 0.8rem;
+    }
+
+    body {
+        background-image: none;
+        background-color: rgb(0, 183, 255);
+    }
+
+    /* Div das informações da Pokedex */
+    .div-pokedex {
+        display: block;
+        padding: 0.1rem;
+        width: 100%;
+    }
+    
+    /* Search */
+    .search {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    }
+
+    .search > button {
+        padding: 0.8rem; /* Reduz o preenchimento interno */
+        margin: 3%; /* Reduz a margem */
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+    }
+
+    .search > input {
+        margin: 10px; /* Reduz a margem */
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        width: 100%; /* Faz o input ocupar toda a largura disponível */
+    }
+    
+    /* Pokedex */
+    .pokedex {
+        padding: 0;
+        width: 100%;
+    }
+    
+    /* Div que irá conter as informações extras do pokemon, como tipo e status */
+    .extraPokedex {
+        width: 100%; 
+        margin-top: 2%;
+        padding: 0;
+    }
+    
+    /* Imagem do Pokemon */
+    .imgPoke {
+        width: 60%;
+        margin: 10%;
+        border-radius: 100%;
+        padding: 0;
+    }
+    
+    /* Lista que contem o nome e o id do pokemon */
+    .listNameId {
+        margin: -5%;
+        font-size: 1.4rem;
+    }
+    
+    .listTypes {
+        padding: 1rem;
+    }
+
+    /* tipo do pokemon */
+    .typesPoke {
+        font-size: 1.2rem;
+    }
+    
+    .listStatus {
+        padding: 1rem;
+    }
+
+    /* cada status do pokemon */
+    .statsPoke {
+        width: 70%;   
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1216px) {
+    header {
+        width: 100%;
+        padding: 0;
+    }
+    
+    header > div > h1 {
+        font-size: 1.2rem;
+    }
+    
+    header > div > p {
+        font-size: 0.8rem;
+    }
+
+    body {
+        background-image: none;
+        background-color: rgb(0, 183, 255);
+    }
+
+    /* Div das informações da Pokedex */
+    .div-pokedex {
+        display: block;
+        padding: 0.1rem;
+        width: 100%;
+    }
+    
+    /* Search */
+    .search {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    }
+
+    .search > button {
+        padding: 0.8rem; /* Reduz o preenchimento interno */
+        margin: 3%; /* Reduz a margem */
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+    }
+
+    .search > input {
+        margin: 10px; /* Reduz a margem */
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        width: 70%; /* Faz o input ocupar toda a largura disponível */
+    }
+    
+    /* Pokedex */
+    .pokedex {
+        padding: 0;
+        width: 70%;
+    }
+    
+    /* Div que irá conter as informações extras do pokemon, como tipo e status */
+    .extraPokedex {
+        width: 70%; 
+        margin-top: 2%;
+        padding: 0;
+    }
+    
+    /* Imagem do Pokemon */
+    .imgPoke {
+        width: 30%;
+        margin: 7%;
+        border-radius: 100%;
+        padding: 0;
+    }
+    
+    /* Lista que contem o nome e o id do pokemon */
+    .listNameId {
+        margin: -5%;
+        font-size: 1.4rem;
+    }
+    
+    .listTypes {
+        padding: 1rem;
+    }
+
+    /* tipo do pokemon */
+    .typesPoke {
+        font-size: 1.2rem;
+    }
+    
+    .listStatus {
+        padding: 1rem;
+    }
+
+    /* cada status do pokemon */
+    .statsPoke {
+        width: 70%;   
+        font-size: 0.9rem;
+    }
+}

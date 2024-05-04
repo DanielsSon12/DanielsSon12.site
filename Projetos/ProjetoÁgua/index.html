@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Água</title>
+</head>
+
+<body>
+    <header>
+        <h1>Já bebeu água hoje?</h1>
+        <p>De acordo com a OMS(Organização Mundial da Saúde) é necessário beber por dia <span>35ml de água</span> para
+            cada quilo que a pessoa possui.</p>
+    </header>
+    <main>
+        <div class="div_pedidoInfo">
+            <h2>Quanto de água devo beber por dia?</h2>
+            <p>Insira as informações pedidas abaixo para que possamos calcular a quantidade de água que você deve beber
+                por dia.</p>
+        </div>
+
+        <div class="div_informacoes">
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Insira seu nome" class="nome" id="nome" required><br><br>
+
+            <label for="peso">Peso:</label>
+            <input type="number" placeholder="Insira seu peso em KG" class="peso" id="peso" required><br>
+        </div>
+
+        <div class="div_buttons">
+            <button type="submit" class="calcular">Calcular</button>
+            <button type="reset" class="limpar">Limpar</button>
+        </div>
+
+        <div class="div_resposta">
+            <!-- Reposta sera exibida aqui -->
+        </div>
+    </main>
+    <script src="./script.js" defer></script>
+</body>
+
+</html>

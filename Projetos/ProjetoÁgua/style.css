@@ -1,0 +1,94 @@
+* {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(153, 189, 231);
+}
+
+h1, h2 {
+    color: rgb(0, 0, 80);
+}
+
+/* Introdução */
+
+header {
+    display: block;
+    padding: 3%;
+    border-bottom: 2px solid rgb(0, 0, 80);
+}
+
+header > h1 {
+    font-size: 3rem;
+}
+
+header > p {
+    font-size: 1.3rem;
+}
+
+header > p > span {
+    font-weight: bolder;
+    color: rgb(0, 0, 80);
+}
+
+/* Informações pedidas */
+.div_pedidoInfo {
+    display: block;
+}
+
+.div_pedidoInfo > h2 {
+    font-size: 1.8rem;
+}
+
+.div_pedidoInfo > p {
+    font-size: 1.2rem;
+}
+
+/* Informações */
+.div_informacoes {
+    display:inline-block;
+    padding-bottom: 1%;
+}
+
+.div_informacoes > label {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: rgb(0, 0, 80);
+}
+
+.div_informacoes > input {
+    width: 100%;
+    padding: 3%;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 80);
+}
+
+/* Botões */
+.div_buttons > button {
+    padding: 7px;
+    margin: 10px;
+    border-color: rgb(0, 0, 80);
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.div_buttons > button:hover {
+    color: whitesmoke;
+    background-color: rgb(50, 92, 155);
+    border-color: rgb(50, 92, 155);
+}
+
+/* Div da resposta */
+.div_resposta {
+    border-top: 2px solid rgb(0, 0, 80);
+}
+
+.div_resposta > .nomeResposta {
+    font-size: 1.8rem;
+    color: rgb(0, 0, 80);
+}
+
+.div_resposta > .resposta {
+    font-size: 1.4rem;
+}

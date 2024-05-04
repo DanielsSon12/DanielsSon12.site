@@ -1862,8 +1862,8 @@ nav {
         padding-top: 120px;
         padding-bottom: 120px;
         border-top: 2px solid rgb(27, 27, 27);
+        display: flex;
     }
-
 
     .section_projetos > div > h4, p {
         max-width: 400px;
@@ -1890,6 +1890,7 @@ nav {
     }
 
     .section_projetos > div > ul > li > a {
+        display: flex;
         font-size: 0.85rem;
         padding: 5px;
     }   

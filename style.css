@@ -745,6 +745,8 @@ nav {
         padding-top: 90px;
         padding-bottom: 90px;
         border-top: 2px solid rgb(27, 27, 27);
+        display: flex;
+        justify-content: center;
     }
 
     .section_projetos > div > h4, p {
@@ -764,16 +766,21 @@ nav {
     
     .section_projetos > div > ul {
         padding-top: 1px;
+        display: flex;
+        flex-direction: column;
     }
 
     .section_projetos > div > ul > li {
         padding: 5px;
         margin: 5px;
+        width: auto;
     }
 
     .section_projetos > div > ul > li > a {
         font-size: 0.7rem;
         padding: 5px;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -1023,6 +1030,7 @@ nav {
         padding-top: 90px;
         padding-bottom: 90px;
         border-top: 2px solid rgb(27, 27, 27);
+        justify-content: center;
     }
 
     .section_projetos > div > h4, p {
@@ -1042,16 +1050,21 @@ nav {
     
     .section_projetos > div > ul {
         padding-top: 1px;
+        display: flex;
+        flex-direction:column;
     }
 
     .section_projetos > div > ul > li {
         padding: 5px;
         margin: 5px;
+        width: auto;
     }
 
     .section_projetos > div > ul > li > a {
         font-size: 0.7rem;
         padding: 5px;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -1300,6 +1313,8 @@ nav {
         padding-top: 110px;
         padding-bottom: 110px;
         border-top: 2px solid rgb(27, 27, 27);
+        display: flex;
+        justify-content: center;
     }
 
 
@@ -1320,16 +1335,21 @@ nav {
     
     .section_projetos > div > ul {
         padding-top: 1px;
+        display: flex;
+        flex-direction: column;
     }
 
     .section_projetos > div > ul > li {
         padding: 8px;
         margin: 5px;
+        width: auto;
     }
 
     .section_projetos > div > ul > li > a {
         font-size: 0.85rem;
         padding: 5px;
+        display: flex;
+        justify-content: center;
     }   
 }
 
@@ -1863,6 +1883,7 @@ nav {
         padding-bottom: 120px;
         border-top: 2px solid rgb(27, 27, 27);
         display: flex;
+        justify-content: center;
     }
 
     .section_projetos > div > h4, p {
@@ -1882,17 +1903,21 @@ nav {
     
     .section_projetos > div > ul {
         padding-top: 1px;
+        display: flex;
+        flex-direction: column;
     }
 
     .section_projetos > div > ul > li {
         padding: 8px;
         margin: 5px;
+        width:auto;
     }
 
     .section_projetos > div > ul > li > a {
         display: flex;
         font-size: 0.85rem;
         padding: 5px;
+        justify-content: center;
     }   
 }
 
@@ -2142,6 +2167,7 @@ nav {
         padding-top: 130px;
         padding-bottom: 130px;
         border-top: 2px solid rgb(27, 27, 27);
+        justify-content: center;
     }
 
 
@@ -2162,16 +2188,21 @@ nav {
     
     .section_projetos > div > ul {
         padding-top: 1px;
+        display: flex;
+        flex-direction: column;
     }
 
     .section_projetos > div > ul > li {
         padding: 8px;
         margin: 5px;
+        width: auto;
     }
 
     .section_projetos > div > ul > li > a {
         font-size: 0.85rem;
         padding: 5px;
+        display: flex;
+        justify-content: center;
     }   
 }
 
